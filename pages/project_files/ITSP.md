@@ -1,0 +1,21 @@
+---
+layout: page
+permalink: /projects/ITSP/
+---
+# Offside Detection in Football
+
+A software implmentation of a system that can detect offside situations in a given video feed. <br>
+The source code for the project can be found on this [Github Repo Link](https://github.com/ishank-juneja/Offside-Detection-System-for-Football)
+- A flowchat demonstrating the methodology used is shown below
+
+<p align ="center">
+  <img src="{{site.baseurl}}/images/flow_char_ITSP.png" alt="VRP 2" style="width:400px;height:435px;" />
+</p>
+
+
+The above graphic was part of a poster we made for a student technical exbition <br>
+-- *Tech and RnD Expo 2017* at IITB 
+<embed src="{{site.baseurl}}/docs/ITSPver4.pdf" width="900px" height="1250px" alt = "Poster"/>
+
+
+
