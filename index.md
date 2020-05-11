@@ -15,8 +15,9 @@ This is the Markdown Implementation
 
 Welcome to my Homepage!
 
-My name is Ishank Juneja and I am currently a 3<sup>rd</sup> Year undergraduate student. I am pursuing a major in Electrical Engineering and a minor in Computer Science. 
+My name is Ishank Juneja and I am currently a 4<sup>th</sup> Year undergraduate student. I am pursuing a major in Electrical Engineering and a minor in Computer Science. 
 
 Recently I have had the chance to work on some exciting projects: For Details [Click Here]({{site.baseurl}}/projects)
 
-I am also enthusiastic about programming, I put up my work on [my Github Page](https://github.com/ishank-juneja) 	
+I am also enthusiastic about programming, I put up my work on [my Github Page](https://github.com/ishank-juneja)
+ 	
