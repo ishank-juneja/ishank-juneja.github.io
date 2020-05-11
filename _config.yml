@@ -25,6 +25,9 @@ quora_username: Ishank-Juneja
 jekyll-mentions:
     base_url: https://github.com
 
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
+
 # Build settings
 markdown: kramdown
 theme: minima
