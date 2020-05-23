@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ishank-juneja.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ishank-juneja.github.io/" rel="alternate" type="text/html" /><updated>2020-05-23T23:28:13+05:30</updated><id>https://ishank-juneja.github.io/feed.xml</id><title type="html">Homepage | Ishank Juneja</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Baby_image</title><link href="https://ishank-juneja.github.io/projects/baby-image/" rel="alternate" type="text/html" title="Baby_image" /><published>2017-09-24T00:00:00+05:30</published><updated>2017-09-24T00:00:00+05:30</updated><id>https://ishank-juneja.github.io/projects/baby_image</id><content type="html" xml:base="https://ishank-juneja.github.io/projects/baby-image/">&lt;h1 id=&quot;baby-image-segmentation&quot;&gt;Baby Image Segmentation&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ishank-juneja.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ishank-juneja.github.io/" rel="alternate" type="text/html" /><updated>2020-05-23T23:34:08+05:30</updated><id>https://ishank-juneja.github.io/feed.xml</id><title type="html">Homepage | Ishank Juneja</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Something else</title><link href="https://ishank-juneja.github.io/projects/baby-image/" rel="alternate" type="text/html" title="Something else" /><published>2017-09-24T00:00:00+05:30</published><updated>2017-09-24T00:00:00+05:30</updated><id>https://ishank-juneja.github.io/projects/Baby-Image</id><content type="html" xml:base="https://ishank-juneja.github.io/projects/baby-image/">&lt;h1 id=&quot;baby-image-segmentation&quot;&gt;Baby Image Segmentation&lt;/h1&gt;
 &lt;p&gt;This project was through an intership with a start-up called &lt;a href=&quot;http://cradlewise.com/about/&quot;&gt;Cradlewise&lt;/a&gt;. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.&lt;/p&gt;
 
 &lt;p&gt;When an infant rolls over on its side, a dangerous position may arise where the baby may suffocate. The goal was to flag down such dangerous positions so that an alram can be raised.&lt;/p&gt;
@@ -13,12 +13,12 @@
 
 &lt;p&gt;Anoter non segmentation based method was implemented which followed the sequence: Look for circles corresponding to the Head, Torso and Legs –&amp;gt; Check the alignment between the centers of the three circles –&amp;gt; If mis-aligned beyond a certain threshold, declare unsafe.&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;  
-  &lt;img src=&quot;/images/circles_baby.png&quot; alt=&quot;Depth Frame&quot; style=&quot;width:184px;height:160px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/circles_baby.png&quot; alt=&quot;Depth Frame&quot; style=&quot;width:184px;height:160px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;A rendered version of a typical depth frame (zFrame)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;  
-  &lt;img src=&quot;/images/rendered_depth_frame.png&quot; alt=&quot;Depth Frame&quot; style=&quot;width:184px;height:160px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/rendered_depth_frame.png&quot; alt=&quot;Depth Frame&quot; style=&quot;width:184px;height:160px;&quot; /&gt;
 &lt;/p&gt;</content><author><name></name></author><summary type="html">Baby Image Segmentation This project was through an intership with a start-up called Cradlewise. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.</summary></entry></feed>
