@@ -1,5 +1,6 @@
 ---
 layout: page
+date: 2017-09-24 
 permalink: /projects/baby-image/
 ---
 # Baby Image Segmentation
