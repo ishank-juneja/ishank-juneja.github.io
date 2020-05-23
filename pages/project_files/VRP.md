@@ -20,11 +20,11 @@ Some of the graphics I made as part of [my notes](https://github.com/ishank-june
 
 - Discrete Optimization solutions through Linear Programming Approach
 <p align ="center">
-  <img src="{{site.baseurl}}/images/VRP_2.jpg" alt="VRP 2" style="width:600px;height:400px;" />
+  <img src="{{site.baseurl}}/assets/images/VRP_2.jpg" alt="VRP 2" style="width:600px;height:400px;" />
 </p>
 
 - Branch and Bound Algorithm for IP solutions  
 <p align="center">  
-  <img src="{{site.baseurl}}/images/VRP_4.jpg" alt="VRP 4" style="width:500px;height:500px;" />
+  <img src="{{site.baseurl}}/assets/images/VRP_4.jpg" alt="VRP 4" style="width:500px;height:500px;" />
 </p>
 

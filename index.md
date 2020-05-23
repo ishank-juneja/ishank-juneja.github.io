@@ -1,17 +1,13 @@
 ---
-
 categories: jekyll update
 layout: page
 ---
+{% include JB/setup %}
 <!--- Put in Top Most Jekyll Directory-->
 
 <p align="center">
-  <img src="{{site.baseurl}}/images/ishank.jpg" alt="picture of me"/>
+  <img src="{{site.baseurl}}/assets/images/ishank.jpg" alt="picture of me"/>
 </p>
-
-<!--- [ishank]({{site.baseurl}}/images/ishank_2.jpg)
-This is the Markdown Implementation 
--->
 
 Welcome to my Homepage!
 
@@ -21,3 +17,11 @@ Recently I have had the chance to work on some exciting projects: For Details [C
 
 I am also enthusiastic about programming, I put up my work on [my Github Page](https://github.com/ishank-juneja)
  	
+#### Updates
+
+<div style="height:250px;overflow:auto;">
+<table>
+<col width="100px">
+<col width="650px">
+<tr><td><b>May 2020:</b></td><td> A test entry</td></tr>
+

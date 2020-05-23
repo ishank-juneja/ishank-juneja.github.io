@@ -13,5 +13,5 @@ permalink: /projects/
 - [**Offisde Detection in Football**]({{site.baseurl}}/projects/ITSP) <br>
 	-- A self initiated Summer project. Our team created a program to identify offisde situations in football. The project utilised the functionality of the openCV library in Python. 
 
-- [**Course Projects**]({{site.baseurl}}/projects/course) <br>
+- [**Course Projects**]({{baseurl.site}}/projects/course) <br>
 	-- Some interesting projects done as part of course work here at IITB.

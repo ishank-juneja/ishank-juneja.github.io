@@ -26,7 +26,7 @@ jekyll-mentions:
     base_url: https://github.com
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X
+google_analytics: UA-166118550-1
 
 # Build settings
 markdown: kramdown
