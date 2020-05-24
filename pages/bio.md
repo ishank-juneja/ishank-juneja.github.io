@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Biography
-permalink: /biography/
+title: About
+permalink: /about/
 ---
 
 # Ishank Juneja

@@ -4,11 +4,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Projects</title>
-  <meta name="description" content="Personal homepage: Ishank Juneja">
+  <title>Vrp</title>
+  <meta name="description" content="Vehicle Routing Problems – A flavour of Discrete Optimization">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/projects/">
+  <link rel="canonical" href="http://localhost:4000/projects/VRPs/">
   <link rel="alternate" type="application/rss+xml" title="Personal Webpage | Ishank Juneja" href="http://localhost:4000/feed.xml">
 
 <link href='http://joelglovier.com/feed.xml' rel='alternate' type='application/atom+xml'>
@@ -67,34 +67,48 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">Projects</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Vrp</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2012-09-12T00:00:00+05:30" itemprop="datePublished">Sep 12, 2012
+      </time></p>
   </header>
 
-  <div class="post-content">
-    <ul>
-  <li>
-    <p><a href="/projects/VRPs"><strong>Optimization Problems</strong></a> <br />
-  – A supervised learning project where I learnt about Integer programming as a discrete optimization technique and applied this knowledge to Vehicle Routing Problems.</p>
-  </li>
-  <li>
-    <p><a href="/projects/baby-image"><strong>Baby Image Segmentation</strong></a> <br />
-  – An internship where I worked on Image Segmentation and Classification on some Infant image data. The goal was to flag potentially dangerous positions.</p>
-  </li>
-  <li>
-    <p><a href="/projects/ITSP"><strong>Offisde Detection in Football</strong></a> <br />
-  – A self initiated Summer project. Our team created a program to identify offisde situations in football. The project utilised the functionality of the openCV library in Python.</p>
-  </li>
-  <li>
-    <p><a href="/projects/course"><strong>Course Projects</strong></a> <br />
-  – Some interesting projects done as part of course work here at IITB.</p>
-  </li>
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="vehicle-routing-problems--a-flavour-of-discrete-optimization">Vehicle Routing Problems – A flavour of Discrete Optimization</h1>
+
+<p>The aim of this supervised Learning project project was to come up with a formulation for a <strong>corporate cab fleet problem</strong>, which is a type of vehicle routing problem (VRP).</p>
+
+<p>VRPs are problems concerning the distribution of goods from depots to final users (customers). <br />
+Solving a VRP is equivalent to determining a set of routes that start and end at the same depot,
+such that operational constraints and customer requirements are satisfied and cost is minimized.</p>
+
+<p>The distribution network is modelled as a Graph with edges as roads and vertices
+corresponding to customer locations.</p>
+
+<p>To work towards my goal I learnt about concepts like –<br />
+	Linear Programming problems, the simplex algorithm for constraint optimization, Integer programming (IP) for discrete optimization, Network Problem IP models, the travelling salesman problem and Branch and bound and cutting plane algorithms for solving IP problems.</p>
+
+<p>Some of the graphics I made as part of <a href="https://github.com/ishank-juneja/cab-fleet-optimization/tree/master/notes">my notes</a> for this are shown below.</p>
+
+<ul>
+  <li>Discrete Optimization solutions through Linear Programming Approach</li>
 </ul>
+<p align="center">
+  <img src="/assets/images/VRP_2.jpg" alt="VRP 2" style="width:600px;height:400px;" />
+</p>
 
-  </div>
+<ul>
+  <li>Branch and Bound Algorithm for IP solutions</li>
+</ul>
+<p align="center">  
+  <img src="/assets/images/VRP_4.jpg" alt="VRP 4" style="width:500px;height:500px;" />
+</p>
 
+
+  </div><a class="u-url" href="/projects/VRPs/" hidden></a>
 </article>
 
       </div>

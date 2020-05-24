@@ -26,10 +26,8 @@ quora_username: Ishank-Juneja
 stackoverflow: 4477387/ishank-juneja
 jekyll-mentions:
     base_url: https://github.com
-
 # Google Analytics
 google_analytics: UA-166118550-1
-
 linkedin_username: ishank-juneja 
 include: ['_pages']
 footer-links-active:
@@ -39,7 +37,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
