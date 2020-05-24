@@ -2,9 +2,8 @@
 layout: page
 date: 2017-09-24 
 permalink: /projects/baby-image/
-title: Something else
+title: Baby Image Segmentation 
 ---
-# Baby Image Segmentation
 This project was through an intership with a start-up called [Cradlewise](http://cradlewise.com/about/). Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.  
 
 When an infant rolls over on its side, a dangerous position may arise where the baby may suffocate. The goal was to flag down such dangerous positions so that an alram can be raised.

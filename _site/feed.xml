@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-24T15:59:06+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Personal Webpage | Ishank Juneja</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Steth</title><link href="http://localhost:4000/projects/course/steth/" rel="alternate" type="text/html" title="Steth" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>http://localhost:4000/projects/course/steth</id><content type="html" xml:base="http://localhost:4000/projects/course/steth/">&lt;h1 id=&quot;electronic-stethoscope-front-end&quot;&gt;Electronic Stethoscope Front-End&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-24T16:05:51+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Personal Webpage | Ishank Juneja</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Steth</title><link href="http://localhost:4000/projects/course/steth/" rel="alternate" type="text/html" title="Steth" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>http://localhost:4000/projects/course/steth</id><content type="html" xml:base="http://localhost:4000/projects/course/steth/">&lt;h1 id=&quot;electronic-stethoscope-front-end&quot;&gt;Electronic Stethoscope Front-End&lt;/h1&gt;
 
 &lt;p&gt;A traditional Stethoscope acquires body signals acoustically. The sounds reach a doctor’s ears through
 rubber tubes. The ability to make accurate inferences from these sounds is limited by the physicians
@@ -23,8 +23,7 @@ A major aspect of the project was identifying and eliminating sources of noise.&
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/assets/images/steth.jpg&quot; alt=&quot;Stethoscope&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">Electronic Stethoscope Front-End</summary></entry><entry><title type="html">Something else</title><link href="http://localhost:4000/projects/baby-image/" rel="alternate" type="text/html" title="Something else" /><published>2017-09-24T00:00:00+05:30</published><updated>2017-09-24T00:00:00+05:30</updated><id>http://localhost:4000/projects/Baby-Image</id><content type="html" xml:base="http://localhost:4000/projects/baby-image/">&lt;h1 id=&quot;baby-image-segmentation&quot;&gt;Baby Image Segmentation&lt;/h1&gt;
-&lt;p&gt;This project was through an intership with a start-up called &lt;a href=&quot;http://cradlewise.com/about/&quot;&gt;Cradlewise&lt;/a&gt;. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.&lt;/p&gt;
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Electronic Stethoscope Front-End</summary></entry><entry><title type="html">Baby Image Segmentation</title><link href="http://localhost:4000/projects/baby-image/" rel="alternate" type="text/html" title="Baby Image Segmentation" /><published>2017-09-24T00:00:00+05:30</published><updated>2017-09-24T00:00:00+05:30</updated><id>http://localhost:4000/projects/Baby-Image</id><content type="html" xml:base="http://localhost:4000/projects/baby-image/">&lt;p&gt;This project was through an intership with a start-up called &lt;a href=&quot;http://cradlewise.com/about/&quot;&gt;Cradlewise&lt;/a&gt;. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.&lt;/p&gt;
 
 &lt;p&gt;When an infant rolls over on its side, a dangerous position may arise where the baby may suffocate. The goal was to flag down such dangerous positions so that an alram can be raised.&lt;/p&gt;
 
@@ -46,21 +45,7 @@ A major aspect of the project was identifying and eliminating sources of noise.&
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;  
   &lt;img src=&quot;/assets/images/rendered_depth_frame.png&quot; alt=&quot;Depth Frame&quot; style=&quot;width:184px;height:160px;&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">Baby Image Segmentation This project was through an intership with a start-up called Cradlewise. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.</summary></entry><entry><title type="html">Itsp</title><link href="http://localhost:4000/projects/ITSP/" rel="alternate" type="text/html" title="Itsp" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>http://localhost:4000/projects/ITSP</id><content type="html" xml:base="http://localhost:4000/projects/ITSP/">&lt;h1 id=&quot;offside-detection-in-football&quot;&gt;Offside Detection in Football&lt;/h1&gt;
-
-&lt;p&gt;A software implmentation of a system that can detect offside situations in a given video feed. &lt;br /&gt;
-The source code for the project can be found on this &lt;a href=&quot;https://github.com/ishank-juneja/Offside-Detection-System-for-Football&quot;&gt;Github Repo Link&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;A flowchat demonstrating the methodology used is shown below&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/flow_char_ITSP.png&quot; alt=&quot;VRP 2&quot; style=&quot;width:400px;height:435px;&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The above graphic was part of a poster we made for a student technical exbition &lt;br /&gt;
-– &lt;em&gt;Tech and RnD Expo 2017&lt;/em&gt; at IITB&lt;/p&gt;
-&lt;embed src=&quot;/assets/docs/ITSPver4.pdf&quot; width=&quot;900px&quot; height=&quot;1250px&quot; alt=&quot;Poster&quot; /&gt;</content><author><name></name></author><summary type="html">Offside Detection in Football</summary></entry><entry><title type="html">Vrp</title><link href="http://localhost:4000/projects/VRPs/" rel="alternate" type="text/html" title="Vrp" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>http://localhost:4000/projects/VRP</id><content type="html" xml:base="http://localhost:4000/projects/VRPs/">&lt;h1 id=&quot;vehicle-routing-problems--a-flavour-of-discrete-optimization&quot;&gt;Vehicle Routing Problems – A flavour of Discrete Optimization&lt;/h1&gt;
+&lt;/p&gt;</content><author><name></name></author><summary type="html">This project was through an intership with a start-up called Cradlewise. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.</summary></entry><entry><title type="html">Vrp</title><link href="http://localhost:4000/projects/VRPs/" rel="alternate" type="text/html" title="Vrp" /><published>2017-09-24T00:00:00+05:30</published><updated>2017-09-24T00:00:00+05:30</updated><id>http://localhost:4000/projects/VRP</id><content type="html" xml:base="http://localhost:4000/projects/VRPs/">&lt;h1 id=&quot;vehicle-routing-problems--a-flavour-of-discrete-optimization&quot;&gt;Vehicle Routing Problems – A flavour of Discrete Optimization&lt;/h1&gt;
 
 &lt;p&gt;The aim of this supervised Learning project project was to come up with a formulation for a &lt;strong&gt;corporate cab fleet problem&lt;/strong&gt;, which is a type of vehicle routing problem (VRP).&lt;/p&gt;
 
@@ -88,7 +73,21 @@ corresponding to customer locations.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;  
   &lt;img src=&quot;/assets/images/VRP_4.jpg&quot; alt=&quot;VRP 4&quot; style=&quot;width:500px;height:500px;&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">Vehicle Routing Problems – A flavour of Discrete Optimization</summary></entry><entry><title type="html">Course_projects</title><link href="http://localhost:4000/projects/course/" rel="alternate" type="text/html" title="Course_projects" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>http://localhost:4000/projects/course_projects</id><content type="html" xml:base="http://localhost:4000/projects/course/">&lt;h1 id=&quot;project-list&quot;&gt;Project List&lt;/h1&gt;
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Vehicle Routing Problems – A flavour of Discrete Optimization</summary></entry><entry><title type="html">Itsp</title><link href="http://localhost:4000/projects/ITSP/" rel="alternate" type="text/html" title="Itsp" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>http://localhost:4000/projects/ITSP</id><content type="html" xml:base="http://localhost:4000/projects/ITSP/">&lt;h1 id=&quot;offside-detection-in-football&quot;&gt;Offside Detection in Football&lt;/h1&gt;
+
+&lt;p&gt;A software implmentation of a system that can detect offside situations in a given video feed. &lt;br /&gt;
+The source code for the project can be found on this &lt;a href=&quot;https://github.com/ishank-juneja/Offside-Detection-System-for-Football&quot;&gt;Github Repo Link&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A flowchat demonstrating the methodology used is shown below&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/flow_char_ITSP.png&quot; alt=&quot;VRP 2&quot; style=&quot;width:400px;height:435px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The above graphic was part of a poster we made for a student technical exbition &lt;br /&gt;
+– &lt;em&gt;Tech and RnD Expo 2017&lt;/em&gt; at IITB&lt;/p&gt;
+&lt;embed src=&quot;/assets/docs/ITSPver4.pdf&quot; width=&quot;900px&quot; height=&quot;1250px&quot; alt=&quot;Poster&quot; /&gt;</content><author><name></name></author><summary type="html">Offside Detection in Football</summary></entry><entry><title type="html">Course_projects</title><link href="http://localhost:4000/projects/course/" rel="alternate" type="text/html" title="Course_projects" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>http://localhost:4000/projects/course_projects</id><content type="html" xml:base="http://localhost:4000/projects/course/">&lt;h1 id=&quot;project-list&quot;&gt;Project List&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;/projects/course/steth&quot;&gt;Electronic Stethoscope Front-End&lt;/a&gt;&lt;/li&gt;
