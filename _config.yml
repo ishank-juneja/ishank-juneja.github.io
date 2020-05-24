@@ -13,21 +13,27 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Homepage | Ishank Juneja 
+title: Personal Webpage | Ishank Juneja 
+full_name: Ishank Juneja
 email: ishankjuneja@gmail.com
+email2: ishankjuneja@iitb.ac.in
 description: >- # this means to ignore newlines until "baseurl:"
   Personal homepage: Ishank Juneja
 url: https://ishank-juneja.github.io # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: ishankjuneja
-github_username:  ishank-juneja
+twitter_username: ishankjuneja
+github_username: ishank-juneja
 quora_username: Ishank-Juneja
-
+stackoverflow: 4477387/ishank-juneja
 jekyll-mentions:
     base_url: https://github.com
 
 # Google Analytics
 google_analytics: UA-166118550-1
 
+linkedin_username: ishank-juneja 
+include: ['_pages']
+footer-links-active:
+  stackoverflow: true
 # Build settings
 markdown: kramdown
 theme: minima
