@@ -23,5 +23,5 @@ I am also enthusiastic about programming, I put up my work on [my Github Page](h
 <table>
 <col width="100px">
 <col width="650px">
-<tr><td><b>May 2020:</b></td><td> A test entry</td></tr>
+<tr><td><b>May 2020:</b></td><td> Revamped webpage and new blog post up. More content coming up soon.</td></tr>
 
