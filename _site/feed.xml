@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://ishank-juneja.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ishank-juneja.github.io/" rel="alternate" type="text/html" /><updated>2020-05-24T20:08:53+05:30</updated><id>https://ishank-juneja.github.io/feed.xml</id><title type="html">Personal Webpage | Ishank Juneja</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Steth</title><link href="https://ishank-juneja.github.io/projects/course/steth/" rel="alternate" type="text/html" title="Steth" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>https://ishank-juneja.github.io/projects/course/steth</id><content type="html" xml:base="https://ishank-juneja.github.io/projects/course/steth/">&lt;h1 id=&quot;electronic-stethoscope-front-end&quot;&gt;Electronic Stethoscope Front-End&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-26T21:02:44+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Personal Webpage | Ishank Juneja</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Webpage Setup using Jekyll</title><link href="http://localhost:4000/blog/pageSetup" rel="alternate" type="text/html" title="Webpage Setup using Jekyll" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/webpage-setup</id><content type="html" xml:base="http://localhost:4000/blog/pageSetup">&lt;p&gt;This post illustrates how to get a Jekyll static site up and running with some useful add-ons and tips. Rather than be a self contained post, this serves as more of a collection of pointers to other useful resources around the internet that when taken together get the job done.&lt;/p&gt;
+
+&lt;h4 id=&quot;lift-off&quot;&gt;&lt;strong&gt;Lift off!&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;When starting off making a personal webpage with Jekyll, the first place one might end up is the &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;official website&lt;/a&gt;. The Jekyll documentation is great for understanding its more advanced features but I found, &lt;a href=&quot;https://www.taniarascia.com/make-a-static-website-with-jekyll/&quot;&gt;this post&lt;/a&gt; to be a much more self contained tutorial to getting a webpage running. In particular the official Jekyll documentation misses out on some of the details of creating some so called ‘gemfiles’ within the folder structure.&lt;/p&gt;
+
+&lt;p&gt;After completing the procedure in the linked tutorial, the directory structure we get looks as follows-&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+├── 404.html
+├── about.md
+├── _config.yml
+├── feed.xml
+├── Gemfile
+├── Gemfile.lock
+├── index.md
+├── _posts
+│   └── 2019-07-16-welcome-to-jekyll.markdown
+└── _site
+    ├── 404.html
+    ├── about
+    │   └── index.html
+    ├── assets
+    │   ├── main.css
+    │   └── minima-social-icons.svg
+    ├── feed.xml&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;As you might have already understood from following the linked tutorial, when we run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; (or just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; in the outermost directory containing our to get a rendering of our webpage on the local url &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;http://127.0.0.1:4000&lt;/a&gt;. Or when we run, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll build&lt;/code&gt;. The finished webpage (or rather collection of pages) is placed into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt; directory from which it could be deployed onto our preferred web server.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;deploying-in-the-wild&quot;&gt;&lt;strong&gt;Deploying in the wild&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Although usually when a jekyll based blog/webpage is setup, it is done on our own free github.io domain name using github pages, in which case we don’t need to worry about deploying the contents of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt; ourselves, since github does that for us automatically when we push the entire outer directory and any subsequent changes to it to a specially named remote directory. You can check out the &lt;a href=&quot;https://pages.github.com/&quot;&gt;github pages&lt;/a&gt; link for details.&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-and-placing-markdown-files&quot;&gt;&lt;strong&gt;Creating and placing markdown files&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;The first page a visitor would see when they arrive at your website would be the contents of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.md&lt;/code&gt; Under the minima template the top right corner would contain links to pages rendered using any and every markdown file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pages&lt;/code&gt; directory or any of its sub-directories. Every other webpage, (blog posts, or some other format) should appear either inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory or any of its sub-directories (and so on recursively). Note that all markdown files present inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; must be named using the format &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-file-name&lt;/code&gt;, else the files won’t show up in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt; finished product and by extension, will not be accessible from your website.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Under the default &lt;em&gt;minima&lt;/em&gt; template, it seems that there are two options as far as the layout of your markdown file is concerned - &lt;strong&gt;post&lt;/strong&gt; and &lt;strong&gt;page&lt;/strong&gt;. To me the difference between the two seems very minor with the post layout having an automatic date stamp at the top of the rendered document and the page layout (somewhat fortunately) lacking such a date feature.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;customizing-urls-using-permalinks&quot;&gt;&lt;strong&gt;Customizing URLs using permalinks&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Another useful jekyll feature is that of &lt;em&gt;permalinks&lt;/em&gt;. By default, jekyll parses your file name for its date to create a url, for instance, by default, the url of this page would have been &lt;br /&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://ishank-juneja.github.io/2020/05/24/webpage-setup.html&lt;/code&gt;. If you, like me, find such a url aesthetically displeasing, then you might want to look into &lt;a href=&quot;https://www.youtube.com/watch?v=938jDG_YPdc&quot;&gt;permalinks&lt;/a&gt; in Jekyll.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The title, date, permalink and other useful information go into the &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/&quot;&gt;front-matter&lt;/a&gt; of the markdown file, for instance, the front matter for this page looks like so,&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2020-05-24&lt;/span&gt; 
+&lt;span class=&quot;na&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/blog/pageSetup&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Webpage Setup using Jekyll&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;the-picture-frame-surrounding-your-webpage&quot;&gt;&lt;strong&gt;The picture-frame surrounding your webpage&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;At the bottom of every page on your static website, are little links to the owners email, twitter and potentially other places of online presence. The structure of this bottom bar is dependent entirely on our choice of template and cannot be altered without creating our own fork of the template or using some other pre-existing template. The contents of the bottom bar are controlled by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file. The file for this web-page is given below.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Personal Webpage | Ishank Juneja&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;full_name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Ishank Juneja&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ishankjuneja@gmail.com&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;email2&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ishankjuneja@iitb.ac.in&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;-&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# this means to ignore newlines until &quot;baseurl:&quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;Personal homepage: Ishank Juneja&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://ishank-juneja.github.io&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the base hostname &amp;amp; protocol for your site, e.g. http://example.com&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;twitter_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ishankjuneja&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ishank-juneja&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;quora_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Ishank-Juneja&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;stackoverflow&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4477387/ishank-juneja&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;jekyll-mentions&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;base_url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://github.com&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Google Analytics&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;google_analytics&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;UA-XXXXXXXX-X&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;linkedin_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ishank-juneja&lt;/span&gt; 
+&lt;span class=&quot;na&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;_pages'&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;footer-links-active&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;stackoverflow&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Build settings&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kramdown&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;minima&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-feed&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In addition to creating entries for links that you wish to display, we must also provide Jekyll with relevant graphics (the GH icon, the twitter bird etc.) in the form of  .svg files that need to be included in a special &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; folder. Such a folder did not come by default when I created my webpage but some tutorials (see next section) assume the existence of such a directory anyway. To get the auxiliary files needed I referred to the &lt;a href=&quot;https://github.com/martiansideofthemoon/martiansideofthemoon.github.io&quot;&gt;source code&lt;/a&gt; for the webpage of a former student here at IITB. The webpage also inspired me to add &lt;a href=&quot;https://stackoverflow.com/help/flair&quot;&gt;stack exchange flair&lt;/a&gt; to the footer of my webpage.&lt;/p&gt;
+
+&lt;h4 id=&quot;monitoring-traffic-with-google-analytics&quot;&gt;&lt;strong&gt;Monitoring traffic with Google Analytics&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;If you wish to see how many hits your blog is getting, and which geographical regions these views come from, you could choose to create a google analytics profile and add some code snippets as is explained in this well written blog post on &lt;a href=&quot;https://desiredpersona.com/google-analytics-jekyll/&quot;&gt;adding analytics to Jekyll&lt;/a&gt;. The post assumes some pre-existing structure to your project which in my case was not present by defualt. Once again &lt;a href=&quot;https://github.com/martiansideofthemoon/martiansideofthemoon.github.io&quot;&gt;the source code&lt;/a&gt; reference came in handy as clarification.&lt;/p&gt;</content><author><name></name></author><summary type="html">This post illustrates how to get a Jekyll static site up and running with some useful add-ons and tips. Rather than be a self contained post, this serves as more of a collection of pointers to other useful resources around the internet that when taken together get the job done.</summary></entry><entry><title type="html">Steth</title><link href="http://localhost:4000/projects/course/steth/" rel="alternate" type="text/html" title="Steth" /><published>2020-05-24T00:00:00+05:30</published><updated>2020-05-24T00:00:00+05:30</updated><id>http://localhost:4000/projects/course/steth</id><content type="html" xml:base="http://localhost:4000/projects/course/steth/">&lt;h1 id=&quot;electronic-stethoscope-front-end&quot;&gt;Electronic Stethoscope Front-End&lt;/h1&gt;
 
 &lt;p&gt;A traditional Stethoscope acquires body signals acoustically. The sounds reach a doctor’s ears through
 rubber tubes. The ability to make accurate inferences from these sounds is limited by the physicians
@@ -23,9 +106,7 @@ A major aspect of the project was identifying and eliminating sources of noise.&
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/assets/images/steth.jpg&quot; alt=&quot;Stethoscope&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">Electronic Stethoscope Front-End</summary></entry><entry><title type="html">Vrp</title><link href="https://ishank-juneja.github.io/projects/VRPs/" rel="alternate" type="text/html" title="Vrp" /><published>2018-06-10T00:00:00+05:30</published><updated>2018-06-10T00:00:00+05:30</updated><id>https://ishank-juneja.github.io/projects/VRP</id><content type="html" xml:base="https://ishank-juneja.github.io/projects/VRPs/">&lt;h1 id=&quot;vehicle-routing-problems--a-flavour-of-discrete-optimization&quot;&gt;Vehicle Routing Problems – A flavour of Discrete Optimization&lt;/h1&gt;
-
-&lt;p&gt;The aim of this supervised Learning project project was to come up with a formulation for a &lt;strong&gt;corporate cab fleet problem&lt;/strong&gt;, which is a type of vehicle routing problem (VRP).&lt;/p&gt;
+&lt;/p&gt;</content><author><name></name></author><summary type="html">Electronic Stethoscope Front-End</summary></entry><entry><title type="html">Vehicle Routing Problems</title><link href="http://localhost:4000/projects/VRPs/" rel="alternate" type="text/html" title="Vehicle Routing Problems" /><published>2018-06-10T00:00:00+05:30</published><updated>2018-06-10T00:00:00+05:30</updated><id>http://localhost:4000/projects/VRP</id><content type="html" xml:base="http://localhost:4000/projects/VRPs/">&lt;p&gt;The aim of this supervised Learning project project was to come up with a formulation for a &lt;strong&gt;corporate cab fleet problem&lt;/strong&gt;, which is a type of vehicle routing problem (VRP).&lt;/p&gt;
 
 &lt;p&gt;VRPs are problems concerning the distribution of goods from depots to final users (customers). &lt;br /&gt;
 Solving a VRP is equivalent to determining a set of routes that start and end at the same depot,
@@ -51,7 +132,7 @@ corresponding to customer locations.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;  
   &lt;img src=&quot;/assets/images/VRP_4.jpg&quot; alt=&quot;VRP 4&quot; style=&quot;width:500px;height:500px;&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">Vehicle Routing Problems – A flavour of Discrete Optimization</summary></entry><entry><title type="html">Baby Image Segmentation</title><link href="https://ishank-juneja.github.io/projects/baby-image/" rel="alternate" type="text/html" title="Baby Image Segmentation" /><published>2017-09-24T00:00:00+05:30</published><updated>2017-09-24T00:00:00+05:30</updated><id>https://ishank-juneja.github.io/projects/Baby-Image</id><content type="html" xml:base="https://ishank-juneja.github.io/projects/baby-image/">&lt;p&gt;This project was through an intership with a start-up called &lt;a href=&quot;http://cradlewise.com/about/&quot;&gt;Cradlewise&lt;/a&gt;. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.&lt;/p&gt;
+&lt;/p&gt;</content><author><name></name></author><summary type="html">The aim of this supervised Learning project project was to come up with a formulation for a corporate cab fleet problem, which is a type of vehicle routing problem (VRP).</summary></entry><entry><title type="html">Baby Image Segmentation</title><link href="http://localhost:4000/projects/baby-image/" rel="alternate" type="text/html" title="Baby Image Segmentation" /><published>2017-09-24T00:00:00+05:30</published><updated>2017-09-24T00:00:00+05:30</updated><id>http://localhost:4000/projects/Baby-Image</id><content type="html" xml:base="http://localhost:4000/projects/baby-image/">&lt;p&gt;This project was through an intership with a start-up called &lt;a href=&quot;http://cradlewise.com/about/&quot;&gt;Cradlewise&lt;/a&gt;. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.&lt;/p&gt;
 
 &lt;p&gt;When an infant rolls over on its side, a dangerous position may arise where the baby may suffocate. The goal was to flag down such dangerous positions so that an alram can be raised.&lt;/p&gt;
 
@@ -73,7 +154,7 @@ corresponding to customer locations.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;  
   &lt;img src=&quot;/assets/images/rendered_depth_frame.png&quot; alt=&quot;Depth Frame&quot; style=&quot;width:184px;height:160px;&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">This project was through an intership with a start-up called Cradlewise. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.</summary></entry><entry><title type="html">Itsp</title><link href="https://ishank-juneja.github.io/projects/ITSP/" rel="alternate" type="text/html" title="Itsp" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>https://ishank-juneja.github.io/projects/ITSP</id><content type="html" xml:base="https://ishank-juneja.github.io/projects/ITSP/">&lt;h1 id=&quot;offside-detection-in-football&quot;&gt;Offside Detection in Football&lt;/h1&gt;
+&lt;/p&gt;</content><author><name></name></author><summary type="html">This project was through an intership with a start-up called Cradlewise. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.</summary></entry><entry><title type="html">Itsp</title><link href="http://localhost:4000/projects/ITSP/" rel="alternate" type="text/html" title="Itsp" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>http://localhost:4000/projects/ITSP</id><content type="html" xml:base="http://localhost:4000/projects/ITSP/">&lt;h1 id=&quot;offside-detection-in-football&quot;&gt;Offside Detection in Football&lt;/h1&gt;
 
 &lt;p&gt;A software implmentation of a system that can detect offside situations in a given video feed. &lt;br /&gt;
 The source code for the project can be found on this &lt;a href=&quot;https://github.com/ishank-juneja/Offside-Detection-System-for-Football&quot;&gt;Github Repo Link&lt;/a&gt;&lt;/p&gt;
@@ -87,7 +168,7 @@ The source code for the project can be found on this &lt;a href=&quot;https://gi
 
 &lt;p&gt;The above graphic was part of a poster we made for a student technical exbition &lt;br /&gt;
 – &lt;em&gt;Tech and RnD Expo 2017&lt;/em&gt; at IITB&lt;/p&gt;
-&lt;embed src=&quot;/assets/docs/ITSPver4.pdf&quot; width=&quot;900px&quot; height=&quot;1250px&quot; alt=&quot;Poster&quot; /&gt;</content><author><name></name></author><summary type="html">Offside Detection in Football</summary></entry><entry><title type="html">Course_projects</title><link href="https://ishank-juneja.github.io/projects/course/" rel="alternate" type="text/html" title="Course_projects" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>https://ishank-juneja.github.io/projects/course_projects</id><content type="html" xml:base="https://ishank-juneja.github.io/projects/course/">&lt;h1 id=&quot;project-list&quot;&gt;Project List&lt;/h1&gt;
+&lt;embed src=&quot;/assets/docs/ITSPver4.pdf&quot; width=&quot;900px&quot; height=&quot;1250px&quot; alt=&quot;Poster&quot; /&gt;</content><author><name></name></author><summary type="html">Offside Detection in Football</summary></entry><entry><title type="html">Course_projects</title><link href="http://localhost:4000/projects/course/" rel="alternate" type="text/html" title="Course_projects" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>http://localhost:4000/projects/course_projects</id><content type="html" xml:base="http://localhost:4000/projects/course/">&lt;h1 id=&quot;project-list&quot;&gt;Project List&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;/projects/course/steth&quot;&gt;Electronic Stethoscope Front-End&lt;/a&gt;&lt;/li&gt;
