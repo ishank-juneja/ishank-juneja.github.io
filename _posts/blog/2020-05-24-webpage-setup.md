@@ -32,7 +32,7 @@ After completing the procedure in the linked tutorial, the directory structure w
     ├── feed.xml
 {% endhighlight %}
 
-As you might have already understood from following the linked tutorial, when we run `bundle exec jekyll serve` (or just `jekyll serve` in the outermost directory containing our to get a rendering of our webpage on the local url [http://127.0.0.1:4000](http://127.0.0.1:4000). Or when we run, `bundle exec jekyll build`. The finished webpage (or rather collection of pages) is placed into the `_site` directory from which it could be deployed onto our preferred web server.<br>
+As you might have already understood from following the linked tutorial, when we run `bundle exec jekyll serve` (or just `jekyll serve`) in the outermost directory containing our to get a rendering of our webpage on the local url [http://127.0.0.1:4000](http://127.0.0.1:4000). Or when we run, `bundle exec jekyll build`. The finished webpage (or rather collection of pages) is placed into the `_site` directory from which it could be deployed onto our preferred web server.<br>
 
 #### **Deploying in the wild**
 
