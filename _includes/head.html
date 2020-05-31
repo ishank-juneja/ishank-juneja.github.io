@@ -11,6 +11,10 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
 <link href='http://joelglovier.com/feed.xml' rel='alternate' type='application/atom+xml'>
+<!-- Mathjax Support -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 {% if site.google_analytics and jekyll.environment == 'production' %}
 {% include analytics.html %}

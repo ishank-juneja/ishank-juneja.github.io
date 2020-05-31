@@ -59,6 +59,8 @@ title: Webpage Setup using Jekyll
 {% endhighlight %}
  
 #### **The picture-frame surrounding your webpage**
+Make corrections to this section to be consistent with Jekyll overriding themes instructions discussed next <br>
+
 At the bottom of every page on your static website, are little links to the owners email, twitter and potentially other places of online presence. The structure of this bottom bar is dependent entirely on our choice of template and cannot be altered without creating our own fork of the template or using some other pre-existing template. The contents of the bottom bar are controlled by the `_config.yml` file. The file for this web-page is given below. 
 
 {% highlight yaml %}
@@ -92,4 +94,9 @@ In addition to creating entries for links that you wish to display, we must also
 
 #### **Monitoring traffic with Google Analytics**
 If you wish to see how many hits your blog is getting, and which geographical regions these views come from, you could choose to create a google analytics profile and add some code snippets as is explained in this well written blog post on [adding analytics to Jekyll](https://desiredpersona.com/google-analytics-jekyll/). The post assumes some pre-existing structure to your project which in my case was not present by defualt. Once again [the source code](https://github.com/martiansideofthemoon/martiansideofthemoon.github.io) reference came in handy as clarification.
+
+#### **Overriding themes**
+An earlier version of Jekyll exposed the detailed directory structure by default, however, now themes abstract out the details better.
+
+To get the same results now we can follow the instructions suggested on the jekyll documentations for [overiding](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) the default themes. 
 
