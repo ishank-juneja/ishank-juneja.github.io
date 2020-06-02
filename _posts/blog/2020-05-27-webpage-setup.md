@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-05-27
-permalink: /blog/pageSetup
+permalink: /blog/pageSetupJekyll
 comments: true
 title: Webpage Setup using Jekyll
 ---
