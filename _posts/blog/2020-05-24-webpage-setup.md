@@ -2,6 +2,7 @@
 layout: post
 date: 2020-05-24
 permalink: /blog/pageSetup
+comments: true
 title: Webpage Setup using Jekyll
 ---
 This post illustrates how to get a Jekyll static site up and running with some useful add-ons and tips. Rather than be a self contained post, this serves as more of a collection of pointers to other useful resources around the internet that when taken together get the job done.<br>
