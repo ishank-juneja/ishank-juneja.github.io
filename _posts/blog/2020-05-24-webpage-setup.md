@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-24 
+date: 2020-05-24
 permalink: /blog/pageSetup
 title: Webpage Setup using Jekyll
 ---

@@ -1,0 +1,136 @@
+<p>This post illustrates how to get a Jekyll static site up and running with some useful add-ons and tips. Rather than be a self contained post, this serves as more of a collection of pointers to other useful resources around the internet that when taken together get the job done.<br />
+The tutorial and linked instructions assume a linux system with a <em>bash shell</em> available.</p>
+
+<h4 id="lift-off"><strong>Lift off!</strong></h4>
+
+<p>When starting off making a personal webpage with Jekyll, the first place one might end up is the <a href="https://jekyllrb.com/">official website</a>. The Jekyll documentation is great for understanding its more advanced features but I found, <a href="https://www.taniarascia.com/make-a-static-website-with-jekyll/">this post</a> to be a much more self contained tutorial to getting a webpage up and running. In particular the official Jekyll documentation misses out on some of the details of creating some so called ‘gemfiles’ within the folder structure.</p>
+
+<p>After completing the procedure in the linked tutorial, the directory structure we get looks as follows-</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">.</span>
+├── 404.html
+├── about.md
+├── _config.yml
+├── feed.xml
+├── Gemfile
+├── Gemfile.lock
+├── index.md
+├── _posts
+│   └── 2019-07-16-welcome-to-jekyll.markdown
+└── _site
+    ├── 404.html
+    ├── about
+    │   └── index.html
+    ├── assets
+    │   ├── main.css
+    │   └── minima-social-icons.svg
+    ├── feed.xml</code></pre></figure>
+
+<p>As you might gather from following the linked tutorial, when we run <code class="highlighter-rouge">bundle exec jekyll serve</code> (or just <code class="highlighter-rouge">jekyll serve</code>) in the outermost directory containing our project, a rendering version of our webpage on the local url <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a> becomes avaiable. Or when we run <code class="highlighter-rouge">bundle exec jekyll build</code>. The finished webpage (or rather collection of pages) is placed into the <code class="highlighter-rouge">_site</code> directory from which it could be deployed onto our preferred web server. <br />
+The <code class="highlighter-rouge">_site</code> directory is the finished product in some sense, so any changes made directly to the contents of this direcotry are pointless since these would be overwritten during the next compilation.</p>
+
+<h4 id="deploying-in-the-wild"><strong>Deploying in the wild</strong></h4>
+
+<p>Although usually when a jekyll based blog/webpage is setup, it is done on our own free github.io domain name using github pages, in which case we don’t need to worry about deploying the contents of <code class="highlighter-rouge">_site</code> ourselves, since github does that for us automatically when we push the entire outer directory and any subsequent changes to it to a specially named remote directory. You can check out the <a href="https://pages.github.com/">github pages</a> link for details.</p>
+
+<h4 id="creating-and-placing-markdown-files"><strong>Creating and placing markdown files</strong></h4>
+
+<p>The first page a visitor would see when they arrive at your website would be the contents of <code class="highlighter-rouge">index.md</code> Under the minima template the top right corner would contain links to pages rendered using any and every markdown file present in either the outermost project directory, in any specially named directory for instance, one called <code class="highlighter-rouge">pages</code>. Every other webpage, (blog posts, or any other format) should appear either inside the <code class="highlighter-rouge">_posts</code> directory or any of its sub-directories (and so on recursively). Note that all markdown files present inside <code class="highlighter-rouge">_posts</code> must be named using the format <code class="highlighter-rouge">YYYY-MM-DD-file-name</code>, else the files won’t show up in the <code class="highlighter-rouge">_site</code> finished product and by extension, will not be accessible from your website. Any <code class="highlighter-rouge">.md</code> markdown files present anywhere outside of this prescribed template will be treated like a new page and would be added to the upper right corner navigation pane.</p>
+
+<p>Under the default <em>minima</em> template, there are two options as far as the layout of a webpage generatred using a markdown file is concerned - <strong>post</strong> and <strong>page</strong>. To me the difference between the two seems very minor with the post layout having an automatic date stamp at the top of the rendered document and the page layout (somewhat fortunately) lacking such a date feature.</p>
+
+<h4 id="customizing-urls-using-permalinks"><strong>Customizing URLs using permalinks</strong></h4>
+
+<p>Another useful jekyll feature is that of <em>permalinks</em>. By default, jekyll parses your file name for its date to create a url, for instance, by default, the url of this page would have been <br /> <code class="highlighter-rouge">https://ishank-juneja.github.io/2020/05/24/webpage-setup.html</code>. If you, like me, find such a url aesthetically displeasing, then you might want to look into <a href="https://www.youtube.com/watch?v=938jDG_YPdc">permalinks</a> in Jekyll.<br /></p>
+
+<p>The title, date, permalink and other useful information go into the <a href="https://jekyllrb.com/docs/front-matter/">front-matter</a> of the markdown file, for instance, the front matter for this page looks like so,</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2020-05-24</span> 
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/blog/pageSetup</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Webpage Setup using Jekyll</span>
+<span class="nn">---</span></code></pre></figure>
+
+<h4 id="the-picture-frame-surrounding-your-webpage"><strong>The picture-frame surrounding your webpage</strong></h4>
+
+<p>At the bottom of every page on your static website, are little links to the owners email, twitter and potentially other places of online presence. The structure of this bottom bar is dependent entirely on our choice of template and cannot be altered without creating our own fork of the template or using some other pre-existing template. The contents of the bottom bar are controlled by the <code class="highlighter-rouge">_config.yml</code> file. The file for this web-page is given below.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">title</span><span class="pi">:</span> <span class="s">Ishank's Webpage</span> 
+<span class="na">full_name</span><span class="pi">:</span> <span class="s">Ishank Juneja</span>
+<span class="na">email</span><span class="pi">:</span> <span class="s">ishankjuneja@gmail.com</span>
+<span class="na">email2</span><span class="pi">:</span> <span class="s">ishankjuneja@iitb.ac.in</span>
+<span class="na">description</span><span class="pi">:</span> <span class="pi">&gt;-</span> <span class="c1"># this means to ignore newlines until "baseurl:"</span>
+  <span class="s">Personal homepage: Ishank Juneja</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s">https://ishank-juneja.github.io</span> <span class="c1"># the base hostname &amp; protocol for your site, e.g. http://example.com</span>
+<span class="na">twitter_username</span><span class="pi">:</span> <span class="s">ishankjuneja</span>
+<span class="na">github_username</span><span class="pi">:</span> <span class="s">ishank-juneja</span>
+<span class="na">quora_username</span><span class="pi">:</span> <span class="s">Ishank-Juneja</span>
+<span class="na">stackoverflow</span><span class="pi">:</span> <span class="s">4477387/ishank-juneja</span>
+<span class="na">jekyll-mentions</span><span class="pi">:</span>
+    <span class="na">base_url</span><span class="pi">:</span> <span class="s">https://github.com</span>
+<span class="c1"># Google Analytics</span>
+<span class="na">google_analytics</span><span class="pi">:</span> <span class="s">UA-166118550-1</span>
+<span class="na">linkedin_username</span><span class="pi">:</span> <span class="s">ishank-juneja</span> 
+<span class="na">include</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">_pages'</span><span class="pi">]</span>
+<span class="na">footer-links-active</span><span class="pi">:</span>
+  <span class="na">stackoverflow</span><span class="pi">:</span> <span class="no">true</span>
+<span class="c1"># Build settings</span>
+<span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span></code></pre></figure>
+
+<p>The files that create this frame around each webpage are present in a so-called <code class="highlighter-rouge">Gemfile</code> and can be accessed and modified in the manner described in the next section. In an earlier version of Jekyll these files placed in specially named directories were These concealed directories are abstracted out by Jekyll inIn addition to creating entries for links that you wish to display, we must also provide Jekyll with relevant graphics (the GH icon, the twitter bird etc.) in the form of  .svg files that need to be included in a special <code class="highlighter-rouge">_includes</code> folder. Such a folder did not come by default when I created my webpage but some tutorials (see next section) assume the existence of such a directory anyway. To get the auxiliary files needed I referred to the <a href="https://github.com/martiansideofthemoon/martiansideofthemoon.github.io">source code</a> for the webpage of a former student here at IITB. His well desgined webpage also inspired me to add <a href="https://stackoverflow.com/help/flair">stack exchange flair</a> to the footer of my webpage.</p>
+
+<h4 id="overriding-themes"><strong>Overriding themes</strong></h4>
+<p>At this point, it would be pertinent to mention a change to Jekyll themes brought about somewhat recently. Earlier the default minima theme for Jekyll appeared as a raw directory structure visible within the outermost directory of your project.<br />
+However, the minima template is now present in the form of a so called <code class="highlighter-rouge">Gemfile</code> (Ruby language terminology). To be able to modify any of the default behaviour of the minima template, we can navigate to the Gemfile directory for the minima theme by running <code class="highlighter-rouge">xdg-open $(bundle info --path minima)</code> or <code class="highlighter-rouge">cd $(bundle info --path minima)</code> in a terminal. On navigating to the minima template source location a user would see the following files-</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">.</span>
+├── assets
+│   ├── main.scss
+│   └── minima-social-icons.svg
+├── _includes
+│   ├── disqus_comments.html
+│   ├── footer.html
+│   ├── header.html
+│   ├── head.html
+│   ├── icon-github.html
+│   ├── icon-github.svg
+│   ├── icon-twitter.html
+│   ├── icon-twitter.svg
+│   └── social.html
+├── _layouts
+│   ├── default.html
+│   ├── home.html
+│   ├── page.html
+│   └── post.html
+├── LICENSE.txt
+├── README.md
+└── _sass
+    ├── minima
+    │   ├── _base.scss
+    │   ├── _layout.scss
+    │   └── _syntax-highlighting.scss
+    └── minima.scss</code></pre></figure>
+
+<p>These are folders of the minima template that contain all the files, scripts and templates required to put together your webpage. 
+<a href="https://jekyllrb.com/docs/themes/#overriding-theme-defaults">overiding</a></p>
+
+<h4 id="monitoring-traffic-with-google-analytics"><strong>Monitoring traffic with Google Analytics</strong></h4>
+<p>If you wish to see how many hits your blog is getting, you could choose to create a google analytics (GA) profile and add some code snippets as is explained in this well written blog post on <a href="https://desiredpersona.com/google-analytics-jekyll/">adding analytics to Jekyll</a>. The post assumes that the project has an <code class="highlighter-rouge">_includes</code> directory in case your project does not already have one by defualt, you could simply create an empty <code class="highlighter-rouge">_includes</code> directory and populate it with the <code class="highlighter-rouge">analytics.html</code> file as described in the tutorial. However, simply doing this might be insufficient since the tutorial also tells us to add a few lines of code to a certain <code class="highlighter-rouge">head.html</code> file. The simplest way to cater to all these requirements is to populate the project directory with the complete folder structure that creates the document. The reader can refer to the <a href="https://github.com/ishank-juneja/ishank-juneja.github.io">source code</a> for this webpage and could read the section below on overiding Jekyll themes.</p>
+
+<p>A caveat here is that the GA identification code for a website is publily accessible. This does open up the possibility of misuse of the code through an deliberate or accidental attack that uses the same analytics code on another webpage. The good thing is that GA allows us to create filters to take care of such possiblities as has been described <a href="https://stackoverflow.com/questions/49419250/is-sharing-google-analytics-tracking-id-safe">here</a>. The instructions are as follows,<br /></p>
+<ol>
+  <li>In the google anayltics control view, in the lower left corner go to admin menu (The gear symbol)</li>
+  <li>Go to the all filters menu and click add filter to create a new <em>custom-filter</em></li>
+  <li>Create an inclusive type filter and choose <em>Hostname</em> as the Filter Field</li>
+  <li>In the hostname field enter the domain name of your website, for instance to restrict view to this webpage I used</li>
+  <li>Save the filer. This filter should exclude any spurious views arising from domain names other than yout</li>
+</ol>
+
+<h4 id="latex-for-the-web"><strong>LateX for the Web</strong></h4>
+<p>Technical posts inevitably involve mathematical symbols, equations and relationships. The software <a href="https://www.latex-project.org/about/">LateX</a> is perhaps the most popular and efficient method of producing documents with typesetted mathematics. This post discusses a popular way of adding latex like typesetting to a webpage using a combination of <a href="https://www.mathjax.org/#gettingstarted">MathJax</a> and <a href="https://pandoc.org/">Pandoc</a>.</p>
+
+<p><a href="http://docs.mathjax.org/en/latest/basic/mathjax.html">MathJax</a> is a web based LateX rendering service that allows users to use LateX naturally</p>
