@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-24
+date: 2020-05-27
 permalink: /blog/pageSetup
 comments: true
 title: Webpage Setup using Jekyll
