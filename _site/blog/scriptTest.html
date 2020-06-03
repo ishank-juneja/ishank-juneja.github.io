@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>scriptTest</title>
+  <meta name="description" content="        R12/Ishank Juneja/16D070012    R12/Ishank Juneja/16D070012IntroductionUnder the classic Markov Decision Process (MDP) setup, we associate a tuple \((...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/blog/scriptTest">
+  <link rel="alternate" type="application/rss+xml" title="Ishank's Webpage" href="http://localhost:4000/feed.xml">
+
+<link href='http://joelglovier.com/feed.xml' rel='alternate' type='application/atom+xml'>
+<!-- Mathjax Support -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Ishank's Webpage</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+          <a class="page-link" href="/CV/">Resume</a>
+          
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">scriptTest</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-06-04T00:00:00+05:30" itemprop="datePublished">Jun 4, 2020
+      </time></p>
+			<i><p style="font-size:16px;color:Gray">Reading Time: <span class="reading-time" title="Estimated read time">
+  
+  
+    9 mins
+  
+</span>
+
+</p></i> 
+</header>
+	
+  <div class="post-content e-content" itemprop="articleBody">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>R12/Ishank Juneja/16D070012</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h1 class="title">R12/Ishank Juneja/16D070012</h1>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>Under the classic Markov Decision Process (MDP) setup, we associate a tuple <span class="math inline">\((S, A, T, R)\)</span> with every MDP. In this notation, <span class="math inline">\(S\)</span> is the set of states the agent can take, <span class="math inline">\(A\)</span> is the set of possible actions for the agent, <span class="math inline">\(T:S \times A \rightarrow \Pi(s)\)</span> is the state transition function of the problem. <span class="math inline">\(T\)</span> specifies the probability distribution over next states <span class="math inline">\(s&#39; \in S\)</span> on taking an action <span class="math inline">\(a \in A\)</span> starting from state <span class="math inline">\(s \in S\)</span>. <span class="math inline">\(R\)</span> is the reward function which can be viewed as a feedback on agent performance from the environment. An assumption implicit to this model is the observability of state <span class="math inline">\(s \in S\)</span>. Often times, it is not the case that an agent has access to its exact state. Instead, the agent might only have access to an observation <span class="math inline">\(o \in \Omega\)</span> which captures incomplete information about its underlying state. This framework satisfactorily models many practical situations. For instance, consider a robot that is attempting to localize its position (directly unobservable state <span class="math inline">\(s\)</span>) in a multi-storied building by merely looking at a particular intersection in a corridor (observation <span class="math inline">\(o\)</span>). Partially Observable MDPs (POMDPs) provide a richer mathematical framework which is able to describe many such situations.</p>
+<h2 id="the-pomdp-framework" class="unnumbered">The POMDP Framework</h2>
+<p>A POMDP is completely described by the tuple <span class="math inline">\((S, A, T, R, \Omega, O)\)</span>, where<br />
+<span class="math inline">\((S, A, T, R)\)</span> is the underlying MDP, <span class="math inline">\(\Omega\)</span> is a finite set of observations the agent can experience and <span class="math inline">\(O:S \times A \rightarrow \Pi(\Omega)\)</span> is the observation function which gives, for every state and action, a probability distribution over possible observations. Under the POMDP framework an agent is unable to discern its state accurately. Instead of the true state, the agent makes “an observation” <span class="math inline">\(o\)</span> based on the action <span class="math inline">\(a\)</span> taken and the (still unobserved) resulting state <span class="math inline">\(s&#39;\)</span>.<br />
+An implication of this limitation is that an agent wishing to act optimally must use its memory of all previous actions and observations. To simplify the problem, the POMDP model introduces a <em>belief state</em> <span class="math inline">\(b\)</span>. Belief states are probability distributions over the true underlying states of the agent. That is, for each state <span class="math inline">\(s\)</span>, <span class="math inline">\(b(s)\)</span> gives the probability of the agent being in that state. By design, the agents belief state at any point of time is a sufficient statistic (SS) for all its previous experience. As a SS, the belief states capture all the past observations and the belief state that the agent started with. Sequential decision-making in the POMDP becomes Markovian in belief state <span class="math inline">\(b\)</span> due to the SS property.<br />
+To compute and update belief states as new experience is accumulated, the agent includes a block known as the state-estimator (SE). More precisely, given an observation <span class="math inline">\(o\)</span>, the action taken <span class="math inline">\(a\)</span> and the previous belief state <span class="math inline">\(b\)</span>, the SE is the function SE<span class="math inline">\((b, a, o)\)</span> which outputs the new belief state <span class="math inline">\(b&#39;\)</span>. Using the rules of conditional probability and the definitions of the POMDP parameters, the paper derives the relation <span class="math display">\[b&#39;(s&#39;) \propto O(s&#39;, a, o)\sum_{s \in S}T(s, a, s&#39;)b(s),\]</span> where the probabilities in <span class="math inline">\(b&#39;\)</span> are computed using the constraint <span class="math inline">\(\sum_{s \in S}b(s) = 1\)</span>.<br />
+The other necessary component to describe a POMDP agent is the policy being followed by it. In the POMDP framework, a policy maps a belief state vector <span class="math inline">\(b\)</span> to an action <span class="math inline">\(a\)</span>. Since the problem is Markovian in the belief state <span class="math inline">\(b\)</span>, obtaining a policy through POMDP planning is equivalent to solving the planning problem for an associated <strong>belief MDP</strong>.<br />
+The parameters for the belief MDP are described below,</p>
+<ul>
+<li><p><span class="math inline">\(\mathcal{B}\)</span> is the set of possible belief states and forms the state space</p></li>
+<li><p>The set of actions <span class="math inline">\(A\)</span> remains the same as the POMDP</p></li>
+<li><p><span class="math inline">\(\tau(b,a,b&#39;)\)</span> is the state-transition function which can be computed using the POMDP parameters</p></li>
+<li><p><span class="math inline">\(\rho(b, a)\)</span> is the reward function and is given by an expectation over the reward function <span class="math inline">\(R(s, a)\)</span> under the distribution over states given by <span class="math inline">\(b(s)\)</span></p></li>
+</ul>
+<h2 id="planning-for-pomdps" class="unnumbered">Planning for POMDPs</h2>
+<p>It is often intractable to solve the planning problem for continuous state MDPs, however the special structure of the belief MDP lends it properties that give rise to efficient planning algorithms. In this paper the authors focus primarily on two planning approaches - <strong>Exhaustive Enumeration and Witness Algorithm</strong> the latter among which is a novel approach. Both methods provide a means to determine the optimal <span class="math inline">\(t\)</span> - step value function <span class="math inline">\(V_t\)</span> given a start belief state <span class="math inline">\(b\)</span>. Here <span class="math inline">\(t\)</span> - step refers to the situation where there are only <span class="math inline">\(t\)</span> steps remaining in the agents lifetime. The paper considers the more general finite horizon problem since an infinite horizon discounted trajectory can always be approximated to arbitrary precision by a long enough finite trajectory. Lastly, once the optimal value function is computed using Value-Iteration, it is a straightforward task to determine the optimal policy to complete planning.<br />
+Next, the paper describes how a <span class="math inline">\(t\)</span>-step policy can be represented using a <em>policy tree</em> - <span class="math inline">\(p\)</span> of depth <span class="math inline">\(t\)</span>. An expression for the expected return <span class="math inline">\(V_p(s)\)</span> associated with executing the policy <span class="math inline">\(p\)</span>, starting from a state <span class="math inline">\(s\)</span>, can be derived using the belief MDP parameters. However, the actual quantity of interest is the return for a given <em>belief state</em> <span class="math inline">\(b\)</span>. Using the linearity of expectations we have, <span class="math inline">\(V_p(b) = \sum_{s \in S} b(s) V_p(s)\)</span>. Treating <span class="math inline">\(b\)</span> and <span class="math inline">\(V_p\)</span> as vectors of length <span class="math inline">\(|S|\)</span>, <span class="math inline">\(V_p\)</span> becomes a dot product.<br />
+The objective of planning through value-iteration is to obtain <span class="math display">\[V_t(b) = \max_{p \in \mathcal{P}} b \cdot V_p.\]</span></p>
+<h3 id="pruning-the-search-space" class="unnumbered">Pruning the Search space</h3>
+<p>Using geometrical arguments the authors were able to show that the optimal value function <span class="math inline">\(V_t\)</span> is piecewise linear and convex. Such a <span class="math inline">\(V_t\)</span> induces a partition on the space of possible belief states such that for every <span class="math inline">\(b\)</span> there exists an optimal policy tree. While iterating over value functions, we would be much better of if our search space were as compact as possible. To do achieve this, we keep only <em>useful</em> policy trees and prune way the others. A policy tree <span class="math inline">\(p&#39;\)</span> is considered useful if its value function <span class="math inline">\(V_{p&#39;}\)</span> is such that it cannot be dominated everywhere by the maximum of the value functions of any subset of <span class="math inline">\(\mathcal{P}\)</span>. A possible way of ensuring that we have a minimal subset is to ensure that for every policy, there is at least one point in the state space where its own value function dominates. Once a minimal representation (set of policies) <span class="math inline">\(\mathcal{V}_t\)</span> for the optimal value function <span class="math inline">\(V_t\)</span> is obtained, value iteration (VI) can be applied to the problem in a manner identical to that of VI for <strong>discrete</strong> MDPs.<br />
+The only problem left to be solved then is that of obtaining a minimal representation of the <span class="math inline">\(t\)</span> step optimal value function given a minimal representation of the <span class="math inline">\(t-1\)</span> step value function <span class="math inline">\(V_{t-1}\)</span>. The next two algorithms achieve this.</p>
+<h3 id="exhaustive-enumeration" class="unnumbered">Exhaustive Enumeration</h3>
+<p>This algorithm works by constructing a superset <span class="math inline">\(\mathcal{V}_t^{+}\)</span> of the minimal set and then pruning it down to <span class="math inline">\(\mathcal{V}_t\)</span>. The algorithm can be broken down into two steps - generation and pruning. To generate the superset <span class="math inline">\(\mathcal{V}_t^{+}\)</span>, we only need to consider the policy trees contained in <span class="math inline">\(\mathcal{V}_{t-1}\)</span> since a policy with a non-useful subtree cannot itself be useful. This means that the superset will contain <span class="math inline">\(|A||\mathcal{V}_{t-1}|^{\Omega}\)</span> elements.<br />
+To prune the superset, we can identify the optimal parent <span class="math inline">\(t\)</span> length policy for each <span class="math inline">\(t-1\)</span> length sub-policy using linear programming. For this we would need to compute the value functions for each of the policy trees in <span class="math inline">\(\mathcal{V}_t^{+}\)</span>. This can be done efficiently using the value functions of the sub-trees.<br />
+The main drawback of this approach is that we need to go through the superset <span class="math inline">\(\mathcal{V}_t^{+}\)</span> which has a size exponential in the number of possible observations <span class="math inline">\(|\Omega|\)</span>.</p>
+<h3 id="witness-algorithm---authors-novel-approach" class="unnumbered">Witness Algorithm - Authors’ Novel Approach</h3>
+<p>Instead of computing <span class="math inline">\(\mathcal{V}_t\)</span> directly, the witness algorithm computes a set <span class="math inline">\(\mathcal{Q}_t^{a}\)</span> for every action <span class="math inline">\(a\)</span>. <span class="math inline">\(\mathcal{Q}_t^{a}\)</span> represents the set of all <span class="math inline">\(t\)</span> step policy trees with the action <span class="math inline">\(a\)</span> at their root. The set <span class="math inline">\(\mathcal{V}_t\)</span> is then computed by pruning the union of such policies trees - <span class="math inline">\(\cup_a \mathcal{Q}_t^{a}\)</span>. The job of the witness algorithm is to provide an <em>efficient</em> technique to compute <span class="math inline">\(\mathcal{Q}_t^{a}\)</span>. In particular the authors show that their algorithm has complexity polynomial in <span class="math inline">\(|S|,|A|,|\Omega|,|\mathcal{V}_{t-1}|\)</span> and <span class="math inline">\(|\mathcal{Q}_t^{a}|\)</span>. A caveat here is that <span class="math inline">\(|\mathcal{Q}_t^{a}|\)</span> can be exponentially larger than the size of <span class="math inline">\(\mathcal{V}_t\)</span>.<br />
+The core of the witness algorithm lies in its pruning technique. The algorithm starts of with a single policy tree optimal for some arbitrary belief state <span class="math inline">\(b\)</span>. Then we check if there exists a belief state <span class="math inline">\(b\)</span> for which the <span class="math inline">\(Q\)</span> value estimated using our current set of trees - <span class="math inline">\(\hat{\mathcal{Q}}_{t}^{a}(b)\)</span> is less than the true <span class="math inline">\(Q\)</span> value given by <span class="math inline">\(\mathcal{Q}_{t}^{a}(b)\)</span>. Such a <span class="math inline">\(b\)</span> is said to serve as a <em>witness</em> to the fact that our current collection of policy trees is incomplete. Once such a witness is identified, the algorithm appends the policy, with action <span class="math inline">\(a\)</span> at the root, that yields the best value for the earlier chosen belief state <span class="math inline">\(b\)</span>. This process continues until no more witness points exist and we conclude that our representation of <span class="math inline">\(Q\)</span> is perfect. Since the belief space is continuous, the search for witnesses <span class="math inline">\(b\)</span> is achieved using linear programming.<br />
+The witness algorithm fails to perform well on problems where <span class="math inline">\(|\mathcal{Q}_t^{a}|\)</span> is “not polynomial&quot;. In such situations the authors point to other algorithms such as the briefly described <em>linear support algorithm</em>.</p>
+<h2 id="obtaining-a-minimal-finite-state-controller" class="unnumbered">Obtaining a Minimal Finite State Controller</h2>
+<p>For some special POMDP problems, the optimal policy trees have the property that the observation-action mapping at every level remains the same. In such situations the policy becomes stationary and can be represented as a more compact plan-graph. The way a plan graph is created, on every step an agent could start of in the node optimal for its initial belief state and thereafter simply make observations and follow the arc associated with the observation to the next node. This picture is essentially that of a finite state controller which uses the minimal possible amount of memory to act optimally in a POMDP environment. As the paper points out, it is fascinating that the POMDP problem started off as a discrete problem, was converted to a continuous belief space and at the end the continuous solution could again be mapped back to a discrete controller.<br />
+Some questions I have are -</p>
+<ul>
+<li><p>What exactly is the efficient pruning strategy for obtaining the minimal useful set <span class="math inline">\(\mathcal{V}\)</span> of policy trees? It seemed to me that we can’t do without ensuring that every policy we throw out does not dominate all other policies for some <span class="math inline">\(b \in \mathcal{B}\)</span>.</p></li>
+<li><p>In the description of the witness algorithm (WA), the authors claim that the running time of WA is polynomial if <span class="math inline">\(|\mathcal{Q}_t^{a}|\)</span> is polynomial. What is meant by the latter being polynomial? What problem parameters are being refereed to?</p></li>
+</ul>
+</body>
+</html>
+
+  </div>
+
+  <a class="u-url" href="/blog/scriptTest" hidden></a>
+</article>
+
+
+  
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script
+  type="text/javascript"
+  charset="utf-8"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+>
+</script>
+<script
+  type="text/javascript"
+  charset="utf-8"
+  src="https://vincenttam.github.io/javascripts/MathJaxLocal.js"
+>
+</script>
+
+
+
+      </div>
+    </main><footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Ishank's Webpage</li>
+          <li><a href="mailto:ishankjuneja@gmail.com">ishankjuneja@gmail.com</a></li>
+          <li><a href="mailto:ishankjuneja@iitb.ac.in">ishankjuneja@iitb.ac.in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-1">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/ishank-juneja"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">ishank-juneja</span></a>
+
+          </li>
+          
+          
+          <li>
+            <a href="https://twitter.com/ishankjuneja"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">ishankjuneja</span></a>
+
+          </li>
+          
+          
+          <li>
+            <a href="https://www.linkedin.com/in/ishank-juneja"><span class="icon icon--linkedin"><svg  x="0px" y="0px" width="16px" height="16px" viewBox="0 50 512 512" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+<g>
+    <path fill="#828282" d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
+    C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
+    M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
+    c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
+    s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/>
+</g>
+</svg></span><span class="username">&nbsp;Ishank Juneja</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+      <div class="footer-col footer-col-4">
+        <!-- <p>Personal homepage: Ishank Juneja</p> -->
+        <ul class="social-media-list">
+        
+          <li>
+            <a href="https://stackexchange.com/users/4477387"><img src="https://stackexchange.com/users/flair/4477387.png?theme=clean" width="208" height="58" alt="profile for ijuneja on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for ijuneja on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
+
+          </li>
+        
+        </ul>
+      </div>
+      
+      
+      
+    </div>
+
+  </div>
+
+		
+
+</footer>
+</body>
+
+</html>
