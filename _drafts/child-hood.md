@@ -16,7 +16,9 @@ A few weeks into the beginners camp, we had learned basic crawl stroke and some 
 The pool had water so deep that I couldn't even see the bottom. Though this is common for swimming pools, as a child who had only ever been in shallow baby pools, I questioned whether the pool even had a floor! The instructor gestured us to line up. I, though completely unprepared for the ordeal, complied with the instructions and tried to take a position furthest from the pool. The other children seemed to have no problem jumping to their potential doom, but I for one was not ready to walk the plank. So, being a logical person, when my turn came to jump in, I refused. The people behind me in line went in first until I was the only student outside the water. The instructor walked up to me and demanded to know why I wasn’t in the water. I think I made up a story about how I wasn’t feeling well and didn’t want to swim. She saw through the lies and insisted that I jump.
 
 Left without a choice, I jumped thinking that the cruel teacher will surely pay for making an innocent child suffer. Once in, my body kicked into survival mode and I twirled and flailed my way to the other end. Still unsure of the unfamiliar body of water and thinking of the horrible creatures that could be lurking underneath me, I wasted no time pulling myself out of the water.
-
+<br>
+<hr>
+<br>
 *This essay was written for a course assignment for the Introduction to Psychology course at IIT Bombay*
 
 
