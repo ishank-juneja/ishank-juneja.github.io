@@ -1,0 +1,22 @@
+---
+layout: post
+date: 2020-06-07
+permalink: /blog/memory
+comments: true
+title: What is your earliest childhood memory?
+mathjax: true
+---
+
+It is well known that Childhood memories get distorted if not entirely eroded as we get older. However, some early childhood memories can be recalled vividly if there are strong emotions associated with them. Reflecting on my own childhood memories puts into perspective how daunting the world looks from a child’s point of view. Swimming is one of the activities that seemed very intimidating to me as a five-year-old child.
+
+I am surprised by how detailed my memory of certain childhood swimming lessons is. I recall that I was one of the kids who was the most scared of jumping into the water. The fact that I was not confident in my ability to swim and stay afloat meant that I hung on to floaters far longer than the other children. Among the many swim lessons that I took at my first swim club, one stands out to me the most.
+
+A few weeks into the beginners camp, we had learned basic crawl stroke and some other tricks like the correct way to bring the head out and to breathe through the mouth. I was just starting to get comfortable with the water when one day, to my horror, the instructor decided that we were ready to jump into the larger, deeper adult sized pool. Reluctantly I marched along with our group towards the main pool complex. When we reached, what I saw before me was everything I feared the large pool would be.
+
+The pool had water so deep that I couldn't even see the bottom. Though this is common for swimming pools, as a child who had only ever been in shallow baby pools, I questioned whether the pool even had a floor! The instructor gestured us to line up. I, though completely unprepared for the ordeal, complied with the instructions and tried to take a position furthest from the pool. The other children seemed to have no problem jumping to their potential doom, but I for one was not ready to walk the plank. So, being a logical person, when my turn came to jump in, I refused. The people behind me in line went in first until I was the only student outside the water. The instructor walked up to me and demanded to know why I wasn’t in the water. I think I made up a story about how I wasn’t feeling well and didn’t want to swim. She saw through the lies and insisted that I jump.
+
+Left without a choice, I jumped thinking that the cruel teacher will surely pay for making an innocent child suffer. Once in, my body kicked into survival mode and I twirled and flailed my way to the other end. Still unsure of the unfamiliar body of water and thinking of the horrible creatures that could be lurking underneath me, I wasted no time pulling myself out of the water.
+
+*This essay was written for a course assignment for the Introduction to Psychology course at IIT Bombay*
+
+
