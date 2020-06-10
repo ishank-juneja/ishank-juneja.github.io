@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Blog"
+title: "Ishank's Blog"
 permalink: /blog/
 ---
 
@@ -15,4 +15,6 @@ permalink: /blog/
 
 
 ### Miscellaneous Blogs
-- June 9, 2020 - [An early childhood memory]({{site.baseurl}}/blog/memory)
+- October 9, 2018 - [Review: Man's search for meaning - Victor Frankl]({{site.baseurl}}/blog/memory)
+- August 28, 2018 - [An early childhood memory]({{site.baseurl}}/blog/memory)
+
