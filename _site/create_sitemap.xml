@@ -2,10 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>http://localhost:4000/blog/memory</loc>
-    </url>
-    
-    <url>
         <loc>http://localhost:4000/blog/nixieClock</loc>
     </url>
     
@@ -14,11 +10,23 @@
     </url>
     
     <url>
+        <loc>http://localhost:4000/research/videoStab</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/projects/course/steth/</loc>
     </url>
     
     <url>
         <loc>http://localhost:4000/blog/pageSetupJekyll</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/blog/meaning</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/blog/memory</loc>
     </url>
     
     <url>
