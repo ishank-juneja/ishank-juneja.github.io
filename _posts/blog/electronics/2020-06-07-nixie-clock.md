@@ -13,5 +13,8 @@ mathjax: true
 
 Complete Blog coming soon on June 14.
 
+To do - 
+1. 
+
 <hr>
 *A more detailed desciption of the project along with schematics files can be [found here](link) in our project report*

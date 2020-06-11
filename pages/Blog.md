@@ -1,6 +1,6 @@
 ---
-layout: page
-title: "Ishank's Blog"
+layout: blog_home
+title: "Blog"
 permalink: /blog/
 ---
 
