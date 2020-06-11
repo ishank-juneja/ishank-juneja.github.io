@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>http://localhost:4000/blog/nixieClock</loc>
+        <loc>https://ishank-juneja.github.io/blog/nixieClock</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/blog/scriptTest</loc>
+        <loc>https://ishank-juneja.github.io/blog/scriptTest</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/research/videoStab</loc>
+        <loc>https://ishank-juneja.github.io/research/videoStab</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/projects/course/steth/</loc>
+        <loc>https://ishank-juneja.github.io/projects/course/steth/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/blog/pageSetupJekyll</loc>
+        <loc>https://ishank-juneja.github.io/blog/pageSetupJekyll</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/blog/meaning</loc>
+        <loc>https://ishank-juneja.github.io/blog/meaning</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/blog/memory</loc>
+        <loc>https://ishank-juneja.github.io/blog/memory</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/projects/VRPs/</loc>
+        <loc>https://ishank-juneja.github.io/projects/VRPs/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/projects/baby-image/</loc>
+        <loc>https://ishank-juneja.github.io/projects/baby-image/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/projects/course/</loc>
+        <loc>https://ishank-juneja.github.io/projects/course/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/projects/ITSP/</loc>
+        <loc>https://ishank-juneja.github.io/projects/ITSP/</loc>
     </url>
     
 
@@ -50,7 +50,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/404.html</loc>
+        <loc>https://ishank-juneja.github.io/404.html</loc>
     </url>
     
     
@@ -58,7 +58,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/blog/</loc>
+        <loc>https://ishank-juneja.github.io/blog/</loc>
     </url>
     
     
@@ -66,7 +66,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/CV/</loc>
+        <loc>https://ishank-juneja.github.io/CV/</loc>
     </url>
     
     
@@ -74,17 +74,7 @@
     
     
     <url>
-        <loc>http://localhost:4000/about/</loc>
-    </url>
-    
-    
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://localhost:4000/</loc>
+        <loc>https://ishank-juneja.github.io/about/</loc>
     </url>
     
     
@@ -94,7 +84,17 @@
     
     
     <url>
-        <loc>http://localhost:4000/projects/</loc>
+        <loc>https://ishank-juneja.github.io/</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
+        <loc>https://ishank-juneja.github.io/projects/</loc>
     </url>
     
     
