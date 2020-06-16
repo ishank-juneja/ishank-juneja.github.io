@@ -35,21 +35,40 @@ The limitation of using USB as our power source lead to another challenge; the p
 To check if the power budget problem could be overcome it was necessary to understand the I-V characteristics of the Nixie tubes. We had at our disposal, some now off-market, Nixie Tubes by [Bharat Electronics Limited](https://en.wikipedia.org/wiki/Bharat_Electronics_Limited) (BEL) which were loaned to us by our advisor [Mukul Chandorkar](https://www.ee.iitb.ac.in/~mukul/).
 
 #### **I- V characteristics**
-In the absence of available documentation on our BEL tubes, we performed our own characterization experiments which are described here. The I-V characteristics of the tubes were quite necessary for the design of our power supply.
+<img align='right' src="{{site.baseurl}}/assets/images/figure2.png" alt="nixie clock" height='300'/>
+
+In the absence of available documentation on our BEL tubes, we performed our own characterization experiments which are described here. The I-V characteristics of the tubes were quite necessary for the design of our power supply. <br> 
+This is the case since the feasibility of powering the clock from a computers USB port must first be assessed. Moreover details like the peak current drawn are essential for the design of the transformer in the isolated power supply. 
+
+The I-V characteristics for the digits 2 and 7 are shown to the right. Some observations here are-
+- The current requirement at a particular operating voltage point varies slightly from digit to digit
+  - This was expected due to physicial difference between the shapes of the two cathodes
+- The characteristics of the Nixie Tube are somewhat similar to that of a diode
+  - Current picks up rapidly as voltage is increased and soon current starts to increase rapidly for small increases in voltage
+  - This also highlights the importance of the presence of a series resistance while operating these tubes since there is no significant internal resistance
+
+This characterization was done using a full bridge rectifier, an [autotransformer](https://en.wikipedia.org/wiki/Autotransformer) connected to AC mains and a small circuit board with a filter capacitance, a capacitor discharge pathway (for when power is turned off, indicator LED also present) and a series resistance. Readers familiar with electronics would recognize this as the standard AC-DC conversion circuit. Two multimeters were used to act as voltmeter and ammeter.  
 
 #### **Power Budgeting**
 The voltage level available from USB is **5V** as is well known. The maximum current that a single USB port can be expected to provide is **500mA**. This caps the available power at approximately **2.5W**. As seen in the previous section, a single tube draws about **10mA** of current at **150V** glowing very brightly, thus requiring **1.5W** approximately. Hence as it can be seen, the there isn't much margin for inefficiency in the design of the power supply, but designing one is certainly feasible.  
 
-#### **Hysterisis**
-
 #### **Experiments with a Faulty Tube**
-In an initial experiment we had blown out the 0 digit of a Nixie Tube due to our fault method of recording its I-V characteristics where we didn't include with it a current limiting series resistor. Here we refer to it as the partially faulty (PF) tube.
+<p align='center'>
+<img align='left' src="{{site.baseurl}}/assets/images/figure3.png" alt="I-V char" width='370'/>
+<img align='right' src="{{site.baseurl}}/assets/images/figure1.png" alt="I-V char" width='370'/>
+</p>
 
-We performed the same experiments mentioned above with these tubes as well and observed the following results.
+In an initial experiment we blew out the 0 digit of a Nixie Tube due to our faulty method of recording its I-V characteristics. We didn't include with the tube a current limiting series resistor. This caused a current overload through the 0 digit cathode rendering it useless. This tube is referred to as partially faulty (PF).
+
+We thought it would be an interesting exercise to observe if a problem with one cathode affected the I-V characteristics of any other digit. Based on comparisons with the data from the correct tube mentioned above, and the collated plot on the left, we can conclude that damage to one digit's cathode does not affect the performance of other digits.
+
+#### **Hysterisis**
+In addition to the forward I-V characteristics (Increasing voltage) we also performed the retreating I-V characteristics. The retreating characteristics involved decreasing the voltage down from the highest V reading to the turn off voltage. We were inclined to document this behaviour since the tubes were seen showing [Hysteresis](https://en.wikipedia.org/wiki/Hysteresis).
 
 #### **Precious Tubes need Holders**
 - We did not want to hard solder them on
 - So we designed these holders
+- After breaking one of the legs on one of our spare tubes used for I-V characteristics, we didn't try bending the legs of any of the tubes anymore.
 
 <p align="center">
   <img src="{{site.baseurl}}/assets/images/tube_holder.jpg" alt="holders" height='200'/>
