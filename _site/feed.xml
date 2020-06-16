@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-17T00:53:06+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-17T01:42:54+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
@@ -90,21 +90,31 @@ This is the case since the feasibility of powering the clock from a computers US
 
 &lt;p&gt;In an initial experiment we blew out the 0 digit of a Nixie Tube due to our faulty method of recording its I-V characteristics. We didn’t include with the tube a current limiting series resistor. This caused a current overload through the 0 digit cathode rendering it useless. This tube is referred to as partially faulty (PF).&lt;/p&gt;
 
-&lt;p&gt;We thought it would be an interesting exercise to observe if a problem with one cathode affected the I-V characteristics of any other digit. Based on comparisons with the data from the correct tube mentioned above, and the collated plot on the left, we can conclude that damage to one digit’s cathode does not affect the performance of other digits.&lt;/p&gt;
+&lt;p&gt;We thought it would be an interesting exercise to observe if a problem with one cathode affected the I-V characteristics of any other digit. Based on comparisons with the data from the correct tube mentioned above, and the plot on the right comparing I-V characteristics for digit 6, we can conclude that damage to one digit’s cathode does not affect the performance of other digits.&lt;/p&gt;
 
 &lt;h4 id=&quot;hysterisis&quot;&gt;&lt;strong&gt;Hysterisis&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;In addition to the forward I-V characteristics (Increasing voltage) we also performed the retreating I-V characteristics. The retreating characteristics involved decreasing the voltage down from the highest V reading to the turn off voltage. We were inclined to document this behaviour since the tubes were seen showing &lt;a href=&quot;https://en.wikipedia.org/wiki/Hysteresis&quot;&gt;Hysteresis&lt;/a&gt;.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/hyst.png&quot; alt=&quot;Hyst1&quot; height=&quot;300&quot; /&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/figure6.png&quot; alt=&quot;Hyst2&quot; height=&quot;300&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;In addition to the forward I-V characteristics (Increasing voltage) we also performed retreating I-V characteristics. The retreating characteristics involved decreasing the voltage down from the highest V reading to the turn off voltage. We were inclined to document this behaviour since the tubes were seen showing &lt;a href=&quot;https://en.wikipedia.org/wiki/Hysteresis&quot;&gt;Hysteresis&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This means that the current requirement for a particular digit can be different depending on whether we are moving forward from the turn on voltage or decreasing the voltage applied. That being said, the current difference is quite low, in the (μA) range.&lt;/p&gt;
 
 &lt;h4 id=&quot;precious-tubes-need-holders&quot;&gt;&lt;strong&gt;Precious Tubes need Holders&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;We did not want to hard solder them on&lt;/li&gt;
-  &lt;li&gt;So we designed these holders&lt;/li&gt;
-  &lt;li&gt;After breaking one of the legs on one of our spare tubes used for I-V characteristics, we didn’t try bending the legs of any of the tubes anymore.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/holders.png&quot; alt=&quot;holders schematic&quot; height=&quot;300&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;Nixie Tubes are something of a novelty. So to keep the option of using these tubes in another project open, we wanted to make them socketable. On failing to find a viable off the shelf solution we decided to design our own tube holders as small PCBs with pin heads plugging onto the main controller board. The design is pictured above and the real life finished product is pictured below.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/assets/images/tube_holder.jpg&quot; alt=&quot;holders&quot; height=&quot;200&quot; /&gt;
 &lt;/p&gt;
+
+&lt;p&gt;Some of the tubes are noticeably bent and crooked on these holders. The reason for this was that the legs of the tubes were quite fragile and even a small amount of strain to the leg-glass joint could potentially break the terminal off. So, after breaking a leg on one of our spare tubes, we didn’t try bending the legs of any of the tubes.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;A more detailed desciption of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
