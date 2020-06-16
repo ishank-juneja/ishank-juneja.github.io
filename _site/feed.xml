@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-17T00:42:01+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-17T00:53:06+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
@@ -85,8 +85,7 @@ This is the case since the feasibility of powering the clock from a computers US
 
 &lt;h4 id=&quot;experiments-with-a-faulty-tube&quot;&gt;&lt;strong&gt;Experiments with a Faulty Tube&lt;/strong&gt;&lt;/h4&gt;
 &lt;p align=&quot;center&quot;&gt;
-&lt;img align=&quot;left&quot; src=&quot;/assets/images/figure3.png&quot; alt=&quot;I-V char&quot; width=&quot;370&quot; /&gt;
-&lt;img align=&quot;right&quot; src=&quot;/assets/images/figure1.png&quot; alt=&quot;I-V char&quot; width=&quot;370&quot; /&gt;
+  &lt;img src=&quot;/assets/images/collate.png&quot; alt=&quot;I- V char&quot; height=&quot;300&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;In an initial experiment we blew out the 0 digit of a Nixie Tube due to our faulty method of recording its I-V characteristics. We didn’t include with the tube a current limiting series resistor. This caused a current overload through the 0 digit cathode rendering it useless. This tube is referred to as partially faulty (PF).&lt;/p&gt;

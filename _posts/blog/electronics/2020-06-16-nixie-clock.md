@@ -53,9 +53,8 @@ This characterization was done using a full bridge rectifier, an [autotransforme
 The voltage level available from USB is **5V** as is well known. The maximum current that a single USB port can be expected to provide is **500mA**. This caps the available power at approximately **2.5W**. As seen in the previous section, a single tube draws about **10mA** of current at **150V** glowing very brightly, thus requiring **1.5W** approximately. Hence as it can be seen, the there isn't much margin for inefficiency in the design of the power supply, but designing one is certainly feasible.  
 
 #### **Experiments with a Faulty Tube**
-<p align='center'>
-<img align='left' src="{{site.baseurl}}/assets/images/figure3.png" alt="I-V char" width='370'/>
-<img align='right' src="{{site.baseurl}}/assets/images/figure1.png" alt="I-V char" width='370'/>
+<p align="center">
+  <img src="{{site.baseurl}}/assets/images/collate.png" alt="I- V char" height='300'/>
 </p>
 
 In an initial experiment we blew out the 0 digit of a Nixie Tube due to our faulty method of recording its I-V characteristics. We didn't include with the tube a current limiting series resistor. This caused a current overload through the 0 digit cathode rendering it useless. This tube is referred to as partially faulty (PF).
