@@ -4,14 +4,16 @@ title: "Blog"
 permalink: /blog/
 ---
 
-### Hobby Electronics
-- June 14, 2020 - [A USB Powered Nixie Tube Clock Display]({{site.baseurl}}/blog/nixieClock) <br>
-	-- A brief documentation of our Nixie Tube clock display project
+### Electronics
+- June 2020 - A USB Powered Nixie Tube Clock Display <br>
+	- Part 1, June 16: [Nixie Tube Characterization]({{site.baseurl}}/blog/nixieClock)
+	- Part 2, June 29: [Power Supply Design]({{site.baseurl}}/blog/nixieClockPower)
+	- Part 3, June 30: [Controller Design]({{site.baseurl}}/blog/nixieClockController)
 
 
 ### Guides and Tutorials
 - May 24, 2020 - [How I setup this website]({{site.baseurl}}/blog/pageSetupJekyll) <br>
-	-- Where I write about how I setup this webpage to speed the process for others.
+	- Where I write about how I setup this webpage to speed the process for others.
 
 
 ### Miscellaneous Blogs

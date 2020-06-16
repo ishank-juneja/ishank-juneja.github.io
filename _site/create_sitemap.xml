@@ -6,6 +6,14 @@
     </url>
     
     <url>
+        <loc>http://localhost:4000/blog/nixieClockController</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/blog/nixieClockPower</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/blog/scriptTest</loc>
     </url>
     

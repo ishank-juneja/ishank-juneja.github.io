@@ -1,17 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-11T13:24:04+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">USB powered Nixie-Tube Clock</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="USB powered Nixie-Tube Clock" /><published>2020-06-07T00:00:00+05:30</published><updated>2020-06-07T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/nixie_clock_no_bg.jpg&quot; alt=&quot;nixie clock&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-16T23:50:26+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;br /&gt;
+  &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Complete Blog coming soon on June 14.&lt;/p&gt;
-
-&lt;p&gt;To do -&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;This post is Part 2 in a three part series on our design of a USB powered Nixie Tube Clock display. &lt;br /&gt;
+&lt;a href=&quot;/blog/nixieClockPower&quot;&gt;Part 1&lt;/a&gt; discusses the characterization of Nixie tubes. &lt;br /&gt;
+&lt;a href=&quot;/blog/nixieClockController&quot;&gt;Part 3&lt;/a&gt; describes the design of a circuit which controls the display using isolated control signals.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;em&gt;A more detailed desciption of the project along with schematics files can be &lt;a href=&quot;link&quot;&gt;found here&lt;/a&gt; in our project report&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Digital Video Stabilization</title><link href="http://localhost:4000/research/videoStab" rel="alternate" type="text/html" title="Digital Video Stabilization" /><published>2020-06-04T00:00:00+05:30</published><updated>2020-06-04T00:00:00+05:30</updated><id>http://localhost:4000/research/scriptTest%20(copy)</id><content type="html" xml:base="http://localhost:4000/research/videoStab">&lt;p&gt;Mechanical stabilization is well known. There external equipment such as camera gimblas and other apparatus are used to filter out vibrations. However, the capability of such equipment is limited to prventing high frequency vibrations from entering camera footage.
+&lt;p&gt;Coming out on June 29.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;A more detailed desciption of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;br /&gt;
+  &lt;img src=&quot;/assets/images/controller.jpg&quot; alt=&quot;power supply&quot; height=&quot;350&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This post is Part 3 in a three part series on our design of a USB powered Nixie Tube Clock display. &lt;br /&gt;
+&lt;a href=&quot;/blog/nixieClockPower&quot;&gt;Part 1&lt;/a&gt; discusses the characterization of Nixie tubes. &lt;br /&gt;
+&lt;a href=&quot;/blog/nixieClockPower&quot;&gt;Part 2&lt;/a&gt; discusses the design of the power supply that steps up 5V to 170V.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Coming out on June 30.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;A more detailed desciption of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;br /&gt;
+  &lt;img src=&quot;/assets/images/nixie_clock_no_bg.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This post is Part 1 in a three part series on our design of a USB powered Nixie Tube Clock display. &lt;br /&gt;
+&lt;a href=&quot;/blog/nixieClockPower&quot;&gt;Part 2&lt;/a&gt; discusses the design of the power supply that steps up 5V to 170V. &lt;br /&gt;
+&lt;a href=&quot;/blog/nixieClockController&quot;&gt;Part 3&lt;/a&gt; describes the design of a circuit which controls the display using isolated control signals.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;nixie-tube-what-is-that&quot;&gt;&lt;strong&gt;Nixie Tube. What is that?&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img align=&quot;right&quot; src=&quot;/assets/images/single_tube.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nixie tubes are Cold Cathode display tubes that light up when a high voltage is applied across them. The source of the illumination is electronic excitation and de-excitation. This mechanism is similar to the one used by more modern Neon Display tubes.&lt;/p&gt;
+
+&lt;p&gt;Present day display technology, right from &lt;a href=&quot;https://www.electronics-tutorials.ws/blog/7-segment-display-tutorial.html&quot;&gt;7 segment displays&lt;/a&gt; to LCD screens work by making multiple independent sources light up in a synchronized manner. A Nixie tube is different in that it has the shapes of all digits 0-9 present as separate cathodes. The digit(s) corresponding to the grounded cathode lights up with a beautiful yellow color. For this reason, a typical Nixie tube has at least 12 pins. 10 Cathodes each for the digits 0-9, one cathode for a decimal point and 1 Anode.&lt;/p&gt;
+
+&lt;p&gt;For more information on Nixie Tubes and their working see &lt;a href=&quot;https://www.explainthatstuff.com/how-nixie-tubes-work.html&quot;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nixie Tubes were a leading digit display technology during the 1970s - 80s. Nowadays, these displays are admired and valued for their Retro (Classic) look. Nixie Tube clocks have been a popular hobby project for many years now. Most of these projects use rectified AC mains as their power source. They do so since, the tubes have a somewhat high operating voltage of (about) 170V DC. What makes our project unique is that it succeeds in powering up the Nixie Clock Display using only a single 5V USB power supply. To know more about how our power supply does this, see &lt;a href=&quot;/blog/nixieClockPower&quot;&gt;part 2&lt;/a&gt; of this series.&lt;/p&gt;
+
+&lt;p&gt;The limitation of using USB as our power source lead to another challenge; the power available through the host Single Board Computers USB port is not enough to light up numerous Nixie Tube units simultaneously. Multiplexing is a solution commonly employed in displays to save on power. It works by rapidly turning display units on and off in sequence making sure that only a single one glows at a time. Multiplexing takes advantage of the persistence of human vision to make it seem like all displays are turned on at the same time.&lt;/p&gt;
+
+&lt;p&gt;To check if the power budget problem could be overcome it was necessary to understand the I-V characteristics of the Nixie tubes. We had at our disposal, some now off-market, Nixie Tubes by &lt;a href=&quot;https://en.wikipedia.org/wiki/Bharat_Electronics_Limited&quot;&gt;Bharat Electronics Limited&lt;/a&gt; (BEL) which were loaned to us by our advisor &lt;a href=&quot;https://www.ee.iitb.ac.in/~mukul/&quot;&gt;Mukul Chandorkar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;i--v-characteristics&quot;&gt;&lt;strong&gt;I- V characteristics&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;In the absence of available documentation on our BEL tubes, we performed our own characterization experiments which are described here. The I-V characteristics of the tubes were quite necessary for the design of our power supply.&lt;/p&gt;
+
+&lt;h4 id=&quot;power-budgeting&quot;&gt;&lt;strong&gt;Power Budgeting&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The voltage level available from USB is &lt;strong&gt;5V&lt;/strong&gt; as is well known. The maximum current that a single USB port can be expected to provide is &lt;strong&gt;500mA&lt;/strong&gt;. This caps the available power at approximately &lt;strong&gt;2.5W&lt;/strong&gt;. As seen in the previous section, a single tube draws about &lt;strong&gt;10mA&lt;/strong&gt; of current at &lt;strong&gt;150V&lt;/strong&gt; glowing very brightly, thus requiring &lt;strong&gt;1.5W&lt;/strong&gt; approximately. Hence as it can be seen, the there isn’t much margin for inefficiency in the design of the power supply, but designing one is certainly feasible.&lt;/p&gt;
+
+&lt;h4 id=&quot;hysterisis&quot;&gt;&lt;strong&gt;Hysterisis&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;experiments-with-a-faulty-tube&quot;&gt;&lt;strong&gt;Experiments with a Faulty Tube&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;In an initial experiment we had blown out the 0 digit of a Nixie Tube due to our fault method of recording its I-V characteristics where we didn’t include with it a current limiting series resistor. Here we refer to it as the partially faulty (PF) tube.&lt;/p&gt;
+
+&lt;p&gt;We performed the same experiments mentioned above with these tubes as well and observed the following results.&lt;/p&gt;
+
+&lt;h4 id=&quot;precious-tubes-need-holders&quot;&gt;&lt;strong&gt;Precious Tubes need Holders&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;We did not want to hard solder them on&lt;/li&gt;
+  &lt;li&gt;So we designed these holders&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/assets/images/tube_holder.jpg&quot; alt=&quot;holders&quot; height=&quot;200&quot; /&gt;
+&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;A more detailed desciption of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Digital Video Stabilization</title><link href="http://localhost:4000/research/videoStab" rel="alternate" type="text/html" title="Digital Video Stabilization" /><published>2020-06-04T00:00:00+05:30</published><updated>2020-06-04T00:00:00+05:30</updated><id>http://localhost:4000/research/scriptTest%20(copy)</id><content type="html" xml:base="http://localhost:4000/research/videoStab">&lt;p&gt;Mechanical stabilization is well known. There external equipment such as camera gimblas and other apparatus are used to filter out vibrations. However, the capability of such equipment is limited to prventing high frequency vibrations from entering camera footage.
 To tackle low frequency vibrations arising from actions such as walking and or running while recording video footage.&lt;/p&gt;
 
 &lt;p&gt;Stages of digital Video stabilization-&lt;/p&gt;
@@ -388,38 +459,4 @@ corresponding to customer locations.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;  
   &lt;img src=&quot;/assets/images/VRP_4.jpg&quot; alt=&quot;VRP 4&quot; style=&quot;width:500px;height:500px;&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">The aim of this supervised Learning project project was to come up with a formulation for a corporate cab fleet problem, which is a type of vehicle routing problem (VRP).</summary></entry><entry><title type="html">Baby Image Segmentation</title><link href="http://localhost:4000/projects/baby-image/" rel="alternate" type="text/html" title="Baby Image Segmentation" /><published>2017-09-24T00:00:00+05:30</published><updated>2017-09-24T00:00:00+05:30</updated><id>http://localhost:4000/projects/Baby-Image</id><content type="html" xml:base="http://localhost:4000/projects/baby-image/">&lt;p&gt;This project was through an intership with a start-up called &lt;a href=&quot;http://cradlewise.com/about/&quot;&gt;Cradlewise&lt;/a&gt;. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.&lt;/p&gt;
-
-&lt;p&gt;When an infant rolls over on its side, a dangerous position may arise where the baby may suffocate. The goal was to flag down such dangerous positions so that an alram can be raised.&lt;/p&gt;
-
-&lt;p&gt;To classify safe and unsafe positions, I explored image segmentation based approaches using the openCV library in python. For example the &lt;em&gt;watershed algorithm&lt;/em&gt; – which assigns the same segment to regions of low gradient.&lt;/p&gt;
-
-&lt;p&gt;The challenge in this project was integrating together information available in two forms: A Depth Image (zFrame) and an Intensity Image (iFrane)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Looking for circles in the intensity Frame (iFrame)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anoter non segmentation based method was implemented which followed the sequence: Look for circles corresponding to the Head, Torso and Legs –&amp;gt; Check the alignment between the centers of the three circles –&amp;gt; If mis-aligned beyond a certain threshold, declare unsafe.&lt;/p&gt;
-&lt;p align=&quot;center&quot;&gt;  
-  &lt;img src=&quot;/assets/images/circles_baby.png&quot; alt=&quot;Depth Frame&quot; style=&quot;width:184px;height:160px;&quot; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A rendered version of a typical depth frame (zFrame)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p align=&quot;center&quot;&gt;  
-  &lt;img src=&quot;/assets/images/rendered_depth_frame.png&quot; alt=&quot;Depth Frame&quot; style=&quot;width:184px;height:160px;&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">This project was through an intership with a start-up called Cradlewise. Their flagship product is an all inclusive smart cradle. One of the features which I contributed to, is an unsafe position detector.</summary></entry><entry><title type="html">Offside Detection in Football</title><link href="http://localhost:4000/projects/ITSP/" rel="alternate" type="text/html" title="Offside Detection in Football" /><published>2012-09-12T00:00:00+05:30</published><updated>2012-09-12T00:00:00+05:30</updated><id>http://localhost:4000/projects/ITSP</id><content type="html" xml:base="http://localhost:4000/projects/ITSP/">&lt;p&gt;A software implmentation of a system that can detect offside situations in a given video feed. &lt;br /&gt;
-The source code for the project can be found on this &lt;a href=&quot;https://github.com/ishank-juneja/Offside-Detection-System-for-Football&quot;&gt;Github Repo Link&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;A flowchat demonstrating the methodology used is shown below&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/flow_char_ITSP.png&quot; alt=&quot;VRP 2&quot; style=&quot;width:400px;height:435px;&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The above graphic was part of a poster we made for a student technical exbition &lt;br /&gt;
-– &lt;em&gt;Tech and RnD Expo 2017&lt;/em&gt; at IITB&lt;/p&gt;
-&lt;embed src=&quot;/assets/docs/ITSPver4.pdf&quot; width=&quot;900px&quot; height=&quot;1250px&quot; alt=&quot;Poster&quot; /&gt;</content><author><name></name></author><summary type="html">A software implmentation of a system that can detect offside situations in a given video feed. The source code for the project can be found on this Github Repo Link A flowchat demonstrating the methodology used is shown below</summary></entry></feed>
+&lt;/p&gt;</content><author><name></name></author><summary type="html">The aim of this supervised Learning project project was to come up with a formulation for a corporate cab fleet problem, which is a type of vehicle routing problem (VRP).</summary></entry></feed>

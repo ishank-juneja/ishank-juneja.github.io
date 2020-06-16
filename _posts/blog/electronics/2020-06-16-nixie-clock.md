@@ -1,0 +1,60 @@
+---
+layout: post
+date: 2020-06-16
+permalink: /blog/nixieClock
+comments: true
+title: Nixie Tube Characterization
+mathjax: true
+---
+
+***
+<p align="center">
+  <br>
+  <img src="{{site.baseurl}}/assets/images/nixie_clock_no_bg.jpg" alt="nixie clock" height='300'/>
+</p>
+
+This post is Part 1 in a three part series on our design of a USB powered Nixie Tube Clock display. <br>
+[Part 2]({{site.baseurl}}/blog/nixieClockPower) discusses the design of the power supply that steps up 5V to 170V. <br>
+[Part 3]({{site.baseurl}}/blog/nixieClockController) describes the design of a circuit which controls the display using isolated control signals.
+
+***
+<br>
+#### **Nixie Tube. What is that?**
+<img align='right' src="{{site.baseurl}}/assets/images/single_tube.jpg" alt="nixie clock" height='300'/>
+
+Nixie tubes are Cold Cathode display tubes that light up when a high voltage is applied across them. The source of the illumination is electronic excitation and de-excitation. This mechanism is similar to the one used by more modern Neon Display tubes.
+
+Present day display technology, right from [7 segment displays](https://www.electronics-tutorials.ws/blog/7-segment-display-tutorial.html) to LCD screens work by making multiple independent sources light up in a synchronized manner. A Nixie tube is different in that it has the shapes of all digits 0-9 present as separate cathodes. The digit(s) corresponding to the grounded cathode lights up with a beautiful yellow color. For this reason, a typical Nixie tube has at least 12 pins. 10 Cathodes each for the digits 0-9, one cathode for a decimal point and 1 Anode.      
+
+For more information on Nixie Tubes and their working see [this link](https://www.explainthatstuff.com/how-nixie-tubes-work.html).
+
+Nixie Tubes were a leading digit display technology during the 1970s - 80s. Nowadays, these displays are admired and valued for their Retro (Classic) look. Nixie Tube clocks have been a popular hobby project for many years now. Most of these projects use rectified AC mains as their power source. They do so since, the tubes have a somewhat high operating voltage of (about) 170V DC. What makes our project unique is that it succeeds in powering up the Nixie Clock Display using only a single 5V USB power supply. To know more about how our power supply does this, see [part 2]({{site.baseurl}}/blog/nixieClockPower) of this series.
+ 
+The limitation of using USB as our power source lead to another challenge; the power available through the host Single Board Computers USB port is not enough to light up numerous Nixie Tube units simultaneously. Multiplexing is a solution commonly employed in displays to save on power. It works by rapidly turning display units on and off in sequence making sure that only a single one glows at a time. Multiplexing takes advantage of the persistence of human vision to make it seem like all displays are turned on at the same time. 
+
+To check if the power budget problem could be overcome it was necessary to understand the I-V characteristics of the Nixie tubes. We had at our disposal, some now off-market, Nixie Tubes by [Bharat Electronics Limited](https://en.wikipedia.org/wiki/Bharat_Electronics_Limited) (BEL) which were loaned to us by our advisor [Mukul Chandorkar](https://www.ee.iitb.ac.in/~mukul/).
+
+#### **I- V characteristics**
+In the absence of available documentation on our BEL tubes, we performed our own characterization experiments which are described here. The I-V characteristics of the tubes were quite necessary for the design of our power supply.
+
+#### **Power Budgeting**
+The voltage level available from USB is **5V** as is well known. The maximum current that a single USB port can be expected to provide is **500mA**. This caps the available power at approximately **2.5W**. As seen in the previous section, a single tube draws about **10mA** of current at **150V** glowing very brightly, thus requiring **1.5W** approximately. Hence as it can be seen, the there isn't much margin for inefficiency in the design of the power supply, but designing one is certainly feasible.  
+
+#### **Hysterisis**
+
+#### **Experiments with a Faulty Tube**
+In an initial experiment we had blown out the 0 digit of a Nixie Tube due to our fault method of recording its I-V characteristics where we didn't include with it a current limiting series resistor. Here we refer to it as the partially faulty (PF) tube.
+
+We performed the same experiments mentioned above with these tubes as well and observed the following results.
+
+#### **Precious Tubes need Holders**
+- We did not want to hard solder them on
+- So we designed these holders
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/images/tube_holder.jpg" alt="holders" height='200'/>
+</p>
+
+***
+*A more detailed desciption of the project along with schematics can be found in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf)*<br>
+*A demonstration of our project can be [found here](https://youtu.be/MN-FbMPmbiw)*
