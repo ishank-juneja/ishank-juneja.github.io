@@ -86,5 +86,6 @@ Nixie Tubes are something of a novelty. So to keep the option of using these tub
 Some of the tubes are noticeably bent and crooked on these holders. The reason for this was that the legs of the tubes were quite fragile and even a small amount of strain to the leg-glass joint could potentially break the terminal off. So, after breaking a leg on one of our spare tubes, we didn't try bending the legs of any of the tubes.
 
 ***
-*A more detailed desciption of the project along with schematics can be found in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf)*<br>
+*This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB*
+*A more detailed description of the project along with schematics can be found in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf)*<br>
 *A demonstration of our project can be [found here](https://youtu.be/MN-FbMPmbiw)*

@@ -22,5 +22,6 @@ This post is Part 2 in a three part series on our design of a USB powered Nixie 
 Coming out on June 29.
 
 ***
-*A more detailed desciption of the project along with schematics can be found in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf)*<br>
+*This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB*<br>
+*A more detailed description of the project along with schematics can be found in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf)*<br>
 *A demonstration of our project can be [found here](https://youtu.be/MN-FbMPmbiw)*
