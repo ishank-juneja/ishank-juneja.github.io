@@ -19,7 +19,10 @@ This post is Part 2 in a three part series on our design of a USB powered Nixie 
 
 ***
 
-Coming out on June 29.
+### Introduction
+This page is about the design of the power supply module from our USB powered Nixie Tube clock display project. Since the USB source voltage is 5V and the operating voltage of the Nixie Tube display units is close to 180V, we needed to design a power supply capable of achieving this.
+
+Such a large input and output voltage difference and the fact that we are using USB power mandates the use of an isolated power supply. 
 
 ***
 *This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB*<br>
