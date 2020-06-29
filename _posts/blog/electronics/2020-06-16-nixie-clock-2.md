@@ -10,7 +10,7 @@ mathjax: true
 ***
 <p align="center">
   <br>
-  <img src="{{site.baseurl}}/assets/images/power_supply.jpg" alt="nixie clock" height='300'/>
+  <img src="{{site.baseurl}}/assets/images/power_supply.jpg" alt="Power Supply" height='300'/>
 </p>
 
 This post is Part 2 in a three part series on our design of a USB powered Nixie Tube Clock display. <br>
@@ -20,9 +20,7 @@ This post is Part 2 in a three part series on our design of a USB powered Nixie 
 ***
 
 ### Introduction
-This page is about the design of the power supply module from our USB powered Nixie Tube clock display project. Since the USB source voltage is 5V and the operating voltage of the Nixie Tube display units is close to 180V, we needed to design a power supply capable of achieving this.
-
-Such a large input and output voltage difference and the fact that we are using USB power mandates the use of an isolated power supply. 
+This page is about the design of the power supply module from our USB powered Nixie Tube clock display project. Since the USB source voltage is 5V DC and the operating voltage of the Nixie Tube display units is close to 180V DC, we needed to design a power supply capable of achieving this voltage step up. DC-DC voltage conversion and a large difference between input and output voltage difference mandated a switched mode power supply isolated power supply. 
 
 ***
 *This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB*<br>

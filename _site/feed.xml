@@ -1,7 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-17T01:42:54+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-29T23:09:58+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">A Reading List for The Coming Year</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Coming Year" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 29 June 2020&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;read-recently--now-reading&quot;&gt;&lt;strong&gt;Read Recently / Now Reading&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;s&gt;Weapons of Math destruction - Cathy O'Neil&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Sapiens - YNH&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Homo Deus - YNH&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;The Selfish Gene - Dawkins&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Thinking fast and slow - Daniel Kahnman&lt;/li&gt;
+  &lt;li&gt;21 lessons for the 21st century - Harari&lt;/li&gt;
+  &lt;li&gt;Book of Why - Judea Pearl&lt;/li&gt;
+  &lt;li&gt;The Black Cloud - Hoyle&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;casual-reading&quot;&gt;&lt;strong&gt;Casual Reading&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Solaris - Stanislaw Lem&lt;/li&gt;
+  &lt;li&gt;The Everything Store - Brad Stone&lt;/li&gt;
+  &lt;li&gt;A Brief History of Time - Stephen Hawking&lt;/li&gt;
+  &lt;li&gt;The Emperor’s New Mind - Roger Penrose and follow up by Stuart hameroff
+    &lt;ul&gt;
+      &lt;li&gt;Do anesthetics (gas) affect the microtubules directly. Is this a special chemical 7. process?&lt;/li&gt;
+      &lt;li&gt;This thread is essentially a connection between Quantum mechanics and Consciousness&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cycles of time - Roger Penrose&lt;/li&gt;
+  &lt;li&gt;Shadows of the mind - Roger Penrose&lt;/li&gt;
+  &lt;li&gt;The road to reality - Roger Penrose&lt;/li&gt;
+  &lt;li&gt;The Extended phenotype - Dawkins&lt;/li&gt;
+  &lt;li&gt;Deep Work - Cal Newport&lt;/li&gt;
+  &lt;li&gt;Creation Revisited - Peter Atkins (Yes the Chemist)&lt;/li&gt;
+  &lt;li&gt;Simulacron-3 - Galouye&lt;/li&gt;
+  &lt;li&gt;Machines who think&lt;/li&gt;
+  &lt;li&gt;Origin of species - Darwin&lt;/li&gt;
+  &lt;li&gt;Mendelian Genetics&lt;/li&gt;
+  &lt;li&gt;Dark Universe - Galouye&lt;/li&gt;
+  &lt;li&gt;A for Andromeda - Fred Hoyle&lt;/li&gt;
+  &lt;li&gt;Books by Arthur C Clarke&lt;/li&gt;
+  &lt;li&gt;Einstein’s Dreams - Alan Littman&lt;/li&gt;
+  &lt;li&gt;Communist Manifesto - Karl Marx&lt;/li&gt;
+  &lt;li&gt;Free to choose - Milton Freidman&lt;/li&gt;
+  &lt;li&gt;The Wealth of Nations - Adam Smith&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;academic--textbooks&quot;&gt;&lt;strong&gt;Academic / Textbooks&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Optimal Control - Dan Liberzon&lt;/li&gt;
+  &lt;li&gt;Bayesian Networks - Pearl&lt;/li&gt;
+  &lt;li&gt;Bandits and Online learning - Tor Lattimore&lt;/li&gt;
+  &lt;li&gt;Causality by Judea Pearl&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 29 June 2020</summary></entry><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
-  &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
+  &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;This post is Part 2 in a three part series on our design of a USB powered Nixie Tube Clock display. &lt;br /&gt;
@@ -10,10 +68,12 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;Coming out on June 29.&lt;/p&gt;
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This page is about the design of the power supply module from our USB powered Nixie Tube clock display project. Since the USB source voltage is 5V DC and the operating voltage of the Nixie Tube display units is close to 180V DC, we needed to design a power supply capable of achieving this voltage step up. DC-DC voltage conversion and a large difference between input and output voltage difference mandated a switched mode power supply isolated power supply.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;A more detailed desciption of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+&lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
@@ -29,7 +89,8 @@
 &lt;p&gt;Coming out on June 30.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;A more detailed desciption of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+&lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
@@ -117,7 +178,8 @@ This is the case since the feasibility of powering the clock from a computers US
 &lt;p&gt;Some of the tubes are noticeably bent and crooked on these holders. The reason for this was that the legs of the tubes were quite fragile and even a small amount of strain to the leg-glass joint could potentially break the terminal off. So, after breaking a leg on one of our spare tubes, we didn’t try bending the legs of any of the tubes.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;A more detailed desciption of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+&lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Digital Video Stabilization</title><link href="http://localhost:4000/research/videoStab" rel="alternate" type="text/html" title="Digital Video Stabilization" /><published>2020-06-04T00:00:00+05:30</published><updated>2020-06-04T00:00:00+05:30</updated><id>http://localhost:4000/research/scriptTest%20(copy)</id><content type="html" xml:base="http://localhost:4000/research/videoStab">&lt;p&gt;Mechanical stabilization is well known. There external equipment such as camera gimblas and other apparatus are used to filter out vibrations. However, the capability of such equipment is limited to prventing high frequency vibrations from entering camera footage.
 To tackle low frequency vibrations arising from actions such as walking and or running while recording video footage.&lt;/p&gt;
 
@@ -469,30 +531,4 @@ On understanding Frankl’s thoughts on motivation, I looked back to my own life
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;br /&gt;
-&lt;em&gt;This essay was written for a course assignment for the Introduction to Psychology course at IIT Bombay&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Vehicle Routing Problems</title><link href="http://localhost:4000/projects/VRPs/" rel="alternate" type="text/html" title="Vehicle Routing Problems" /><published>2018-06-10T00:00:00+05:30</published><updated>2018-06-10T00:00:00+05:30</updated><id>http://localhost:4000/projects/VRP</id><content type="html" xml:base="http://localhost:4000/projects/VRPs/">&lt;p&gt;The aim of this supervised Learning project project was to come up with a formulation for a &lt;strong&gt;corporate cab fleet problem&lt;/strong&gt;, which is a type of vehicle routing problem (VRP).&lt;/p&gt;
-
-&lt;p&gt;VRPs are problems concerning the distribution of goods from depots to final users (customers). &lt;br /&gt;
-Solving a VRP is equivalent to determining a set of routes that start and end at the same depot,
-such that operational constraints and customer requirements are satisfied and cost is minimized.&lt;/p&gt;
-
-&lt;p&gt;The distribution network is modelled as a Graph with edges as roads and vertices
-corresponding to customer locations.&lt;/p&gt;
-
-&lt;p&gt;To work towards my goal I learnt about concepts like –&lt;br /&gt;
-	Linear Programming problems, the simplex algorithm for constraint optimization, Integer programming (IP) for discrete optimization, Network Problem IP models, the travelling salesman problem and Branch and bound and cutting plane algorithms for solving IP problems.&lt;/p&gt;
-
-&lt;p&gt;Some of the graphics I made as part of &lt;a href=&quot;https://github.com/ishank-juneja/cab-fleet-optimization/tree/master/notes&quot;&gt;my notes&lt;/a&gt; for this are shown below.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Discrete Optimization solutions through Linear Programming Approach&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/VRP_2.jpg&quot; alt=&quot;VRP 2&quot; style=&quot;width:600px;height:400px;&quot; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Branch and Bound Algorithm for IP solutions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p align=&quot;center&quot;&gt;  
-  &lt;img src=&quot;/assets/images/VRP_4.jpg&quot; alt=&quot;VRP 4&quot; style=&quot;width:500px;height:500px;&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">The aim of this supervised Learning project project was to come up with a formulation for a corporate cab fleet problem, which is a type of vehicle routing problem (VRP).</summary></entry></feed>
+&lt;em&gt;This essay was written for a course assignment for the Introduction to Psychology course at IIT Bombay&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
