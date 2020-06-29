@@ -14,7 +14,7 @@ mathjax: true
 </p>
 
 This post is Part 3 in a three part series on our design of a USB powered Nixie Tube Clock display. <br>
-[Part 1]({{site.baseurl}}/blog/nixieClockPower) discusses the characterization of Nixie tubes. <br>
+[Part 1]({{site.baseurl}}/blog/nixieClock) discusses the characterization of Nixie tubes. <br>
 [Part 2]({{site.baseurl}}/blog/nixieClockPower) discusses the design of the power supply that steps up 5V to 170V.
 
 ***
