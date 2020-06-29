@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-29T23:21:39+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-29T23:47:23+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
@@ -16,7 +16,7 @@
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">A Reading List for The Coming Year</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Coming Year" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 29 June 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">A Reading List for The Near Future</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Near Future" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 29 June 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;read-recently--now-reading&quot;&gt;&lt;strong&gt;Read Recently / Now Reading&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
@@ -67,6 +67,16 @@
   &lt;li&gt;Communist Manifesto - Karl Marx&lt;/li&gt;
   &lt;li&gt;Free to choose - Milton Freidman&lt;/li&gt;
   &lt;li&gt;The Wealth of Nations - Adam Smith&lt;/li&gt;
+  &lt;li&gt;One, Two, Three…Infinity
+Book - George Gamow (A Physicist)
+    &lt;ul&gt;
+      &lt;li&gt;Many topics&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Reflections on Language - Noam Chomsky&lt;/li&gt;
+  &lt;li&gt;The Blind Watchmaker - Richard Dawkins&lt;/li&gt;
+  &lt;li&gt;Ever since Darwin - Steven J Gould&lt;/li&gt;
+  &lt;li&gt;Books by the George A. Miller&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;academic--textbooks&quot;&gt;&lt;strong&gt;Academic / Textbooks&lt;/strong&gt;&lt;/h3&gt;
