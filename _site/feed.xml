@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-29T23:09:58+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">A Reading List for The Coming Year</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Coming Year" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 29 June 2020&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-29T23:21:39+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;br /&gt;
+  &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This post is Part 2 in a three part series on our design of a USB powered Nixie Tube Clock display. &lt;br /&gt;
+&lt;a href=&quot;/blog/nixieClockPower&quot;&gt;Part 1&lt;/a&gt; discusses the characterization of Nixie tubes. &lt;br /&gt;
+&lt;a href=&quot;/blog/nixieClockController&quot;&gt;Part 3&lt;/a&gt; describes the design of a circuit which controls the display using isolated control signals.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;introduction&quot;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;This page is about the design of the power supply module from our USB powered Nixie Tube clock display project. Since the USB source voltage is 5V DC and the operating voltage of the Nixie Tube display units is close to 180V DC, we needed to design a power supply capable of achieving this voltage step up. DC-DC power conversion and a large difference between input and output voltage difference mandated a switched mode power supply isolated power supply.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">A Reading List for The Coming Year</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Coming Year" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 29 June 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;read-recently--now-reading&quot;&gt;&lt;strong&gt;Read Recently / Now Reading&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
@@ -23,6 +41,7 @@
 &lt;h3 id=&quot;casual-reading&quot;&gt;&lt;strong&gt;Casual Reading&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;Solaris - Stanislaw Lem&lt;/li&gt;
+  &lt;li&gt;Enlightenment Now - Steven Pinker&lt;/li&gt;
   &lt;li&gt;The Everything Store - Brad Stone&lt;/li&gt;
   &lt;li&gt;A Brief History of Time - Stephen Hawking&lt;/li&gt;
   &lt;li&gt;The Emperor’s New Mind - Roger Penrose and follow up by Stuart hameroff
@@ -56,25 +75,7 @@
   &lt;li&gt;Bayesian Networks - Pearl&lt;/li&gt;
   &lt;li&gt;Bandits and Online learning - Tor Lattimore&lt;/li&gt;
   &lt;li&gt;Causality by Judea Pearl&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 29 June 2020</summary></entry><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
-&lt;p align=&quot;center&quot;&gt;
-  &lt;br /&gt;
-  &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This post is Part 2 in a three part series on our design of a USB powered Nixie Tube Clock display. &lt;br /&gt;
-&lt;a href=&quot;/blog/nixieClockPower&quot;&gt;Part 1&lt;/a&gt; discusses the characterization of Nixie tubes. &lt;br /&gt;
-&lt;a href=&quot;/blog/nixieClockController&quot;&gt;Part 3&lt;/a&gt; describes the design of a circuit which controls the display using isolated control signals.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;This page is about the design of the power supply module from our USB powered Nixie Tube clock display project. Since the USB source voltage is 5V DC and the operating voltage of the Nixie Tube display units is close to 180V DC, we needed to design a power supply capable of achieving this voltage step up. DC-DC voltage conversion and a large difference between input and output voltage difference mandated a switched mode power supply isolated power supply.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 29 June 2020</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/controller.jpg&quot; alt=&quot;power supply&quot; height=&quot;350&quot; /&gt;
