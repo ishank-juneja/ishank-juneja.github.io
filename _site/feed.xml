@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-30T00:01:20+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-30T00:00:00+05:30</published><updated>2020-06-30T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-02T11:21:23+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-30T00:00:00+05:30</published><updated>2020-06-30T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
@@ -18,7 +18,7 @@
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">A Reading List for The Near Future</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Near Future" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 29 June 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">A Reading List for The Near Future</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Near Future" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 30 June 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;read-recently--now-reading&quot;&gt;&lt;strong&gt;Read Recently / Now Reading&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
@@ -32,12 +32,14 @@
     &lt;s&gt;Homo Deus - YNH&lt;/s&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;s&gt;The Selfish Gene - Dawkins&lt;/s&gt;
+    &lt;s&gt;The Selfish Gene - Richard Dawkins&lt;/s&gt;
   &lt;/li&gt;
-  &lt;li&gt;Thinking fast and slow - Daniel Kahnman&lt;/li&gt;
-  &lt;li&gt;21 lessons for the 21st century - Harari&lt;/li&gt;
-  &lt;li&gt;Book of Why - Judea Pearl&lt;/li&gt;
-  &lt;li&gt;The Black Cloud - Hoyle&lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt; Thinking fast and slow - Daniel Kahnman&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;mark&gt;21 lessons for the 21st century - YNH&lt;/mark&gt;&lt;/li&gt;
+  &lt;li&gt;The Extended phenotype - Richard Dawkins&lt;/li&gt;
+  &lt;li&gt;Deep Work - Cal Newport&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;casual-reading&quot;&gt;&lt;strong&gt;Casual Reading&lt;/strong&gt;&lt;/h3&gt;
@@ -55,8 +57,7 @@
   &lt;li&gt;Cycles of time - Roger Penrose&lt;/li&gt;
   &lt;li&gt;Shadows of the mind - Roger Penrose&lt;/li&gt;
   &lt;li&gt;The road to reality - Roger Penrose&lt;/li&gt;
-  &lt;li&gt;The Extended phenotype - Dawkins&lt;/li&gt;
-  &lt;li&gt;Deep Work - Cal Newport&lt;/li&gt;
+  &lt;li&gt;The Black Cloud - Hoyle&lt;/li&gt;
   &lt;li&gt;Creation Revisited - Peter Atkins (Yes the Chemist)&lt;/li&gt;
   &lt;li&gt;Simulacron-3 - Galouye&lt;/li&gt;
   &lt;li&gt;Machines who think&lt;/li&gt;
@@ -66,7 +67,7 @@
   &lt;li&gt;A for Andromeda - Fred Hoyle&lt;/li&gt;
   &lt;li&gt;Books by Arthur C Clarke&lt;/li&gt;
   &lt;li&gt;Einstein’s Dreams - Alan Littman&lt;/li&gt;
-  &lt;li&gt;Communist Manifesto - Karl Marx&lt;/li&gt;
+  &lt;li&gt;Communist Manifesto - Marx and Engels&lt;/li&gt;
   &lt;li&gt;Free to choose - Milton Freidman&lt;/li&gt;
   &lt;li&gt;The Wealth of Nations - Adam Smith&lt;/li&gt;
   &lt;li&gt;One, Two, Three…Infinity
@@ -79,15 +80,23 @@ Book - George Gamow (A Physicist)
   &lt;li&gt;The Blind Watchmaker - Richard Dawkins&lt;/li&gt;
   &lt;li&gt;Ever since Darwin - Steven J Gould&lt;/li&gt;
   &lt;li&gt;Books by the George A. Miller&lt;/li&gt;
+  &lt;li&gt;What everybody is saying - Joe Navarro
+    - Non verbal cues/language&lt;/li&gt;
+  &lt;li&gt;The Second World War - Winston Churchill&lt;/li&gt;
+  &lt;li&gt;Masters of Doom - David Kushner&lt;/li&gt;
+  &lt;li&gt;Code Complete - Steve McConnel - Software Development&lt;/li&gt;
+  &lt;li&gt;Ikigai - Hector Garcia&lt;/li&gt;
+  &lt;li&gt;Love and Math - Edward Frenkel - The beauty and power of mathematics&lt;/li&gt;
+  &lt;li&gt;Book of Why - Judea Pearl&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;academic--textbooks&quot;&gt;&lt;strong&gt;Academic / Textbooks&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;Optimal Control - Dan Liberzon&lt;/li&gt;
-  &lt;li&gt;Bayesian Networks - Pearl&lt;/li&gt;
+  &lt;li&gt;Bayesian Networks - Judea Pearl&lt;/li&gt;
   &lt;li&gt;Bandits and Online learning - Tor Lattimore&lt;/li&gt;
-  &lt;li&gt;Causality by Judea Pearl&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 29 June 2020</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
+  &lt;li&gt;Causality - Judea Pearl&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 30 June 2020</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/controller.jpg&quot; alt=&quot;power supply&quot; height=&quot;350&quot; /&gt;
