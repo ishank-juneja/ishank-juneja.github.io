@@ -1,0 +1,29 @@
+<hr />
+<p align="center">
+  <br />
+  <img src="/assets/images/power_supply.jpg" alt="Power Supply" height="300" />
+</p>
+
+<p>This post is Part 2 in a three part series on our design of a USB powered Nixie Tube Clock display. <br />
+<a href="/blog/nixieClock">Part 1</a> discusses the characterization of Nixie tubes. <br />
+<a href="/blog/nixieClockController">Part 3</a> describes the design of a circuit which controls the display using isolated control signals.</p>
+
+<hr />
+
+<h4 id="introduction"><strong>Introduction</strong></h4>
+<p>This page is about the design of the power supply module from our USB powered Nixie Tube clock display project. Since the USB source voltage is 5V DC and the operating voltage of the Nixie Tube display units is close to 180V DC, we needed to design a power supply capable of achieving this voltage step up. DC-DC power conversion and a large difference between input and output voltage difference mandated a switched mode (SMPS) isolated power supply.</p>
+
+<p>Despite the high output voltage level required, the convertor still operates in the low power regime (about 2.5 W as explained in <a href="/blog/nixieClock">part 1</a>). This made the Flyback convertor topology ideal for our purpose.</p>
+
+<h4 id="initial-design-process">Initial Design Process</h4>
+<p align="center">
+  <br />
+  <img src="/assets/images/boost.eps" alt="Power Supply" height="300" />
+</p>
+<p>Rather than the choice of a Flyback convertor, a non-isolated Boost convertor with a voltage boost from 5V to 180V could have been used. However, since the power and data source is a single USB port on a computer, it is crucial that we keep the low voltage (LV) and high voltage (HV) sides electrically isolated from each other. The only way to do this would be to choose an isolated convertor.<br />
+Further, an isolated convertor like the Flyback has the advantage of being able to utilise the turns ratio of its transformer as the voltage step up component.</p>
+
+<hr />
+<p><em>This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB</em><br />
+<em>A more detailed description of the project along with schematics can be found in our <a href="/assets/docs/DD08_Design_Lab_report.pdf">project report</a></em><br />
+<em>A demonstration of our project can be <a href="https://youtu.be/MN-FbMPmbiw">found here</a></em></p>

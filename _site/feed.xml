@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-02T11:21:23+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-30T00:00:00+05:30</published><updated>2020-06-30T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-07T00:13:51+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-06-30T00:00:00+05:30</published><updated>2020-06-30T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
@@ -13,12 +13,20 @@
 &lt;h4 id=&quot;introduction&quot;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;This page is about the design of the power supply module from our USB powered Nixie Tube clock display project. Since the USB source voltage is 5V DC and the operating voltage of the Nixie Tube display units is close to 180V DC, we needed to design a power supply capable of achieving this voltage step up. DC-DC power conversion and a large difference between input and output voltage difference mandated a switched mode (SMPS) isolated power supply.&lt;/p&gt;
 
-&lt;p&gt;Despite the high output voltage level required, the convertor still operates in the low power regime (about 2.5 W as explained in &lt;a href=&quot;/blog/nixieClock&quot;&gt;part 1&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Despite the high output voltage level required, the convertor still operates in the low power regime (about 2.5 W as explained in &lt;a href=&quot;/blog/nixieClock&quot;&gt;part 1&lt;/a&gt;). This made the Flyback convertor topology ideal for our purpose.&lt;/p&gt;
+
+&lt;h4 id=&quot;initial-design-process&quot;&gt;&lt;strong&gt;Initial Design Process&lt;/strong&gt;&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/boost.svg&quot; alt=&quot;Power Supply&quot; height=&quot;200&quot; /&gt;
+  &lt;figcaption&gt; A non isolated Boost convertor &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Rather than the choice of a Flyback convertor, a non-isolated Boost convertor with a voltage boost from 5V to 180V could have been used. However, since the power and data source is a single USB port on a computer, it is crucial that we keep the low voltage (LV) and high voltage (HV) sides electrically isolated from each other. The only way to do this would be to choose an isolated convertor.&lt;br /&gt;
+Further, an isolated convertor like the Flyback has the advantage of being able to utilise the turns ratio of its transformer as the voltage step up component.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">A Reading List for The Near Future</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Near Future" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 30 June 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">A Reading List for The Near Future</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Near Future" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 02 July 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;read-recently--now-reading&quot;&gt;&lt;strong&gt;Read Recently / Now Reading&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
@@ -40,6 +48,7 @@
   &lt;li&gt;&lt;mark&gt;21 lessons for the 21st century - YNH&lt;/mark&gt;&lt;/li&gt;
   &lt;li&gt;The Extended phenotype - Richard Dawkins&lt;/li&gt;
   &lt;li&gt;Deep Work - Cal Newport&lt;/li&gt;
+  &lt;li&gt;The Machine Stops - Short story by E. M. Forster&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;casual-reading&quot;&gt;&lt;strong&gt;Casual Reading&lt;/strong&gt;&lt;/h3&gt;
@@ -88,6 +97,9 @@ Book - George Gamow (A Physicist)
   &lt;li&gt;Ikigai - Hector Garcia&lt;/li&gt;
   &lt;li&gt;Love and Math - Edward Frenkel - The beauty and power of mathematics&lt;/li&gt;
   &lt;li&gt;Book of Why - Judea Pearl&lt;/li&gt;
+  &lt;li&gt;Homo Ludens - Johan Huizinga&lt;/li&gt;
+  &lt;li&gt;The Double Helix - James Watson&lt;/li&gt;
+  &lt;li&gt;The Road to Reality - Roger Penrose&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;academic--textbooks&quot;&gt;&lt;strong&gt;Academic / Textbooks&lt;/strong&gt;&lt;/h3&gt;
@@ -96,7 +108,8 @@ Book - George Gamow (A Physicist)
   &lt;li&gt;Bayesian Networks - Judea Pearl&lt;/li&gt;
   &lt;li&gt;Bandits and Online learning - Tor Lattimore&lt;/li&gt;
   &lt;li&gt;Causality - Judea Pearl&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 30 June 2020</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
+  &lt;li&gt;AI: A Modern Approach - Peter Norvig and Stuart Russell&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 02 July 2020</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/controller.jpg&quot; alt=&quot;power supply&quot; height=&quot;350&quot; /&gt;

@@ -24,7 +24,11 @@ This page is about the design of the power supply module from our USB powered Ni
 
 Despite the high output voltage level required, the convertor still operates in the low power regime (about 2.5 W as explained in [part 1]({{site.baseurl}}/blog/nixieClock)). This made the Flyback convertor topology ideal for our purpose.
 
-#### Initial Design Process
+#### **Initial Design Process**
+<figure>
+  <img src="{{site.baseurl}}/assets/images/boost.svg" alt="Power Supply" height='200'/>
+  <figcaption> A non isolated Boost convertor </figcaption>
+</figure>
 Rather than the choice of a Flyback convertor, a non-isolated Boost convertor with a voltage boost from 5V to 180V could have been used. However, since the power and data source is a single USB port on a computer, it is crucial that we keep the low voltage (LV) and high voltage (HV) sides electrically isolated from each other. The only way to do this would be to choose an isolated convertor.<br>
 Further, an isolated convertor like the Flyback has the advantage of being able to utilise the turns ratio of its transformer as the voltage step up component.
 
