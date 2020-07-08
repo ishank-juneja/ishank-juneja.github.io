@@ -24,6 +24,9 @@ This page is about the design of the power supply module from our USB powered Ni
 
 Despite the high output voltage level required, the convertor still operates in the low power regime (about 2.5 W as explained in [part 1]({{site.baseurl}}/blog/nixieClock)). This made the Flyback convertor topology ideal for our purpose.
 
+#### **Related Existing Solutions**
+
+
 #### **Initial Design Process**
 <div style="align: left; text-align:center;">
     <img src="{{site.baseurl}}/assets/images/boost.svg" width="400px"/>
