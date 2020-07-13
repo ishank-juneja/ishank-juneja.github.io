@@ -78,12 +78,12 @@
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Power Supply Design</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2020-06-30T00:00:00+05:30" itemprop="datePublished">Jun 30, 2020
+      <time class="dt-published" datetime="2020-07-13T00:00:00+05:30" itemprop="datePublished">Jul 13, 2020
       </time></p>
 			<i><p style="font-size:16px;color:Gray">Reading Time: <span class="reading-time" title="Estimated read time">
   
   
-    2 mins
+    4 mins
   
 </span>
 
@@ -108,7 +108,24 @@ This work on the design of the power supply was spearheaded by Anantha Hegde and
 
 <p>Despite the high output voltage level required, the convertor still operates in the low power regime (about 2.5 W as explained in <a href="/blog/nixieClock">part 1</a>). This made the Flyback convertor topology ideal for our purpose.</p>
 
-<h4 id="related-existing-solutions"><strong>Related Existing Solutions</strong></h4>
+<h4 id="related-existing-solutions---survey"><strong>Related Existing Solutions - Survey</strong></h4>
+<p>Before we describe the solution we ended up implementing to reach the described end goal, let us look at some of the other solutions we considered prior to it. On scouring the web we found a few solutions that matched our requirement closely. Most of these solutions had an input operating voltage of 9V-12V. Perhaps this restriction of a slightly higher than available input voltage has something to do with most batteries (Lead Acid for example) having a terminal voltage in that range.</p>
+
+<h4 id="single-ic-based-solutions"><strong>Single IC Based solutions</strong></h4>
+
+<h5 id="tny-278"><strong>TNY-278</strong></h5>
+<p>Our first attempt at a Power Supply was with the <a href="https://www.power.com/sites/default/files/product-docs/tny274-280.pdf">TNY-278</a> IC by Power Integrations. This was our starting point since this chip was available in our project advisors lab. The TNY-278 is a switching IC which has a typical application of a step down convertor in a flyback like type topology (can be seen in linked <a href="https://www.power.com/sites/default/files/product-docs/tny274-280.pdf">data sheet</a>). Our intention was to reverse the input and output ports of its typical application circuit to use the chip in a step up convertor. However, we soon realized that the usage of such a topology with a 5V input voltage would not be possible since the internal circuitry of the TNY-278 makes any voltage below 5.85V unusable.</p>
+
+<h5 id="lm3488"><strong>LM3488</strong></h5>
+<p>Quite close to the start of our work we came across <a href="https://github.com/esynr3z/nixie-ps">this project</a>. The linked project describes the design of a Flyback convertor that steps up 5-12V to 180V. On the surface of it, this seemed like the end to our search. In fact we even went ahead and got a circuit board printed for this circuit.</p>
+<div style="align: left; text-align:center;">
+    <img src="/assets/images/LM3488.png" width="600px" />
+    <div class="caption"> A non isolated Boost convertor </div>
+</div>
+<p><br />
+The circuit is essentially a Flyback topology built around the <a href="https://www.ti.com/lit/ds/snvs089o/snvs089o.pdf?ts=1594663885165&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">LM 3488</a> IC. The LM 3488 is the complete package as far as a switched power supply (SMPS) is concerned since it has voltage feedback from the output (FB pin), MOSFET gate drive (DR) and the switching frequency set (FA/SYNC/SD) all built into a single package. However, the design in the linked project destroyed the isolation obtained using the transformer of the Flyback convertor by sending in a direct voltage feedback from the HV side to the LV side without some sort of optocoupler isolation in between. Since this was a critical design flaw for our application(need for isolation described in the section on the design process) we decided to look at our own solutions. So, next began the phase of designing switched mode convertors from scratch using discrete components rather than packaged IC solutions.</p>
+
+<h4 id="discrete-components-based-solutions"><strong>Discrete Components Based Solutions</strong></h4>
 
 <h4 id="initial-design-process"><strong>Initial Design Process</strong></h4>
 <div style="align: left; text-align:center;">

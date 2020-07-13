@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-06-30
+date: 2020-07-13
 permalink: /blog/nixieClockPower
 comments: true
 title: Power Supply Design
@@ -24,7 +24,24 @@ This page is about the design of the power supply module from our USB powered Ni
 
 Despite the high output voltage level required, the convertor still operates in the low power regime (about 2.5 W as explained in [part 1]({{site.baseurl}}/blog/nixieClock)). This made the Flyback convertor topology ideal for our purpose.
 
-#### **Related Existing Solutions**
+#### **Related Existing Solutions - Survey**
+Before we describe the solution we ended up implementing to reach the described end goal, let us look at some of the other solutions we considered prior to it. On scouring the web we found a few solutions that matched our requirement closely. Most of these solutions had an input operating voltage of 9V-12V. Perhaps this restriction of a slightly higher than available input voltage has something to do with most batteries (Lead Acid for example) having a terminal voltage in that range.
+
+#### **Single IC Based solutions**
+
+##### **TNY-278**
+Our first attempt at a Power Supply was with the [TNY-278](https://www.power.com/sites/default/files/product-docs/tny274-280.pdf) IC by Power Integrations. This was our starting point since this chip was available in our project advisors lab. The TNY-278 is a switching IC which has a typical application of a step down convertor in a flyback like type topology (can be seen in linked [data sheet](https://www.power.com/sites/default/files/product-docs/tny274-280.pdf)). Our intention was to reverse the input and output ports of its typical application circuit to use the chip in a step up convertor. However, we soon realized that the usage of such a topology with a 5V input voltage would not be possible since the internal circuitry of the TNY-278 makes any voltage below 5.85V unusable. 
+
+##### **LM3488**
+Quite close to the start of our work we came across [this project](https://github.com/esynr3z/nixie-ps). The linked project describes the design of a Flyback convertor that steps up 5-12V to 180V. On the surface of it, this seemed like the end to our search. In fact we even went ahead and got a circuit board printed for this circuit.
+<div style="align: left; text-align:center;">
+    <img src="{{site.baseurl}}/assets/images/LM3488.png" width="600px"/>
+    <div class="caption"> A non isolated Boost convertor </div>
+</div>
+<br>
+The circuit is essentially a Flyback topology built around the [LM 3488](https://www.ti.com/lit/ds/snvs089o/snvs089o.pdf?ts=1594663885165&ref_url=https%253A%252F%252Fwww.google.com%252F) IC. The LM 3488 is the complete package as far as a switched power supply (SMPS) is concerned since it has voltage feedback from the output (FB pin), MOSFET gate drive (DR) and the switching frequency set (FA/SYNC/SD) all built into a single package. However, the design in the linked project destroyed the isolation obtained using the transformer of the Flyback convertor by sending in a direct voltage feedback from the HV side to the LV side without some sort of optocoupler isolation in between. Since this was a critical design flaw for our application(need for isolation described in the section on the design process) we decided to look at our own solutions. So, next began the phase of designing switched mode convertors from scratch using discrete components rather than packaged IC solutions.
+
+#### **Discrete Components Based Solutions**
 
 
 #### **Initial Design Process**
