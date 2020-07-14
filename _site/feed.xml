@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-14T01:02:17+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-07-13T00:00:00+05:30</published><updated>2020-07-13T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-15T00:16:52+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-07-13T00:00:00+05:30</published><updated>2020-07-13T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
@@ -21,26 +21,46 @@ This work on the design of the power supply was spearheaded by Anantha Hegde and
 &lt;h4 id=&quot;single-ic-based-solutions&quot;&gt;&lt;strong&gt;Single IC Based solutions&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;h5 id=&quot;tny-278&quot;&gt;&lt;strong&gt;TNY-278&lt;/strong&gt;&lt;/h5&gt;
-&lt;p&gt;Our first attempt at a Power Supply was with the &lt;a href=&quot;https://www.power.com/sites/default/files/product-docs/tny274-280.pdf&quot;&gt;TNY-278&lt;/a&gt; IC by Power Integrations. This was our starting point since this chip was available in our project advisors lab. The TNY-278 is a switching IC which has a typical application of a step down convertor in a flyback like type topology (can be seen in linked &lt;a href=&quot;https://www.power.com/sites/default/files/product-docs/tny274-280.pdf&quot;&gt;data sheet&lt;/a&gt;). Our intention was to reverse the input and output ports of its typical application circuit to use the chip in a step up convertor. However, we soon realized that the usage of such a topology with a 5V input voltage would not be possible since the internal circuitry of the TNY-278 makes any voltage below 5.85V unusable.&lt;/p&gt;
+&lt;p&gt;Our first attempt at a Power Supply was with the &lt;a href=&quot;https://www.power.com/sites/default/files/product-docs/tny274-280.pdf&quot;&gt;TNY-278&lt;/a&gt; IC by Power Integrations. This was our starting point since this chip was available in our project advisors lab. The TNY-278 is a switching IC which has a typical application of a step down convertor in a flyback like type topology (can be seen in linked &lt;a href=&quot;https://www.power.com/sites/default/files/product-docs/tny274-280.pdf&quot;&gt;data sheet&lt;/a&gt;). Our intention was to reverse the input and output ports of its typical application circuit to use the chip in a step up convertor. However, we soon realized that the usage of such a topology with a 5V input voltage would not be possible since the internal circuitry of the TNY-278 makes any voltage below 5.85V unusable. However, we never showed that the operation of the TNY-278 IC could be mirrored in the first place. We simply rejected the idea since it would certainly not work with a 5V input in the first place.&lt;/p&gt;
 
 &lt;h5 id=&quot;lm3488&quot;&gt;&lt;strong&gt;LM3488&lt;/strong&gt;&lt;/h5&gt;
-&lt;p&gt;Quite close to the start of our work we came across &lt;a href=&quot;https://github.com/esynr3z/nixie-ps&quot;&gt;this project&lt;/a&gt;. The linked project describes the design of a Flyback convertor that steps up 5-12V to 180V. On the surface of it, this seemed like the end to our search. In fact we even went ahead and got a circuit board printed for this circuit.&lt;/p&gt;
+&lt;p&gt;Quite close to the start of our work we came across &lt;a href=&quot;https://github.com/esynr3z/nixie-ps&quot;&gt;this well documented project&lt;/a&gt;. The linked project describes the design of a Flyback convertor that steps up 5-12V to 180V. On the surface of it, this seemed like the end to our search. In fact we even went ahead and got a circuit board printed for this circuit. The schematic and the board view are pictured below.&lt;/p&gt;
 &lt;div style=&quot;align: left; text-align:center;&quot;&gt;
     &lt;img src=&quot;/assets/images/LM3488.png&quot; width=&quot;600px&quot; /&gt;
     &lt;div class=&quot;caption&quot;&gt; A non isolated Boost convertor &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;
-The circuit is essentially a Flyback topology built around the &lt;a href=&quot;https://www.ti.com/lit/ds/snvs089o/snvs089o.pdf?ts=1594663885165&amp;amp;ref_url=https%253A%252F%252Fwww.google.com%252F&quot;&gt;LM 3488&lt;/a&gt; IC. The LM 3488 is the complete package as far as a switched power supply (SMPS) is concerned since it has voltage feedback from the output (FB pin), MOSFET gate drive (DR) and the switching frequency set (FA/SYNC/SD) all built into a single package. However, the design in the linked project destroyed the isolation obtained using the transformer of the Flyback convertor by sending in a direct voltage feedback from the HV side to the LV side without some sort of optocoupler isolation in between. Since this was a critical design flaw for our application(need for isolation described in the section on the design process) we decided to look at our own solutions. So, next began the phase of designing switched mode convertors from scratch using discrete components rather than packaged IC solutions.&lt;/p&gt;
+The circuit is essentially a Flyback topology built around the &lt;a href=&quot;https://www.ti.com/lit/ds/snvs089o/snvs089o.pdf?ts=1594663885165&amp;amp;ref_url=https%253A%252F%252Fwww.google.com%252F&quot;&gt;LM 3488&lt;/a&gt; IC. The LM 3488 is the complete package as far as a switched power supply (SMPS) is concerned since it has voltage feedback from the output (FB pin), MOSFET gate drive (DR) and the switching frequency set (FA/SYNC/SD) all built into a single package. However, the design in the linked project destroyed the isolation obtained from the transformer of the Flyback convertor by sending in a direct voltage feedback from the HV side to the LV side without optocoupler isolation in between.&lt;/p&gt;
+
+&lt;p&gt;Since this was a critical design flaw for our application (the need for isolation is described in the next section) we decided to look for our own solutions starting from scratch. So, next began the phase of designing switched mode convertors from scratch using discrete components rather than packaged IC solutions.&lt;/p&gt;
 
 &lt;h4 id=&quot;discrete-components-based-solutions&quot;&gt;&lt;strong&gt;Discrete Components Based Solutions&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;h4 id=&quot;initial-design-process&quot;&gt;&lt;strong&gt;Initial Design Process&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;initial-design-process---boost-convertor&quot;&gt;Initial Design Process - Boost Convertor&lt;/h4&gt;
 &lt;div style=&quot;align: left; text-align:center;&quot;&gt;
     &lt;img src=&quot;/assets/images/boost.svg&quot; width=&quot;400px&quot; /&gt;
     &lt;div class=&quot;caption&quot;&gt; A non isolated Boost convertor &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;
-Rather than the choice of a Flyback convertor, a non-isolated Boost convertor with a voltage boost from 5V to 180V could have been used. However, since the power and data source is a single USB port on a computer, it is crucial that we keep the low voltage (LV) and high voltage (HV) sides electrically isolated from each other. The only way to do this would be to choose an isolated convertor.&lt;br /&gt;
+We started off the design process by putting together a Boost convertor. The question of whether a MOS or a BJT should be used as the electronic switch in our design was asked. Compared to a MOSFET, a BJT has a slower transient response and higher losses due to a continuous base current and a higher voltage drop across the Collector - Emitter junction.&lt;/p&gt;
+
+&lt;p&gt;Our choice of MOSFET was the &lt;a href=&quot;https://www.infineon.com/dgdl/irfz44npbf.pdf?fileId=5546d462533600a40153563b3a9f220d&quot;&gt;IRFZ44N&lt;/a&gt;. This MOSFET fell well within the voltage and current ranges in which we would eventually want to operate our Flyback convertor switch. We tried switching this MOSFET using a switching frequency of 100KHz.&lt;/p&gt;
+&lt;div style=&quot;align: left; text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/not_switch.jpg&quot; width=&quot;400px&quot; /&gt;
+    &lt;div class=&quot;caption&quot;&gt;  Input Signal (Above) from an AFG and Faulty MOSFET Drain Signal (Below)&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+Initially when this was tried with the switching signal, a square wave of 100KHz, was provided directly to the date drive (pin) of the MOSFET. Soon we realized that the analog function generator (AFG), is unable to provide sufficient current for the switch to be able to switch fast enough. This leads to the faulty on-off waveform in blue in the above figure. This calls for the need of a separate gate-drive stage which takes in a switching signal without imposing a load on it and echoes the same signal to a high current capacity gate-drive line.&lt;/p&gt;
+
+&lt;p&gt;Our initial design used the &lt;a href=&quot;http://images.100y.com.tw/pdf_file/23-AVAGO-HCPL-3120,J312,HCNW3120.pdf&quot;&gt;HCPL-3120&lt;/a&gt; as the higher current capacity gate drive and the &lt;a href=&quot;https://www.ti.com/lit/ds/symlink/sg2524.pdf?HQS=TI-null-null-alldatasheets-df-pf-SEP-wwe&quot;&gt;SG3542&lt;/a&gt; as the function generator. The HCPL chip is a standard gate drive chip and the SG3542 provides an easy interface to set the frequency and duty cycle independently. After making these changes to the design of our Boost convertor, we obtain the below cleaner waveforms. There continue to be some large stray transients that need to be done away with before use in a real convertor. After making some more changes, tweaking the values and ratings of some circuit components we ended up making the Boost convertor work. The details are available in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;.&lt;/p&gt;
+&lt;div style=&quot;align: left; text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/transients.jpg&quot; width=&quot;400px&quot; /&gt;
+    &lt;div class=&quot;caption&quot;&gt; A correct switching waveform with large transients&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;flyback-convertor-and-transformer-design&quot;&gt;Flyback convertor and transformer design&lt;/h4&gt;
+&lt;p&gt;Rather than the choice of a Flyback convertor, a non-isolated Boost convertor with a voltage boost from 5V to 180V could have been used. However, since the power and data source is a single USB port on a computer, it is crucial that we keep the low voltage (LV) and high voltage (HV) sides electrically isolated from each other. The only way to do this would be to choose an isolated convertor.&lt;br /&gt;
 Further, an isolated convertor like the Flyback has the advantage of being able to utilise the turns ratio of its transformer as the voltage step up component. The problem of a high step up of $\frac{180}{5} = 36$ times using a non-isolated Boost convertor can be illustrated by comparing the input to output transfer functions of the Boost and the Flyback convertors.&lt;/p&gt;
 
 &lt;p&gt;The Boost convertor has the input $V_i$ to output $V_o$ transfer function of 
@@ -55,6 +75,8 @@ Where $D$ is the duty cycle (or the fraction time spent on). So for a step up of
 &lt;p&gt;Due to the transformer present in the circuit, the transfer function is given by,
 \[V_o = \frac{N_2}{N_1} \frac{D}{1-D} V_i.\]
 Where $\frac{N_2}{N_1}$ is the turns ratio of the transformer in question. With a reasonably large turns ratio, little of the step up burden falls on the $D$ term thereby making for a reasonable duty cycle.&lt;/p&gt;
+
+&lt;p&gt;The transformer is the central and key component for the successful design of a flyback convertor.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
@@ -101,8 +123,8 @@ Where $\frac{N_2}{N_1}$ is the turns ratio of the transformer in question. With 
 
 &lt;h3 id=&quot;fiction&quot;&gt;&lt;strong&gt;Fiction&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
-  &lt;li&gt;Solaris - Stanislaw Lem
-2&lt;/li&gt;
+  &lt;li&gt;Solaris - Stanislaw Lem&lt;/li&gt;
+  &lt;li&gt;Machines Who Think - Pamela McCorduck&lt;/li&gt;
   &lt;li&gt;The Everything Store - Brad Stone&lt;/li&gt;
   &lt;li&gt;A Brief History of Time - Stephen Hawking&lt;/li&gt;
   &lt;li&gt;The Emperor’s New Mind - Roger Penrose and follow up by Stuart hameroff
@@ -117,7 +139,6 @@ Where $\frac{N_2}{N_1}$ is the turns ratio of the transformer in question. With 
   &lt;li&gt;The Black Cloud - Hoyle&lt;/li&gt;
   &lt;li&gt;Creation Revisited - Peter Atkins (Yes the Chemist)&lt;/li&gt;
   &lt;li&gt;Simulacron-3 - Galouye&lt;/li&gt;
-  &lt;li&gt;Machines who think&lt;/li&gt;
   &lt;li&gt;Origin of species - Darwin&lt;/li&gt;
   &lt;li&gt;Mendelian Genetics&lt;/li&gt;
   &lt;li&gt;Dark Universe - Galouye&lt;/li&gt;

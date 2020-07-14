@@ -30,26 +30,45 @@ Before we describe the solution we ended up implementing to reach the described 
 #### **Single IC Based solutions**
 
 ##### **TNY-278**
-Our first attempt at a Power Supply was with the [TNY-278](https://www.power.com/sites/default/files/product-docs/tny274-280.pdf) IC by Power Integrations. This was our starting point since this chip was available in our project advisors lab. The TNY-278 is a switching IC which has a typical application of a step down convertor in a flyback like type topology (can be seen in linked [data sheet](https://www.power.com/sites/default/files/product-docs/tny274-280.pdf)). Our intention was to reverse the input and output ports of its typical application circuit to use the chip in a step up convertor. However, we soon realized that the usage of such a topology with a 5V input voltage would not be possible since the internal circuitry of the TNY-278 makes any voltage below 5.85V unusable. 
+Our first attempt at a Power Supply was with the [TNY-278](https://www.power.com/sites/default/files/product-docs/tny274-280.pdf) IC by Power Integrations. This was our starting point since this chip was available in our project advisors lab. The TNY-278 is a switching IC which has a typical application of a step down convertor in a flyback like type topology (can be seen in linked [data sheet](https://www.power.com/sites/default/files/product-docs/tny274-280.pdf)). Our intention was to reverse the input and output ports of its typical application circuit to use the chip in a step up convertor. However, we soon realized that the usage of such a topology with a 5V input voltage would not be possible since the internal circuitry of the TNY-278 makes any voltage below 5.85V unusable. However, we never showed that the operation of the TNY-278 IC could be mirrored in the first place. We simply rejected the idea since it would certainly not work with a 5V input in the first place.  
 
 ##### **LM3488**
-Quite close to the start of our work we came across [this project](https://github.com/esynr3z/nixie-ps). The linked project describes the design of a Flyback convertor that steps up 5-12V to 180V. On the surface of it, this seemed like the end to our search. In fact we even went ahead and got a circuit board printed for this circuit.
+Quite close to the start of our work we came across [this well documented project](https://github.com/esynr3z/nixie-ps). The linked project describes the design of a Flyback convertor that steps up 5-12V to 180V. On the surface of it, this seemed like the end to our search. In fact we even went ahead and got a circuit board printed for this circuit. The schematic and the board view are pictured below.
 <div style="align: left; text-align:center;">
     <img src="{{site.baseurl}}/assets/images/LM3488.png" width="600px"/>
     <div class="caption"> A non isolated Boost convertor </div>
 </div>
 <br>
-The circuit is essentially a Flyback topology built around the [LM 3488](https://www.ti.com/lit/ds/snvs089o/snvs089o.pdf?ts=1594663885165&ref_url=https%253A%252F%252Fwww.google.com%252F) IC. The LM 3488 is the complete package as far as a switched power supply (SMPS) is concerned since it has voltage feedback from the output (FB pin), MOSFET gate drive (DR) and the switching frequency set (FA/SYNC/SD) all built into a single package. However, the design in the linked project destroyed the isolation obtained using the transformer of the Flyback convertor by sending in a direct voltage feedback from the HV side to the LV side without some sort of optocoupler isolation in between. Since this was a critical design flaw for our application(need for isolation described in the section on the design process) we decided to look at our own solutions. So, next began the phase of designing switched mode convertors from scratch using discrete components rather than packaged IC solutions.
+The circuit is essentially a Flyback topology built around the [LM 3488](https://www.ti.com/lit/ds/snvs089o/snvs089o.pdf?ts=1594663885165&ref_url=https%253A%252F%252Fwww.google.com%252F) IC. The LM 3488 is the complete package as far as a switched power supply (SMPS) is concerned since it has voltage feedback from the output (FB pin), MOSFET gate drive (DR) and the switching frequency set (FA/SYNC/SD) all built into a single package. However, the design in the linked project destroyed the isolation obtained from the transformer of the Flyback convertor by sending in a direct voltage feedback from the HV side to the LV side without optocoupler isolation in between. 
+
+Since this was a critical design flaw for our application (the need for isolation is described in the next section) we decided to look for our own solutions starting from scratch. So, next began the phase of designing switched mode convertors from scratch using discrete components rather than packaged IC solutions.
 
 #### **Discrete Components Based Solutions**
 
-
-#### **Initial Design Process**
+#### Initial Design Process - Boost Convertor
 <div style="align: left; text-align:center;">
     <img src="{{site.baseurl}}/assets/images/boost.svg" width="400px"/>
     <div class="caption"> A non isolated Boost convertor </div>
 </div>
 <br>
+We started off the design process by putting together a Boost convertor. The question of whether a MOS or a BJT should be used as the electronic switch in our design was asked. Compared to a MOSFET, a BJT has a slower transient response and higher losses due to a continuous base current and a higher voltage drop across the Collector - Emitter junction.
+
+Our choice of MOSFET was the [IRFZ44N](https://www.infineon.com/dgdl/irfz44npbf.pdf?fileId=5546d462533600a40153563b3a9f220d). This MOSFET fell well within the voltage and current ranges in which we would eventually want to operate our Flyback convertor switch. We tried switching this MOSFET using a switching frequency of 100KHz. 
+<div style="align: left; text-align:center;">
+    <img src="{{site.baseurl}}/assets/images/not_switch.jpg" width="400px"/>
+    <div class="caption">  Input Signal (Above) from an AFG and Faulty MOSFET Drain Signal (Below)</div>
+</div>
+<br>
+Initially when this was tried with the switching signal, a square wave of 100KHz, was provided directly to the date drive (pin) of the MOSFET. Soon we realized that the analog function generator (AFG), is unable to provide sufficient current for the switch to be able to switch fast enough. This leads to the faulty on-off waveform in blue in the above figure. This calls for the need of a separate gate-drive stage which takes in a switching signal without imposing a load on it and echoes the same signal to a high current capacity gate-drive line.      
+
+Our initial design used the [HCPL-3120](http://images.100y.com.tw/pdf_file/23-AVAGO-HCPL-3120,J312,HCNW3120.pdf) as the higher current capacity gate drive and the [SG3542](https://www.ti.com/lit/ds/symlink/sg2524.pdf?HQS=TI-null-null-alldatasheets-df-pf-SEP-wwe) as the function generator. The HCPL chip is a standard gate drive chip and the SG3542 provides an easy interface to set the frequency and duty cycle independently. After making these changes to the design of our Boost convertor, we obtain the below cleaner waveforms. There continue to be some large stray transients that need to be done away with before use in a real convertor. After making some more changes, tweaking the values and ratings of some circuit components we ended up making the Boost convertor work. The details are available in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf).
+<div style="align: left; text-align:center;">
+    <img src="{{site.baseurl}}/assets/images/transients.jpg" width="400px"/>
+    <div class="caption"> A correct switching waveform with large transients</div>
+</div>
+<br>
+
+#### Flyback convertor and transformer design
 Rather than the choice of a Flyback convertor, a non-isolated Boost convertor with a voltage boost from 5V to 180V could have been used. However, since the power and data source is a single USB port on a computer, it is crucial that we keep the low voltage (LV) and high voltage (HV) sides electrically isolated from each other. The only way to do this would be to choose an isolated convertor.<br>
 Further, an isolated convertor like the Flyback has the advantage of being able to utilise the turns ratio of its transformer as the voltage step up component. The problem of a high step up of $\frac{180}{5} = 36$ times using a non-isolated Boost convertor can be illustrated by comparing the input to output transfer functions of the Boost and the Flyback convertors.
 
@@ -65,6 +84,8 @@ Where $D$ is the duty cycle (or the fraction time spent on). So for a step up of
 Due to the transformer present in the circuit, the transfer function is given by,
 \\[V_o = \frac{N_2}{N_1} \frac{D}{1-D} V_i.\\]
 Where $\frac{N_2}{N_1}$ is the turns ratio of the transformer in question. With a reasonably large turns ratio, little of the step up burden falls on the $D$ term thereby making for a reasonable duty cycle.
+
+The transformer is the central and key component for the successful design of a flyback convertor. 
 
 ***
 *This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB*<br>
