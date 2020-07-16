@@ -103,13 +103,13 @@ This problem was solved by sandwiching the [UC37322](https://www.ti.com/lit/ds/s
 
 If the switching action in a boost convertor is turned off, the output voltage ceases to build up. In such a case in the absence of any output load, the output voltage would not decrease or increase but rather remain constant. This situation may not be ideal but is still better than the voltage going on increasing indefinitely. The easiest way to shut off switching in our design would be to use the reset pin on the 555 timer generating the switching waveform. Another factor is that we must keep the reset signal of the 555 timer on the LV side and the voltage feedback signal on the HV side isolated from each other. This is achieved using opto-coupler signal isolation using an [MCT2E](https://projectpoint.in/datasheets/pdf/mct2e.pdf) between the two sides.       
 
-The details of the feedback mechanism can be found in the lower half of the below schematic. 
-[LM1117](https://www.ti.com/lit/ds/symlink/lm1117.pdf?ts=1594925343391&ref_url=https%253A%252F%252Fwww.google.com%252F)
+The details of the feedback mechanism can be found in the lower half of the below schematic. The mechanism for how this feedback works is quite interesting. An [LM324](https://www.ti.com/lit/ds/snosc16d/snosc16d.pdf) opamp is configured as a comparator with the regulated 5V power supply intended for HV side silicon connected to the '+' terminal of the comparator and a voltage divided version of the 180V (called VFB) output connected to the '-' terminal of the comparator. When VFB becomes too large, the output of the comparator turns off, thereby turning the output of the MCT2E phototransistor off which in turn resets the 555 timer output through the active low RESET pin. This RESET state remains the situation until the output voltage at the HV side doesn't drop below a certain threshold. Once the voltage drops by enough the phototransistor turns on again starting the switching action and the voltage gain. In the absence of a real load, this on-off procedure would continue cyclically. 
 <div style="align: left; text-align:center;">
     <img src="{{site.baseurl}}/assets/images/Discrete_Schematic.png" width="700px">
     <div class="caption"> The final and complete schematic of the power supply </div>
 </div>
 <br>
+More details about the circuit board layout with SMPS best practices and details about the creating tertiary winding of the transformer can be found in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf)  
 
 ***
 *Mr. Joginder Yadav, RA Machines Lab, IIT Bombay provided immense help for the design of the power supply and other modules of this project*<br>
