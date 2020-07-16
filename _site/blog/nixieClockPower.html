@@ -78,12 +78,12 @@
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Power Supply Design</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2020-07-13T00:00:00+05:30" itemprop="datePublished">Jul 13, 2020
+      <time class="dt-published" datetime="2020-07-16T00:00:00+05:30" itemprop="datePublished">Jul 16, 2020
       </time></p>
 			<i><p style="font-size:16px;color:Gray">Reading Time: <span class="reading-time" title="Estimated read time">
   
   
-    6 mins
+    8 mins
   
 </span>
 
@@ -169,10 +169,35 @@ Where $D$ is the duty cycle (or the fraction time spent on). So for a step up of
 \[V_o = \frac{N_2}{N_1} \frac{D}{1-D} V_i.\]
 Where $\frac{N_2}{N_1}$ is the turns ratio of the transformer in question. With a reasonably large turns ratio, little of the step up burden falls on the $D$ term thereby making for a reasonable duty cycle.</p>
 
-<p>The transformer is the central and key component for the successful design of a flyback convertor.</p>
+<p>The transformer is the central and component for the successful design of a flyback convertor. The design of the transformer was undertaken for a switching frequency of 100KHz. As a fun design exercise, we decided to create a transformer from scratch instead of outsourcing the task to a workshop. With help from research assistants from the <a href="https://www.ee.iitb.ac.in/web/research/labs/apel">Applied Power Electronics Lab (APEL)</a> we managed to achieve our goal.</p>
+
+<p>This transformer needed to have one input winding for the 5V USB power source, and two output windings. One output winding would correspond to the 180V output to power the Nixie tubes. An additional isolated 5V power output was required by us to power the silicon on the High Voltage side (see <a href="/blog/nixieClockController">part 3</a> for details). After completion, the specs of the transformer can be found in our <a href="/assets/docs/DD08_Design_Lab_report.pdf">report</a>. To complete the flyback convertor, the design we came up with initially was as follows,</p>
+<div style="align: left; text-align:center;">
+    <img src="/assets/images/flyback1.png" width="600px" height="300px" />
+    <div class="caption"> 555 timer based Flyback convertor. 5V tertiary winding omitted </div>
+</div>
+<p><br />
+Here the components on the HV side remain similar to the earlier boost convertor. The key difference being that they are rated for suitably high voltages. The switching signal of a 100KHz square wave is provided to the MOSFET directly from a 555 timer. The duty cycle (which controls $D$) and the frequency of the 555 timer can be controlled using individual potentiometers in this design.</p>
+
+<p>A problem with this design is similar to the problem with driving a MOSFET gate with an analog function generator. The current that can be drawn from the output of the 555 timer is limited since the 555 chip is designed as a timer or perhaps a signal generator. In the design of the power supply, this problem manifests itself in the large switching losses that arise within the MOSFET switch. As can be seen in the figure depicting the switching of the IRFZ44N MOSFET when driven through an AFG, poor switching quality leads to a longer transition period between the on and off states. This causes significantly more heat loss in accordance with Joule’s law of heating.</p>
+
+<p>This problem was solved by sandwiching the <a href="https://www.ti.com/lit/ds/symlink/ucc27321.pdf?ts=1594923781813&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">UC37322</a> gate driver between the 555 timer and the MOSFET gate. This allowed for a much better switching waveform thereby reducing the heating and energy loss from the IRFZ44N significantly. The last problem that remains to be solved is that of over voltage at the output side under no load conditions. This problem must be solved since in the absence of control on the output, the voltage would go increasing indefinitely damaging the circuit components.</p>
+
+<h4 id="feedback-control-of-output-voltage">Feedback Control of Output Voltage</h4>
+
+<p>If the switching action in a boost convertor is turned off, the output voltage ceases to build up. In such a case in the absence of any output load, the output voltage would not decrease or increase but rather remain constant. This situation may not be ideal but is still better than the voltage going on increasing indefinitely. The easiest way to shut off switching in our design would be to use the reset pin on the 555 timer generating the switching waveform. Another factor is that we must keep the reset signal of the 555 timer on the LV side and the voltage feedback signal on the HV side isolated from each other. This is achieved using opto-coupler signal isolation using an <a href="https://projectpoint.in/datasheets/pdf/mct2e.pdf">MCT2E</a> between the two sides.</p>
+
+<p>The details of the feedback mechanism can be found in the lower half of the below schematic. 
+<a href="https://www.ti.com/lit/ds/symlink/lm1117.pdf?ts=1594925343391&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">LM1117</a></p>
+<div style="align: left; text-align:center;">
+    <img src="/assets/images/Discrete_Schematic.png" width="700px" />
+    <div class="caption"> The final and complete schematic of the power supply </div>
+</div>
+<p><br /></p>
 
 <hr />
-<p><em>This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB</em><br />
+<p><em>Mr. Joginder Yadav, RA Machines Lab, IIT Bombay provided immense help for the design of the power supply and other modules of this project</em><br />
+<em>This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB</em><br />
 <em>A more detailed description of the project along with schematics can be found in our <a href="/assets/docs/DD08_Design_Lab_report.pdf">project report</a></em><br />
 <em>A demonstration of our project can be <a href="https://youtu.be/MN-FbMPmbiw">found here</a></em></p>
 
