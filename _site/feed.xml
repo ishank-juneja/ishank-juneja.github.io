@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-15T00:16:52+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-07-13T00:00:00+05:30</published><updated>2020-07-13T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-16T12:40:06+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-07-13T00:00:00+05:30</published><updated>2020-07-13T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
@@ -81,44 +81,59 @@ Where $\frac{N_2}{N_1}$ is the turns ratio of the transformer in question. With 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">A Reading List for The Near Future</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="A Reading List for The Near Future" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 13 July 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;readingListStylesheet.css&quot; /&gt;
+
+&lt;p&gt;&lt;strong&gt;Last updated: 16 July 2020&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;⭐ ⭐ ⭐ ⭐ ⭐ = Strongly Recommended&lt;/p&gt;
+
+&lt;p&gt;⭐ ⭐ ⭐ ⭐ = Recommended&lt;/p&gt;
+
+&lt;p&gt;⭐ ⭐ ⭐ = Enjoyable&lt;/p&gt;
+
+&lt;p&gt;⭐ ⭐ = Not Recommended&lt;/p&gt;
+
+&lt;p&gt;⭐ = Steer Clear&lt;/p&gt;
+
+&lt;p&gt;📖 = Now Reading/Last Read&lt;/p&gt;
+
+&lt;p&gt;📕 = To be read&lt;/p&gt;
 
 &lt;h3 id=&quot;academic--textbooks&quot;&gt;&lt;strong&gt;Academic / Textbooks&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
-  &lt;li&gt;Optimal Control - Dan Liberzon&lt;/li&gt;
-  &lt;li&gt;Bayesian Networks - Judea Pearl&lt;/li&gt;
-  &lt;li&gt;Bandits and Online learning - Tor Lattimore&lt;/li&gt;
-  &lt;li&gt;Causality - Judea Pearl&lt;/li&gt;
-  &lt;li&gt;AI: A Modern Approach - Peter Norvig and Stuart Russell&lt;/li&gt;
-  &lt;li&gt;Reinforcement Learning&lt;/li&gt;
+  &lt;li&gt;Optimal Control - Dan Liberzon  📖&lt;/li&gt;
+  &lt;li&gt;Bayesian Networks - Judea Pearl 📕&lt;/li&gt;
+  &lt;li&gt;Bandits and Online learning - Tor Lattimore 📖&lt;/li&gt;
+  &lt;li&gt;Causality - Judea Pearl 📕&lt;/li&gt;
+  &lt;li&gt;AI: A Modern Approach - Peter Norvig and Stuart Russell 📕&lt;/li&gt;
+  &lt;li&gt;Reinforcement Learning 📖&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;non-fiction&quot;&gt;&lt;strong&gt;Non Fiction&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;s&gt;Weapons of Math destruction - Cathy O'Neil&lt;/s&gt;
+    &lt;div class=&quot;left&quot;&gt;  Weapons of Math destruction - Cathy O'Neil &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt; &amp;#x2B50; &amp;#x2B50; &amp;#x2B50; &amp;#x2B50; &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;s&gt;Sapiens - YNH&lt;/s&gt;
+    &lt;div class=&quot;left&quot;&gt; Sapiens - YNH &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt; &amp;#x2B50; &amp;#x2B50; &amp;#x2B50; &amp;#x2B50;&lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;s&gt;Homo Deus - YNH&lt;/s&gt;
+    &lt;div class=&quot;left&quot;&gt; Homo Deus - YNH &lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;&amp;#x2B50; &amp;#x2B50; &amp;#x2B50;&lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;s&gt;The Selfish Gene - Richard Dawkins&lt;/s&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;s&gt; Thinking fast and slow - Daniel Kahnman&lt;/s&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;s&gt;21 lessons for the 21st century - YNH&lt;/s&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;mark&gt;You are a Badass - Jen Sincero&lt;/mark&gt;&lt;/li&gt;
-  &lt;li&gt;The power of habit - Charles Duhigg&lt;/li&gt;
-  &lt;li&gt;Deep Work - Cal Newport&lt;/li&gt;
+  &lt;li&gt;The Selfish Gene - Richard Dawkins&lt;/li&gt;
+  &lt;li&gt;Thinking fast and slow - Daniel Kahnman&lt;/li&gt;
+  &lt;li&gt;21 lessons for the 21st century - YNH&lt;/li&gt;
+  &lt;li&gt;You are a Badass - Jen Sincero&lt;/li&gt;
   &lt;li&gt;The Machine Stops - Short story by E. M. Forster&lt;/li&gt;
-  &lt;li&gt;The Extended phenotype - Richard Dawkins
-. Enlightenment Now - Steven Pinker&lt;/li&gt;
+  &lt;li&gt;The power of habit - Charles Duhigg 📕&lt;/li&gt;
+  &lt;li&gt;Deep Work - Cal Newport&lt;/li&gt;
+  &lt;li&gt;The Extended phenotype - Richard Dawkins&lt;/li&gt;
+  &lt;li&gt;Enlightenment Now - Steven Pinker&lt;/li&gt;
+  &lt;li&gt;Think and Grow Rich - Napoleon Hill&lt;/li&gt;
+  &lt;li&gt;The Science of Getting Rich - Wallace Wattles&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;fiction&quot;&gt;&lt;strong&gt;Fiction&lt;/strong&gt;&lt;/h3&gt;
@@ -176,7 +191,7 @@ Book - George Gamow (A Physicist)
   &lt;/li&gt;
   &lt;li&gt;David Robson’s The Intelligence Trap&lt;/li&gt;
   &lt;li&gt;Carlo Cipolla’s The Basic Laws of Human Stupidity&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 13 July 2020</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/controller.jpg&quot; alt=&quot;power supply&quot; height=&quot;350&quot; /&gt;
