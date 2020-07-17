@@ -8,8 +8,8 @@ permalink: /blog/
 - June 2020 - A USB Powered Nixie Tube Clock Display <br>
 with Anantha Hegde and Yojit Srivastava
 	- Part 1, June 16: [Nixie Tube Characterization]({{site.baseurl}}/blog/nixieClock)
-	- Part 2, June 29: [Power Supply Design]({{site.baseurl}}/blog/nixieClockPower)
-	- Part 3, June 30: [Controller Design]({{site.baseurl}}/blog/nixieClockController)
+	- Part 2, July 16: [Power Supply Design]({{site.baseurl}}/blog/nixieClockPower)
+	- Part 3, July 21: [Controller Design]({{site.baseurl}}/blog/nixieClockController)
 
 
 ### Guides and Tutorials

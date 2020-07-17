@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-17T00:54:18+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-07-16T00:00:00+05:30</published><updated>2020-07-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-17T12:32:13+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Power Supply Design</title><link href="http://localhost:4000/blog/nixieClockPower" rel="alternate" type="text/html" title="Power Supply Design" /><published>2020-07-16T00:00:00+05:30</published><updated>2020-07-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-2</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockPower">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/power_supply.jpg&quot; alt=&quot;Power Supply&quot; height=&quot;300&quot; /&gt;
@@ -21,7 +21,7 @@ This work on the design of the power supply was spearheaded by Anantha Hegde and
 &lt;h4 id=&quot;single-ic-based-solutions&quot;&gt;&lt;strong&gt;Single IC Based solutions&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;h5 id=&quot;tny-278&quot;&gt;&lt;strong&gt;TNY-278&lt;/strong&gt;&lt;/h5&gt;
-&lt;p&gt;Our first attempt at a Power Supply was with the &lt;a href=&quot;https://www.power.com/sites/default/files/product-docs/tny274-280.pdf&quot;&gt;TNY-278&lt;/a&gt; IC by Power Integrations. This was our starting point since this chip was available in our project advisors lab. The TNY-278 is a switching IC which has a typical application of a step down convertor in a flyback like type topology (can be seen in linked &lt;a href=&quot;https://www.power.com/sites/default/files/product-docs/tny274-280.pdf&quot;&gt;data sheet&lt;/a&gt;). Our intention was to reverse the input and output ports of its typical application circuit to use the chip in a step up convertor. However, we soon realized that the usage of such a topology with a 5V input voltage would not be possible since the internal circuitry of the TNY-278 makes any voltage below 5.85V unusable. However, we never showed that the operation of the TNY-278 IC could be mirrored in the first place. We simply rejected the idea since it would certainly not work with a 5V input in the first place.&lt;/p&gt;
+&lt;p&gt;Our first attempt at a Power Supply was with the &lt;a href=&quot;https://www.power.com/sites/default/files/product-docs/tny274-280.pdf&quot;&gt;TNY-278&lt;/a&gt; IC by Power Integrations. This was our starting point since this chip was available in our project advisors lab. The TNY-278 is a switching IC which has a typical application of a step down convertor in a flyback like type topology (can be seen in linked &lt;a href=&quot;https://www.power.com/sites/default/files/product-docs/tny274-280.pdf&quot;&gt;data sheet&lt;/a&gt;). Our intention was to reverse the input and output ports of its typical application circuit to use the chip in a step up convertor. However, we soon realized that the usage of such a topology with a 5V input voltage would not be possible since the internal circuitry of the TNY-278 makes any voltage below 5.85V unusable. However, we never showed that the operation of the TNY-278 IC could be mirrored in the first place. We simply rejected the idea since it would certainly not work with a 5V input.&lt;/p&gt;
 
 &lt;h5 id=&quot;lm3488&quot;&gt;&lt;strong&gt;LM3488&lt;/strong&gt;&lt;/h5&gt;
 &lt;p&gt;Quite close to the start of our work we came across &lt;a href=&quot;https://github.com/esynr3z/nixie-ps&quot;&gt;this well documented project&lt;/a&gt;. The linked project describes the design of a Flyback convertor that steps up 5-12V to 180V. On the surface of it, this seemed like the end to our search. In fact we even went ahead and got a circuit board printed for this circuit. The schematic and the board view are pictured below.&lt;/p&gt;
@@ -50,7 +50,7 @@ We started off the design process by putting together a Boost convertor. The que
     &lt;div class=&quot;caption&quot;&gt;  Input Signal (Above) from an AFG and Faulty MOSFET Drain Signal (Below)&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;
-Initially when this was tried with the switching signal, a square wave of 100KHz, was provided directly to the date drive (pin) of the MOSFET. Soon we realized that the analog function generator (AFG), is unable to provide sufficient current for the switch to be able to switch fast enough. This leads to the faulty on-off waveform in blue in the above figure. This calls for the need of a separate gate-drive stage which takes in a switching signal without imposing a load on it and echoes the same signal to a high current capacity gate-drive line.&lt;/p&gt;
+Initially when this was tried with the switching signal, a square wave of 100KHz, was provided directly to the date drive (pin) of the MOSFET. Soon we realized that the analog function generator (AFG), is unable to provide sufficient current for the MOSFET to be able to switch fast enough. This leads to the faulty on-off waveform in blue in the above figure. This calls for the need of a separate gate-drive stage which takes in a switching signal without imposing a load on it and echoes the same signal to a high current capacity gate-drive line.&lt;/p&gt;
 
 &lt;p&gt;Our initial design used the &lt;a href=&quot;http://images.100y.com.tw/pdf_file/23-AVAGO-HCPL-3120,J312,HCNW3120.pdf&quot;&gt;HCPL-3120&lt;/a&gt; as the higher current capacity gate drive and the &lt;a href=&quot;https://www.ti.com/lit/ds/symlink/sg2524.pdf?HQS=TI-null-null-alldatasheets-df-pf-SEP-wwe&quot;&gt;SG3542&lt;/a&gt; as the function generator. The HCPL chip is a standard gate drive chip and the SG3542 provides an easy interface to set the frequency and duty cycle independently. After making these changes to the design of our Boost convertor, we obtain the below cleaner waveforms. There continue to be some large stray transients that need to be done away with before use in a real convertor. After making some more changes, tweaking the values and ratings of some circuit components we ended up making the Boost convertor work. The details are available in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;.&lt;/p&gt;
 &lt;div style=&quot;align: left; text-align:center;&quot;&gt;
@@ -76,7 +76,7 @@ Where $D$ is the duty cycle (or the fraction time spent on). So for a step up of
 \[V_o = \frac{N_2}{N_1} \frac{D}{1-D} V_i.\]
 Where $\frac{N_2}{N_1}$ is the turns ratio of the transformer in question. With a reasonably large turns ratio, little of the step up burden falls on the $D$ term thereby making for a reasonable duty cycle.&lt;/p&gt;
 
-&lt;p&gt;The transformer is the central and component for the successful design of a flyback convertor. The design of the transformer was undertaken for a switching frequency of 100KHz. As a fun design exercise, we decided to create a transformer from scratch instead of outsourcing the task to a workshop. With help from research assistants from the &lt;a href=&quot;https://www.ee.iitb.ac.in/web/research/labs/apel&quot;&gt;Applied Power Electronics Lab (APEL)&lt;/a&gt; we managed to achieve our goal.&lt;/p&gt;
+&lt;p&gt;The transformer was the central component for the successful design of the flyback convertor. The design of the transformer was undertaken for a switching frequency of 100KHz. As a fun design exercise, we decided to create a transformer from scratch instead of outsourcing the task to a workshop. With help from research assistants from the &lt;a href=&quot;https://www.ee.iitb.ac.in/web/research/labs/apel&quot;&gt;Applied Power Electronics Lab (APEL)&lt;/a&gt; we managed to achieve our goal.&lt;/p&gt;
 
 &lt;p&gt;This transformer needed to have one input winding for the 5V USB power source, and two output windings. One output winding would correspond to the 180V output to power the Nixie tubes. An additional isolated 5V power output was required by us to power the silicon on the High Voltage side (see &lt;a href=&quot;/blog/nixieClockController&quot;&gt;part 3&lt;/a&gt; for details). After completion, the specs of the transformer can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;report&lt;/a&gt;. To complete the flyback convertor, the design we came up with initially was as follows,&lt;/p&gt;
 &lt;div style=&quot;align: left; text-align:center;&quot;&gt;
@@ -94,7 +94,7 @@ Here the components on the HV side remain similar to the earlier boost convertor
 
 &lt;p&gt;If the switching action in a boost convertor is turned off, the output voltage ceases to build up. In such a case in the absence of any output load, the output voltage would not decrease or increase but rather remain constant. This situation may not be ideal but is still better than the voltage going on increasing indefinitely. The easiest way to shut off switching in our design would be to use the reset pin on the 555 timer generating the switching waveform. Another factor is that we must keep the reset signal of the 555 timer on the LV side and the voltage feedback signal on the HV side isolated from each other. This is achieved using opto-coupler signal isolation using an &lt;a href=&quot;https://projectpoint.in/datasheets/pdf/mct2e.pdf&quot;&gt;MCT2E&lt;/a&gt; between the two sides.&lt;/p&gt;
 
-&lt;p&gt;The details of the feedback mechanism can be found in the lower half of the below schematic. The mechanism for how this feedback works is quite interesting. An &lt;a href=&quot;https://www.ti.com/lit/ds/snosc16d/snosc16d.pdf&quot;&gt;LM324&lt;/a&gt; opamp is configured as a comparator with the regulated 5V power supply intended for HV side silicon connected to the ‘+’ terminal of the comparator and a voltage divided version of the 180V (called VFB) output connected to the ‘-‘ terminal of the comparator. When VFB becomes too large, the output of the comparator turns off, thereby turning the output of the MCT2E phototransistor off which in turn resets the 555 timer output through the active low RESET pin. This RESET state remains the situation until the output voltage at the HV side doesn’t drop below a certain threshold. Once the voltage drops by enough the phototransistor turns on again starting the switching action and the voltage gain. In the absence of a real load, this on-off procedure would continue cyclically.&lt;/p&gt;
+&lt;p&gt;The details of the feedback mechanism can be found in the lower half of the below schematic. The mechanism for how this feedback works is quite interesting. An &lt;a href=&quot;https://www.ti.com/lit/ds/snosc16d/snosc16d.pdf&quot;&gt;LM324&lt;/a&gt; opamp is configured as a comparator with the regulated 5V power supply intended for HV side silicon connected to the ‘+’ terminal of the comparator and a voltage divided version of the 180V (called VFB) output connected to the ‘-‘ terminal of the comparator. When VFB becomes too large, the output of the comparator turns off, thereby turning the output of the MCT2E phototransistor off which in turn resets the 555 timer output through the active low RESET pin. This RESET state remains the situation until the output voltage at the HV side drops below a certain threshold. Once the voltage drops by enough the phototransistor turns on again starting the switching action and the voltage gain. In the absence of a real load, this on-off procedure would continue cyclically.&lt;/p&gt;
 &lt;div style=&quot;align: left; text-align:center;&quot;&gt;
     &lt;img src=&quot;/assets/images/Discrete_Schematic.png&quot; width=&quot;700px&quot; /&gt;
     &lt;div class=&quot;caption&quot;&gt; The final and complete schematic of the power supply &lt;/div&gt;
@@ -106,7 +106,7 @@ More details about the circuit board layout with SMPS best practices and details
 &lt;p&gt;&lt;em&gt;Mr. Joginder Yadav, RA Machines Lab, IIT Bombay provided immense help for the design of the power supply and other modules of this project&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 16 July 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 17 July 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;⭐ ⭐ ⭐ ⭐ ⭐ = Strongly Recommended&lt;/p&gt;
 
@@ -132,8 +132,21 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;Reinforcement Learning 📖&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;h3 id=&quot;biographiesautobiographies&quot;&gt;&lt;strong&gt;Biographies/Autobiographies&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Elon Musk - Ashlee Vance&lt;br /&gt;
+⭐ ⭐ ⭐ ⭐&lt;/li&gt;
+  &lt;li&gt;iCon, Steve Jobs - Jeffrey S. Young, Jeffrey Young, and William L. Simon&lt;br /&gt;
+⭐ ⭐ ⭐&lt;/li&gt;
+  &lt;li&gt;The Google Story - David A. Vise and Mark Malseed&lt;br /&gt;
+⭐ ⭐ ⭐&lt;/li&gt;
+  &lt;li&gt;The Everything Store - Brad Stone 📕&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h3 id=&quot;non-fiction&quot;&gt;&lt;strong&gt;Non Fiction&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
+  &lt;li&gt;Periodic Tales - Hugh Aldersey-Williams&lt;br /&gt;
+⭐ ⭐ ⭐&lt;/li&gt;
   &lt;li&gt;Weapons of Math destruction - Cathy O’Neil&lt;br /&gt;
 ⭐ ⭐ ⭐ ⭐&lt;/li&gt;
   &lt;li&gt;Sapiens - YNH &lt;br /&gt;
@@ -155,7 +168,6 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;Think and Grow Rich - Napoleon Hill 📕&lt;/li&gt;
   &lt;li&gt;The Science of Getting Rich - Wallace Wattles 📕&lt;/li&gt;
   &lt;li&gt;Machines Who Think - Pamela McCorduck 📕&lt;/li&gt;
-  &lt;li&gt;The Everything Store - Brad Stone 📕&lt;/li&gt;
   &lt;li&gt;A Brief History of Time - Stephen Hawking 📕&lt;/li&gt;
   &lt;li&gt;The Emperor’s New Mind - Roger Penrose and follow up by Stuart Hameroff 📕
     &lt;ul&gt;
@@ -193,6 +205,8 @@ More details about the circuit board layout with SMPS best practices and details
 
 &lt;h3 id=&quot;fiction&quot;&gt;&lt;strong&gt;Fiction&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
+  &lt;li&gt;The Hitchhiker’s Guide to the Galaxy Omnibus: A Trilogy in Five Parts - Adams, Douglas&lt;br /&gt; 
+⭐ ⭐ ⭐ ⭐&lt;/li&gt;
   &lt;li&gt;The Machine Stops - Short story by E. M. Forster &lt;br /&gt;
 ⭐ ⭐ ⭐ ⭐ ⭐&lt;/li&gt;
   &lt;li&gt;मानसरोवर - प्रेमचंद 📕&lt;/li&gt;
@@ -207,7 +221,7 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;On Intelligence - Jeff Hawkins and Sandra Blakeslee 📕&lt;/li&gt;
   &lt;li&gt;The Intelligence Trap - David Robinson 📕&lt;/li&gt;
   &lt;li&gt;The Basic Laws of Human Stupidity - Carlo Cipolla📕&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 16 July 2020</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 17 July 2020</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/controller.jpg&quot; alt=&quot;power supply&quot; height=&quot;350&quot; /&gt;
