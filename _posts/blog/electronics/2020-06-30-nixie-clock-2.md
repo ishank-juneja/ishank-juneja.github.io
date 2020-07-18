@@ -10,7 +10,7 @@ mathjax: true
 ***
 <p align="center">
   <br>
-  <img src="{{site.baseurl}}/assets/images/power_supply.jpg" alt="Power Supply" height='300'/>
+  <img src="{{site.baseurl}}/assets/images/ps_annotated.jpg" alt="Power Supply" height='300'/>
 </p>
 
 This post is Part 2 in a three part series on our design of a USB powered Nixie Tube Clock display. <br>
@@ -109,7 +109,10 @@ The details of the feedback mechanism can be found in the lower half of the belo
     <div class="caption"> The final and complete schematic of the power supply </div>
 </div>
 <br>
-More details about the circuit board layout with SMPS best practices and details about the creating tertiary winding of the transformer can be found in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf)  
+More details about the circuit board layout with SMPS best practices and details about the creating tertiary winding of the transformer can be found in our [project report]({{site.baseurl}}/assets/docs/DD08_Design_Lab_report.pdf). 
+
+It would be appropriate to add here that though the feedback mechanism was tested on our earlier breadboard based design, it did not function correctly when placed within the final circuit board. Primarily, this had to do with the additional 5V power source from the tertiary winding of our transformer not functioning correctly. Hence the unused feedback stage in the image at the start. Importantly, this makes the final power supply **unsafe** to use without a load connected.    
+
 
 ***
 *Mr. Joginder Yadav, RA Machines Lab, IIT Bombay provided immense help for the design of the power supply and other modules of this project*<br>

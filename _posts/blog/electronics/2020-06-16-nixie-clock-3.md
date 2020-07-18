@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-06-16
+date: 2020-07-18
 permalink: /blog/nixieClockController
 comments: true
 title: Clock Controller Design
@@ -10,7 +10,7 @@ mathjax: true
 ***
 <p align="center">
   <br>
-  <img src="{{site.baseurl}}/assets/images/controller.jpg" alt="power supply" height='350'/>
+  <img src="{{site.baseurl}}/assets/images/controller_annotated.png" alt="power supply" height='350'/>
 </p>
 
 This post is Part 3 in a three part series on our design of a USB powered Nixie Tube Clock display. <br>
@@ -19,7 +19,9 @@ This post is Part 3 in a three part series on our design of a USB powered Nixie 
 
 ***
 
-Coming out on June 30.
+#### **Controller Board Overview **
+The controller board a.k.a the USB bridge circuit is responsible for taking in timing information via USB from the host computer and displaying it, through the means of isolated controller signals, onto the six Nixie Tube display.  
+
 
 ***
 *This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB*<br>
