@@ -10,7 +10,7 @@ mathjax: true
 ***
 <p align="center">
   <br>
-  <img src="{{site.baseurl}}/assets/images/controller_annotated.png" alt="power supply" height='350'/>
+  <img src="{{site.baseurl}}/assets/images/controller_annotated.png" alt="Controller Board Annotated Image" height='350'/>
 </p>
 
 This post is Part 3 in a three part series on our design of a USB powered Nixie Tube Clock display. <br>
