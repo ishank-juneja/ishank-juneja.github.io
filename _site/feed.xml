@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-19T00:02:21+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-07-18T00:00:00+05:30</published><updated>2020-07-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-21T23:56:08+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-07-18T00:00:00+05:30</published><updated>2020-07-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
-  &lt;img src=&quot;/assets/images/controller_annotated.png&quot; alt=&quot;power supply&quot; height=&quot;350&quot; /&gt;
+  &lt;img src=&quot;/assets/images/controller_annotated.png&quot; alt=&quot;Controller Board Annotated Image&quot; height=&quot;350&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;This post is Part 3 in a three part series on our design of a USB powered Nixie Tube Clock display. &lt;br /&gt;
@@ -10,8 +10,19 @@
 
 &lt;hr /&gt;
 
-&lt;h4 id=&quot;controller-board-overview-&quot;&gt;**Controller Board Overview **&lt;/h4&gt;
-&lt;p&gt;The controller board a.k.a the USB bridge circuit is responsible for taking in timing information via USB from the host computer and displaying it, through the means of isolated controller signals, onto the six Nixie Tube display.&lt;/p&gt;
+&lt;h4 id=&quot;controller-board-overview&quot;&gt;&lt;strong&gt;Controller Board Overview&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The controller board a.k.a the USB bridge circuit is responsible for taking in timing information via USB from the host computer and displaying it, through the means of electrically isolated control signals, onto the front end display module consisting of 6 Nixie Tubes.&lt;/p&gt;
+&lt;div style=&quot;align: left; text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/block_diagram.png&quot; height=&quot;400px&quot; /&gt;
+    &lt;div class=&quot;caption&quot;&gt; Complete Block Diagram &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+The flow of information and power is illustrated in the above block diagram. From the above block diagram, Nixie Tube Driver Module, Micro-controller and the Nixie Tubes are all part of the controller board. The details of these and some of their sub-components are illustrated next.&lt;/p&gt;
+
+&lt;h4 id=&quot;usb-controller-circuit&quot;&gt;&lt;strong&gt;USB Controller Circuit&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;The most interesting component of the controller board is the USB micro-controller circuit. The host computer, which could be a single board computer for portability and compactness, is connected to the USB controller. After which the host side USB interface program first uploads the firmware onto the controller and then streams time information data to it. The firmware and host side program software was written with help from our advisor Prof. &lt;a href=&quot;https://www.ee.iitb.ac.in/~mukul/&quot;&gt;Mukul Chandorkar&lt;/a&gt; and is &lt;a href=&quot;https://github.com/ishank-juneja/TUSB3210-Controller&quot;&gt;available here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;An interesting question to be answered is what part of the processing should occur on the embedded controller and what parts should be done by the host computer. We pushed all the time keeping and computation onto the host computer leaving the USB controller with only the burden of two things. Translating the digits of time being streamed from the host to control signals that the display front end would understand&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
@@ -126,7 +137,7 @@ More details about the circuit board layout with SMPS best practices and details
 &lt;p&gt;&lt;em&gt;Mr. Joginder Yadav, RA Machines Lab, IIT Bombay provided immense help for the design of the power supply and other modules of this project&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 17 July 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 19 July 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;⭐ ⭐ ⭐ ⭐ ⭐ = Strongly Recommended&lt;/p&gt;
 
@@ -221,7 +232,12 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;Ikigai - Hector Garcia 📕&lt;/li&gt;
   &lt;li&gt;Love and Math - Edward Frenkel 📕&lt;/li&gt;
   &lt;li&gt;Book of Why - Judea Pearl 📕&lt;/li&gt;
-  &lt;li&gt;The Emperor of All Maladies - Siddhartha Mukherjee&lt;/li&gt;
+  &lt;li&gt;The Emperor of All Maladies - Siddhartha Mukherjee 📕&lt;/li&gt;
+  &lt;li&gt;To save everything click here - Evgeny Morozov 📕&lt;/li&gt;
+  &lt;li&gt;Brave new world - Aldous Huxley 📕&lt;/li&gt;
+  &lt;li&gt;Rapt: Attention and the focussed life - Winifred Gallagher 📕&lt;/li&gt;
+  &lt;li&gt;All things shining - Hubert Dreyfus, Sean Dorrance Kelly 📕&lt;/li&gt;
+  &lt;li&gt;Flow: The Psychology of Optimal Experience - Mihaly Csikszentmihalyi 📕&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;fiction&quot;&gt;&lt;strong&gt;Fiction&lt;/strong&gt;&lt;/h3&gt;
@@ -243,7 +259,7 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;The Intelligence Trap - David Robinson 📕&lt;/li&gt;
   &lt;li&gt;The Basic Laws of Human Stupidity - Carlo Cipolla📕&lt;/li&gt;
   &lt;li&gt;Americanah - Chimamanda Ngozi Adichie&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 17 July 2020</summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 19 July 2020</summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/nixie_clock_no_bg.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
