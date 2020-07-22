@@ -83,7 +83,7 @@
 			<i><p style="font-size:16px;color:Gray">Reading Time: <span class="reading-time" title="Estimated read time">
   
   
-    1 mins
+    2 mins
   
 </span>
 
@@ -115,7 +115,11 @@ The flow of information and power is illustrated in the above block diagram. Fro
 <h4 id="usb-controller-circuit"><strong>USB Controller Circuit</strong></h4>
 <p>The most interesting component of the controller board is the USB micro-controller circuit. The host computer, which could be a single board computer for portability and compactness, is connected to the USB controller. After which the host side USB interface program first uploads the firmware onto the controller and then streams time information data to it. The firmware and host side program software was written with help from our advisor Prof. <a href="https://www.ee.iitb.ac.in/~mukul/">Mukul Chandorkar</a> and is <a href="https://github.com/ishank-juneja/TUSB3210-Controller">available here</a>.</p>
 
-<p>An interesting question to be answered is what part of the processing should occur on the embedded controller and what parts should be done by the host computer. We pushed all the time keeping and computation onto the host computer leaving the USB controller with only the burden of two things. Translating the digits of time being streamed from the host to control signals that the display front end would understand</p>
+<p>Two alternatives were considered for the USB controller circuit - the TUSB3210 and the FT232R chip. Our initial preference leaned towards the the FT232 from the desire for greater simplicity. Some problems with timing that could not be precisely controlled lead to us picking the TUSB3210 RAM based micro-controller. The details of these problems could be quite relevant and are available in our <a href="https://youtu.be/MN-FbMPmbiw">project report</a>. To use the TUSB3210 controller in the USB connection circuit, some additional circuitry like its own power supply and some resetting circuitry were also needed. The details of these elements are also present in our project report.</p>
+
+<p>An interesting question to be answered is what part of the processing should occur on the embedded controller and what parts should be done by the host computer. We pushed all the time keeping and computation onto the host computer leaving the USB controller with only the burden of two things. (1) Translating the digits of time being streamed from the host to control signals that the display front end can understand and (2) Using the control signals to multiplex between the various tubes in such a way that only a single tube is turned on at a time. This is required since the power available from the USB power source is, in principle, enough to light up only a single tube as discussed in <a href="/blog/nixieClock">part 1</a>.</p>
+
+<h4 id="optocoupler-isolation-and-control-signals"><strong>Optocoupler isolation and Control Signals</strong></h4>
 
 <hr />
 <p><em>This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB</em><br />
