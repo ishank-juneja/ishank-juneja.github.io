@@ -9,7 +9,7 @@ permalink: /blog/
 with Anantha Hegde and Yojit Srivastava
 	- Part 1, June 16: [Nixie Tube Characterization]({{site.baseurl}}/blog/nixieClock)
 	- Part 2, July 16: [Power Supply Design]({{site.baseurl}}/blog/nixieClockPower)
-	- Part 3, July 21: [Controller Design]({{site.baseurl}}/blog/nixieClockController)
+	- Part 3, July 24: [Controller Design]({{site.baseurl}}/blog/nixieClockController)
 
 
 ### Guides and Tutorials
