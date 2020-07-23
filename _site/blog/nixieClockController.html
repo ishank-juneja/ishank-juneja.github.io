@@ -78,12 +78,12 @@
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Clock Controller Design</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2020-07-18T00:00:00+05:30" itemprop="datePublished">Jul 18, 2020
+      <time class="dt-published" datetime="2020-07-24T00:00:00+05:30" itemprop="datePublished">Jul 24, 2020
       </time></p>
 			<i><p style="font-size:16px;color:Gray">Reading Time: <span class="reading-time" title="Estimated read time">
   
   
-    7 mins
+    8 mins
   
 </span>
 
@@ -151,9 +151,21 @@ The display front end is where the previously mentioned 10 control signals get u
 <p>Looking at the broader design of the optocoupler transmitting the control signal to the high voltage side, we identify a somewhat serious problem with the described design. The problem being that if we consider the default state of the optocoupler input LED to be off, then this means that the default state of the output phototransistor for each signal is off and its output is therefore high, this in turn means that the default state of the nixie tubes is on. Since we wish to turn on a single nixie tube at a time (which is the goal of multiplexing), this means that 5 out of 6 optocoupler input LEDs need to be turned on strongly for 5 unselected tubes to be off at all times. Signal inversion at the high voltage end or some other changes in the design can solve this problem and can reduce wear on the optocoupler LEDs in addition to decreasing power usage significantly on the low voltage USB side.</p>
 
 <h4 id="digit-selection-using-the-74141-ic">Digit Selection using the 74141 IC</h4>
-<p>Each Nixie Tube has a total of twelve pins, one Anode and eleven cathodes corresponding to the digits 0-9 and the Decimal point. Barring the decimal point, there needs to be a mechanism to choose between the 10 digits at any given instant. An off the shelf solution is available for the same in the form of the <a href="https://pdf1.alldatasheet.com/datasheet-pdf/view/115763/TI/SN74141.html">SN74141 TTL IC</a>. The differences between the 74141 and a regular BCD decoder such as the 7442 are the
-presence of open collector outputs with Zener Diode Clamping and the use of high voltage rating transistors at the outputs in case of the 74141 which are absent in the 7442. This is crucial for the Nixie Tube application since a large voltage
-could appear at the Cathodes of the Tube which are not turned on.</p>
+<p>Each Nixie Tube has a total of twelve pins, one Anode and eleven cathodes corresponding to the digits 0-9 and the Decimal point. Barring the decimal point, there needs to be a mechanism to choose between the 10 digits at any given instant. An off the shelf solution is available for the same in the form of the <a href="/assets/docs/sn74141.pdf">SN74141 TTL IC</a>. The differences between the 74141 and a regular BCD decoder such as the 7442 are the
+presence of open collector outputs with Zener Diode Clamping and the use of high voltage rating transistors at the outputs in case of the 74141 which are absent in the 7442. This is crucial for the nixie tube application since a large voltage
+could appear on the cathodes corresponding to digits that aren’t turned on for a tube that is glowing.</p>
+
+<p>For the 74141 IC the low level input voltage is allowed to be up to 0.8V. This requirement is not as strenuous as the one for turning off a nixie tube but the problem of turning on the input LED of an optocoupler strongly to achieve a low logic level at the phototransistor output still hold true but the problem of the default value of a phototransistor being on is not a problem since the required input signals onto the pins A-D are a mix of high and low levels.</p>
+
+<p>The SN74141 IC is not the ideal way to implement digit selection for the nixie tubes since the chip has now been discontinued. Further we found the 74141 to be quite unreliable with numerous failures during the testing process. A reproducible and more reliable approach would be to use high voltage shift registers (a.k.a serial to parallel convertors). In this <a href="https://www.youtube.com/watch?v=7uogKucrPks">design exercise</a> creating a nixie tube display, Dave from the EEVBlog recommends using the HV5622 or other similar ICs.</p>
+
+<h4 id="the-complete-board-view"><strong>The Complete Board View</strong></h4>
+<p>The final board design is quite elegant and symmetrical in our opinion.</p>
+<div style="align: left; text-align:center;">
+    <img src="/assets/images/controller_brd.png" height="400px" />
+    <div class="caption"> Complete board view of the controller board </div>
+</div>
+<p><br /></p>
 
 <hr />
 <p><em>This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB</em><br />
