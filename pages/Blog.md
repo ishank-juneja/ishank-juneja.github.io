@@ -19,5 +19,6 @@ with Anantha Hegde and Yojit Srivastava
 
 ### Miscellaneous Blogs
 - June 29, 2020 - [A reading list for the near future]({{site.baseurl}}/blog/nowReading)
+- August 1, 2019 - [Radioistopes and the Indian Atomic Energy Program]({{site.baseurl}}/blog/radioIsotopes) 
 - October 9, 2018 - [Review: Man's search for meaning - Victor Frankl]({{site.baseurl}}/blog/meaning)
 - August 28, 2018 - [An early childhood memory]({{site.baseurl}}/blog/memory)

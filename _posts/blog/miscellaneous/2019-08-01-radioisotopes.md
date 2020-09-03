@@ -1,0 +1,70 @@
+---
+layout: post
+date: 2020-08-01
+permalink: /blog/radioIsotopes
+comments: true
+title: Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program
+mathjax: false
+---
+
+The Central Government realized early on in India’s independence that moving forward, Nuclear Technology would be crucial to pulling the nation out of the many challenges it faced. The problems included a paucity of domestic **coal and fossil fuel** and an impoverished populace.
+
+To fulfill these needs the Department of Atomic energy (henceforth referred to as the **DAE**) was instituted in 1954. Given the importance of the DAE, ever since its inception, the Department has been under the direct charge of the Prime Minister’s Office.
+
+Nuclear Power is the contribution of the DAE that has been at the center of the public eye. However, DAE is a multifaceted organisation with contributions across numerous areas of Nuclear Science, Industry and Technical Education. Additionally, over the decades the organisation has placed a high emphasis on basic research. The DAE now includes five research centers and the world renowned **TIFR institute**. 
+
+Two factors that have greatly **improved** the quality of life in India are electrical power and a secure food supply. Firstly, it would be appropriate to highlight the achievements of the DAE in Nuclear Power. India has a total of seven nuclear power plants, collectively they have an installed capacity of nearly 7000 MW. This installation alone is sufficient to power nearly **50,000 Indian households**. Further the Nuclear Power Corporation has planned several new plants including the **Jaitapur** Nuclear Power Plant. When completed, the Jaitapur Plant will have a generation capacity of 9900 MW. This would make it the **largest capacity** Nuclear power plant in the world. A proud achievement for the research arms of the DAE is the fact that India is the **world leader in Thorium** thermal breeder reactor technology. Amongst the many technologies developed for the utilisation of Thorium as a nuclear fuel, the Advanced Heavy Water Reactor is operational.
+
+In the area of **agriculture**, scientists working at **BARC** have created **high yield** and stress resistant varieties using radiation induced mutations. These crop varieties have contributed to higher revenues for farmers and have ensured a stable food supply.
+
+Isotopes are atoms of the same element having different atomic mass. Some isotopes have unstable nuclei, this makes them **radioactive** and they are termed as **Radioisotopes**. These unstable isotopes attain stability by radiating alpha particles, beta particles or gamma rays. Isotopes are extremely useful since different isotopes of the same element share identical chemical properties. This allows scientists to chemically react isotopes and radioisotopes in predictable ways and use them to create desired compounds and reagents.
+
+Since radioisotopes and other special isotopes are immensely important, it is crucial that they be **produced domestically** in a cost effective manner.The creation of isotopes that do not occur naturally involves bombarding the nuclei of a raw target material with subatomic particles like neutrons. This process can take place either in a particle accelerator or a Nuclear reactor. Out of these two methods, production in particle accelerators is not commercially viable. 
+
+Radioisotope production in commercial reactors uses neutron capture by the target material. The source of these neutrons are thermal neutrons generated from a **chain reaction**. The chain reaction is important since it allows a substantial amount of isotope to accumulate. Since the procedure for creating radioisotopes is intricate and sensitive, setting up the required infrastructure has been a challenging task for the government. Today India is capable of synthesising a plethora of important radioisotopes in a cost effective manner. This has been made possible by the efforts taken by researchers from DAE and the early leadership of **Dr. Homi Bhabha** - The architect of India’s Nuclear program.
+
+Isotopes hold an important position in the world of medicine and Healthcare. Radioisotopes are used in both diagnostic and therapeutic applications. These special isotopes are incorporated in **radiopharmaceuticals** and diagnostic **markers**. These energy emitting radioactive isotopes can be used to provide an internal image, thereby acting like a **diagnostic agent**. On the other hand radiopharmaceuticals can also be directly healing towards tissue, giving them a therapeutic application. These drugs are administered to lakhs of people annually for various needs like cardiac function assessment and cancer treatment. 
+
+Although the field of nuclear medicine has been around for a long time, there have been numerous breakthroughs made in recent years. This is especially true for prostate, neuroendocrine and liver cancer **diagnosis and treatment**. On the diagnosis side, BARC has developed **radio-immunoassay** technology. An immunoassay is a device that is used to detect and quantify the presence of biomarker proteins such as excessive **PSA** (Prostate specific antigen). When immunoassay technology is combined with radioisotopes, a more accurate quantification can be achieved. 
+
+Another tool required in the diagnosis of cancer is internal body imaging. This technique is required to search for tumours within various organs of the body. BARC and other organisations working under the umbrella of the DAE have developed the pharmaceutical <sup><strong>99m</strong></sup>**Tc-Sulphur** Colloid for imaging the liver. Radiopharmaceuticals such as the mentioned colloid provide doctors with a clearer picture of the internals of the liver thereby making the diagnosis of liver cancer more reliable.
+
+Indian scientists have also made strides in cancer therapy to cure and prevent the spread of these cancers. Dr. Rubel Chakravarty’s team at BARC has recently, in **2018**, published their work on targeted **alpha therapy** in prostate cancer using radioisotope labelled biomarkers. This new technique is promising and would play a pivotal role in the treatment of prostate cancer in the years to come.
+
+With improved lifestyles, the average life expectancy has gone up. Cancer is an ailment that is more likely to occur during **old age**. Since Indians are living longer lives than before, the number of **cancer cases** have gone up tremendously. The problem is serious to the extent that approximately **8 Lakh new cases** are diagnosed each year and cancer has become the **4th highest** cause of adult mortality in India. Due to contributions of nuclear science, an effective cancer treatment is available in the form of **radiation therapy (Radiotherapy)**. Radiotherapy plays an important role in curing early stage cancer. The main methodologies for performing radiotherapy are **Teletherapy and Brachytherapy.**
+
+Teletherapy involves delivering radiation from an emitter that is placed at a distance from the patient's body. In the early days of teletherapy, the procedure was quite harmful to healthy skin, bone and organ tissue. Over the decades the technology has improved by leaps and bounds.
+
+The most recent machine for teletherapy developed by BARC is the **Bhabhatron**. The current iteration of the device is **Bhabhatron-II**. The machine has numerous advanced features like asymmetric collimation, motorized wedge filter and collimator auto setup. The machine uses a special high activity isotope - **Cobalt-60** as its radiation source. Bhabhatrons are now commonplace in cancer hospitals around India. They are the preferred choice over imported teletherapy machines since the Bhabhatron is **cheaper and superior** in features. The fact that other countries import Bhabhatron devices are a testament to their quality. 
+
+The other popular variant of radiotherapy is brachytherapy. Unlike teletherapy which is radiation from a distance, brachytherapy involves delivering radiation from a source placed in close  **proximity** of the target area. For a long time after the discovery of **Radium**, the popular way of performing brachytherapy was to use a paste of Radium and Barium Chloride and apply it over the skin. Nowadays the isotopes popular in brachytherapy are **Iodine-125 and Caesium-137**. Iodine-125 emits a moderate amount of radiation, this ensures that only the cells of the body which uptake the radioactive Iodine atom are affected. Brachytherapy is popular in the treatment of prostate cancer and **uveal melanomas** (tumours in the eye). Caesium-137 has a half life shorter than I-125. This means that it decays faster and has a slightly larger radiation level which makes it suitable for treatment of cancer in **larger organs** like the cervix. In this case the procedure is referred to as **intracavitary** brachytherapy. 
+
+Another important medical technology that makes use of radioisotopes is **blood irradiation**. Blood irradiation is needed to make sure that blood transfused to an ailing patient is free from infections and bacteria. The sterilization happens using radioisotopes such as **Cobalt-60** and Cesium-137. The **Board of Radiation and Isotope Technology** (BRIT) has developed an indegenous blood irradiator called **BI 2000. **The device is available for purchase by hospitals and has proven to be popular given its quality and cost effectiveness.
+
+As is evident from the above discussion the facilitation of all medical device technology requires the production of special isotopes with a **high purity**. In India, this has been made possible by the setup of specialised **medical cyclotrons**. Two of India’s primary medical cyclotron facilities are the Variable Energy Cyclotron Centre (**VECC**) in Kolkata and the medical cyclotron facility (**MCF**) installed at Tata Memorial Hospital, Mumbai.
+
+India is a developing nation and the economy requires a constant impetus from industry to meet the needs and aspirations of the nation’s growing population. In view of this, it would be relevant to emphasize the contribution of isotope technology to **industrial applications**. 
+
+An important industrial application is that of **non destructive testing**. Radiography (radiation mapping) can be used to inspect the strength of materials without physical contact. It is interesting to understand how this procedure works. When radiation passes through an object it undergoes **absorption and scattering**. The extent of absorption and resulting scattering patterns depend on the material and **internal structure** of the object. Knowledge from such testing allows us to estimate wear and tear. This is especially important for materials used in **high stress** applications like boilers, nuclear reactors, aircraft and oil rigs. 
+
+Another important industrial application of isotopes are **radiotracers**. A tracer is a substance that helps detect and quantify a target. Conventional tracers utilise **dyes and chemicals**, however radioisotope markers provide **many advantages** over them. An important advantage of radioisotopes over conventional chemical tracers is that they can be detected in very low quantities making them a more sensitive tracer. Some examples of the use of radiotracers are **Carbon-14** labelled oils and **Tritium **labelled water in crude oil fields. Tracking the movement of these isotopes allows for better management of the petroleum extraction process.
+
+Clean water is an essential resource and **managing fresh-water** resources is another area where radioisotopes are useful. Factories produce a lot of **effluents** which harm water quality and aquatic ecosystems. Before an industry is granted clearance for discharging effluents into a water body, experimental studies must be conducted to understand their impact on the body.     A brilliant example of this is the use of radiotracers to study the **dilution and dispersion** pattern of domestic sewage as it enters the sea at Colaba and Malad. This study, conducted in 1992, helped shape policy about **sewage treatment** prior to discharge.
+
+Utilising radioisotopes for enhancing agricultural output is of critical significance to the Indian economy. The primary applications of nuclear science in agriculture are **enhanced crop varieties** through induced mutations and **radiation processing** of food.
+
+Mutations can be introduced **artificially** by irradiation with ionizing gamma radiation. New varieties of **groundnuts and legumes** are success stories of this enhancement programme.
+
+Increasing the shelf life of agricultural produce is mandatory if the aim is to ensure a stable food supply and a reliable incomes for farmers. The tropical climate in India is an ideal breeding environment for insects, mould and microbes, this leads to a low **shelf-life** for produce. Processing food with radiation increases its shelf-life. Further it provides an alternative to **chemical fumigants** which are harmful for both the environment and humans that come in contact with them. 
+
+Researching the achievements and history of the DAE has given me immense pride as an Indian citizen. The growth that India’s civil nuclear program has seen since independence is unparalleled across the world. The nation now has a vast network of infrastructure for production and research related to nuclear science. The vision of exemplary leaders like Dr. Bhabha had inspired a generation to reach where we are today and continues to inspire the next generation of researchers.
+
+### **References**
+[1] [Saga of Atomic Energy in India Commerative Volume-3](http://www.dae.gov.in/node/91)
+
+[2] [DAE reports and documentation on Atomic Energy Programs](http://www.dae.gov.in/node/118)
+
+[3] [BARC report on the Bhabhatron](http://www.barc.gov.in/clip/bhabhatron.html)
+
+***
+*This essay was written as an entry for the 31st DAE (Dept. of Atomic Energy) All India Online Essay Contest on Nuclear Science & Technology*

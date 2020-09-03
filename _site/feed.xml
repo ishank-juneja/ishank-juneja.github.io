@@ -1,4 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-25T00:29:17+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-07-24T00:00:00+05:30</published><updated>2020-07-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-03T22:13:15+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program</title><link href="http://localhost:4000/blog/radioIsotopes" rel="alternate" type="text/html" title="Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program" /><published>2020-08-01T00:00:00+05:30</published><updated>2020-08-01T00:00:00+05:30</updated><id>http://localhost:4000/blog/radioisotopes</id><content type="html" xml:base="http://localhost:4000/blog/radioIsotopes">&lt;p&gt;The Central Government realized early on in India’s independence that moving forward, Nuclear Technology would be crucial to pulling the nation out of the many challenges it faced. The problems included a paucity of domestic &lt;strong&gt;coal and fossil fuel&lt;/strong&gt; and an impoverished populace.&lt;/p&gt;
+
+&lt;p&gt;To fulfill these needs the Department of Atomic energy (henceforth referred to as the &lt;strong&gt;DAE&lt;/strong&gt;) was instituted in 1954. Given the importance of the DAE, ever since its inception, the Department has been under the direct charge of the Prime Minister’s Office.&lt;/p&gt;
+
+&lt;p&gt;Nuclear Power is the contribution of the DAE that has been at the center of the public eye. However, DAE is a multifaceted organisation with contributions across numerous areas of Nuclear Science, Industry and Technical Education. Additionally, over the decades the organisation has placed a high emphasis on basic research. The DAE now includes five research centers and the world renowned &lt;strong&gt;TIFR institute&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Two factors that have greatly &lt;strong&gt;improved&lt;/strong&gt; the quality of life in India are electrical power and a secure food supply. Firstly, it would be appropriate to highlight the achievements of the DAE in Nuclear Power. India has a total of seven nuclear power plants, collectively they have an installed capacity of nearly 7000 MW. This installation alone is sufficient to power nearly &lt;strong&gt;50,000 Indian households&lt;/strong&gt;. Further the Nuclear Power Corporation has planned several new plants including the &lt;strong&gt;Jaitapur&lt;/strong&gt; Nuclear Power Plant. When completed, the Jaitapur Plant will have a generation capacity of 9900 MW. This would make it the &lt;strong&gt;largest capacity&lt;/strong&gt; Nuclear power plant in the world. A proud achievement for the research arms of the DAE is the fact that India is the &lt;strong&gt;world leader in Thorium&lt;/strong&gt; thermal breeder reactor technology. Amongst the many technologies developed for the utilisation of Thorium as a nuclear fuel, the Advanced Heavy Water Reactor is operational.&lt;/p&gt;
+
+&lt;p&gt;In the area of &lt;strong&gt;agriculture&lt;/strong&gt;, scientists working at &lt;strong&gt;BARC&lt;/strong&gt; have created &lt;strong&gt;high yield&lt;/strong&gt; and stress resistant varieties using radiation induced mutations. These crop varieties have contributed to higher revenues for farmers and have ensured a stable food supply.&lt;/p&gt;
+
+&lt;p&gt;Isotopes are atoms of the same element having different atomic mass. Some isotopes have unstable nuclei, this makes them &lt;strong&gt;radioactive&lt;/strong&gt; and they are termed as &lt;strong&gt;Radioisotopes&lt;/strong&gt;. These unstable isotopes attain stability by radiating alpha particles, beta particles or gamma rays. Isotopes are extremely useful since different isotopes of the same element share identical chemical properties. This allows scientists to chemically react isotopes and radioisotopes in predictable ways and use them to create desired compounds and reagents.&lt;/p&gt;
+
+&lt;p&gt;Since radioisotopes and other special isotopes are immensely important, it is crucial that they be &lt;strong&gt;produced domestically&lt;/strong&gt; in a cost effective manner.The creation of isotopes that do not occur naturally involves bombarding the nuclei of a raw target material with subatomic particles like neutrons. This process can take place either in a particle accelerator or a Nuclear reactor. Out of these two methods, production in particle accelerators is not commercially viable.&lt;/p&gt;
+
+&lt;p&gt;Radioisotope production in commercial reactors uses neutron capture by the target material. The source of these neutrons are thermal neutrons generated from a &lt;strong&gt;chain reaction&lt;/strong&gt;. The chain reaction is important since it allows a substantial amount of isotope to accumulate. Since the procedure for creating radioisotopes is intricate and sensitive, setting up the required infrastructure has been a challenging task for the government. Today India is capable of synthesising a plethora of important radioisotopes in a cost effective manner. This has been made possible by the efforts taken by researchers from DAE and the early leadership of &lt;strong&gt;Dr. Homi Bhabha&lt;/strong&gt; - The architect of India’s Nuclear program.&lt;/p&gt;
+
+&lt;p&gt;Isotopes hold an important position in the world of medicine and Healthcare. Radioisotopes are used in both diagnostic and therapeutic applications. These special isotopes are incorporated in &lt;strong&gt;radiopharmaceuticals&lt;/strong&gt; and diagnostic &lt;strong&gt;markers&lt;/strong&gt;. These energy emitting radioactive isotopes can be used to provide an internal image, thereby acting like a &lt;strong&gt;diagnostic agent&lt;/strong&gt;. On the other hand radiopharmaceuticals can also be directly healing towards tissue, giving them a therapeutic application. These drugs are administered to lakhs of people annually for various needs like cardiac function assessment and cancer treatment.&lt;/p&gt;
+
+&lt;p&gt;Although the field of nuclear medicine has been around for a long time, there have been numerous breakthroughs made in recent years. This is especially true for prostate, neuroendocrine and liver cancer &lt;strong&gt;diagnosis and treatment&lt;/strong&gt;. On the diagnosis side, BARC has developed &lt;strong&gt;radio-immunoassay&lt;/strong&gt; technology. An immunoassay is a device that is used to detect and quantify the presence of biomarker proteins such as excessive &lt;strong&gt;PSA&lt;/strong&gt; (Prostate specific antigen). When immunoassay technology is combined with radioisotopes, a more accurate quantification can be achieved.&lt;/p&gt;
+
+&lt;p&gt;Another tool required in the diagnosis of cancer is internal body imaging. This technique is required to search for tumours within various organs of the body. BARC and other organisations working under the umbrella of the DAE have developed the pharmaceutical &lt;sup&gt;&lt;strong&gt;99m&lt;/strong&gt;&lt;/sup&gt;&lt;strong&gt;Tc-Sulphur&lt;/strong&gt; Colloid for imaging the liver. Radiopharmaceuticals such as the mentioned colloid provide doctors with a clearer picture of the internals of the liver thereby making the diagnosis of liver cancer more reliable.&lt;/p&gt;
+
+&lt;p&gt;Indian scientists have also made strides in cancer therapy to cure and prevent the spread of these cancers. Dr. Rubel Chakravarty’s team at BARC has recently, in &lt;strong&gt;2018&lt;/strong&gt;, published their work on targeted &lt;strong&gt;alpha therapy&lt;/strong&gt; in prostate cancer using radioisotope labelled biomarkers. This new technique is promising and would play a pivotal role in the treatment of prostate cancer in the years to come.&lt;/p&gt;
+
+&lt;p&gt;With improved lifestyles, the average life expectancy has gone up. Cancer is an ailment that is more likely to occur during &lt;strong&gt;old age&lt;/strong&gt;. Since Indians are living longer lives than before, the number of &lt;strong&gt;cancer cases&lt;/strong&gt; have gone up tremendously. The problem is serious to the extent that approximately &lt;strong&gt;8 Lakh new cases&lt;/strong&gt; are diagnosed each year and cancer has become the &lt;strong&gt;4th highest&lt;/strong&gt; cause of adult mortality in India. Due to contributions of nuclear science, an effective cancer treatment is available in the form of &lt;strong&gt;radiation therapy (Radiotherapy)&lt;/strong&gt;. Radiotherapy plays an important role in curing early stage cancer. The main methodologies for performing radiotherapy are &lt;strong&gt;Teletherapy and Brachytherapy.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Teletherapy involves delivering radiation from an emitter that is placed at a distance from the patient’s body. In the early days of teletherapy, the procedure was quite harmful to healthy skin, bone and organ tissue. Over the decades the technology has improved by leaps and bounds.&lt;/p&gt;
+
+&lt;p&gt;The most recent machine for teletherapy developed by BARC is the &lt;strong&gt;Bhabhatron&lt;/strong&gt;. The current iteration of the device is &lt;strong&gt;Bhabhatron-II&lt;/strong&gt;. The machine has numerous advanced features like asymmetric collimation, motorized wedge filter and collimator auto setup. The machine uses a special high activity isotope - &lt;strong&gt;Cobalt-60&lt;/strong&gt; as its radiation source. Bhabhatrons are now commonplace in cancer hospitals around India. They are the preferred choice over imported teletherapy machines since the Bhabhatron is &lt;strong&gt;cheaper and superior&lt;/strong&gt; in features. The fact that other countries import Bhabhatron devices are a testament to their quality.&lt;/p&gt;
+
+&lt;p&gt;The other popular variant of radiotherapy is brachytherapy. Unlike teletherapy which is radiation from a distance, brachytherapy involves delivering radiation from a source placed in close  &lt;strong&gt;proximity&lt;/strong&gt; of the target area. For a long time after the discovery of &lt;strong&gt;Radium&lt;/strong&gt;, the popular way of performing brachytherapy was to use a paste of Radium and Barium Chloride and apply it over the skin. Nowadays the isotopes popular in brachytherapy are &lt;strong&gt;Iodine-125 and Caesium-137&lt;/strong&gt;. Iodine-125 emits a moderate amount of radiation, this ensures that only the cells of the body which uptake the radioactive Iodine atom are affected. Brachytherapy is popular in the treatment of prostate cancer and &lt;strong&gt;uveal melanomas&lt;/strong&gt; (tumours in the eye). Caesium-137 has a half life shorter than I-125. This means that it decays faster and has a slightly larger radiation level which makes it suitable for treatment of cancer in &lt;strong&gt;larger organs&lt;/strong&gt; like the cervix. In this case the procedure is referred to as &lt;strong&gt;intracavitary&lt;/strong&gt; brachytherapy.&lt;/p&gt;
+
+&lt;p&gt;Another important medical technology that makes use of radioisotopes is &lt;strong&gt;blood irradiation&lt;/strong&gt;. Blood irradiation is needed to make sure that blood transfused to an ailing patient is free from infections and bacteria. The sterilization happens using radioisotopes such as &lt;strong&gt;Cobalt-60&lt;/strong&gt; and Cesium-137. The &lt;strong&gt;Board of Radiation and Isotope Technology&lt;/strong&gt; (BRIT) has developed an indegenous blood irradiator called **BI 2000. **The device is available for purchase by hospitals and has proven to be popular given its quality and cost effectiveness.&lt;/p&gt;
+
+&lt;p&gt;As is evident from the above discussion the facilitation of all medical device technology requires the production of special isotopes with a &lt;strong&gt;high purity&lt;/strong&gt;. In India, this has been made possible by the setup of specialised &lt;strong&gt;medical cyclotrons&lt;/strong&gt;. Two of India’s primary medical cyclotron facilities are the Variable Energy Cyclotron Centre (&lt;strong&gt;VECC&lt;/strong&gt;) in Kolkata and the medical cyclotron facility (&lt;strong&gt;MCF&lt;/strong&gt;) installed at Tata Memorial Hospital, Mumbai.&lt;/p&gt;
+
+&lt;p&gt;India is a developing nation and the economy requires a constant impetus from industry to meet the needs and aspirations of the nation’s growing population. In view of this, it would be relevant to emphasize the contribution of isotope technology to &lt;strong&gt;industrial applications&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;An important industrial application is that of &lt;strong&gt;non destructive testing&lt;/strong&gt;. Radiography (radiation mapping) can be used to inspect the strength of materials without physical contact. It is interesting to understand how this procedure works. When radiation passes through an object it undergoes &lt;strong&gt;absorption and scattering&lt;/strong&gt;. The extent of absorption and resulting scattering patterns depend on the material and &lt;strong&gt;internal structure&lt;/strong&gt; of the object. Knowledge from such testing allows us to estimate wear and tear. This is especially important for materials used in &lt;strong&gt;high stress&lt;/strong&gt; applications like boilers, nuclear reactors, aircraft and oil rigs.&lt;/p&gt;
+
+&lt;p&gt;Another important industrial application of isotopes are &lt;strong&gt;radiotracers&lt;/strong&gt;. A tracer is a substance that helps detect and quantify a target. Conventional tracers utilise &lt;strong&gt;dyes and chemicals&lt;/strong&gt;, however radioisotope markers provide &lt;strong&gt;many advantages&lt;/strong&gt; over them. An important advantage of radioisotopes over conventional chemical tracers is that they can be detected in very low quantities making them a more sensitive tracer. Some examples of the use of radiotracers are &lt;strong&gt;Carbon-14&lt;/strong&gt; labelled oils and **Tritium **labelled water in crude oil fields. Tracking the movement of these isotopes allows for better management of the petroleum extraction process.&lt;/p&gt;
+
+&lt;p&gt;Clean water is an essential resource and &lt;strong&gt;managing fresh-water&lt;/strong&gt; resources is another area where radioisotopes are useful. Factories produce a lot of &lt;strong&gt;effluents&lt;/strong&gt; which harm water quality and aquatic ecosystems. Before an industry is granted clearance for discharging effluents into a water body, experimental studies must be conducted to understand their impact on the body.     A brilliant example of this is the use of radiotracers to study the &lt;strong&gt;dilution and dispersion&lt;/strong&gt; pattern of domestic sewage as it enters the sea at Colaba and Malad. This study, conducted in 1992, helped shape policy about &lt;strong&gt;sewage treatment&lt;/strong&gt; prior to discharge.&lt;/p&gt;
+
+&lt;p&gt;Utilising radioisotopes for enhancing agricultural output is of critical significance to the Indian economy. The primary applications of nuclear science in agriculture are &lt;strong&gt;enhanced crop varieties&lt;/strong&gt; through induced mutations and &lt;strong&gt;radiation processing&lt;/strong&gt; of food.&lt;/p&gt;
+
+&lt;p&gt;Mutations can be introduced &lt;strong&gt;artificially&lt;/strong&gt; by irradiation with ionizing gamma radiation. New varieties of &lt;strong&gt;groundnuts and legumes&lt;/strong&gt; are success stories of this enhancement programme.&lt;/p&gt;
+
+&lt;p&gt;Increasing the shelf life of agricultural produce is mandatory if the aim is to ensure a stable food supply and a reliable incomes for farmers. The tropical climate in India is an ideal breeding environment for insects, mould and microbes, this leads to a low &lt;strong&gt;shelf-life&lt;/strong&gt; for produce. Processing food with radiation increases its shelf-life. Further it provides an alternative to &lt;strong&gt;chemical fumigants&lt;/strong&gt; which are harmful for both the environment and humans that come in contact with them.&lt;/p&gt;
+
+&lt;p&gt;Researching the achievements and history of the DAE has given me immense pride as an Indian citizen. The growth that India’s civil nuclear program has seen since independence is unparalleled across the world. The nation now has a vast network of infrastructure for production and research related to nuclear science. The vision of exemplary leaders like Dr. Bhabha had inspired a generation to reach where we are today and continues to inspire the next generation of researchers.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;[1] &lt;a href=&quot;http://www.dae.gov.in/node/91&quot;&gt;Saga of Atomic Energy in India Commerative Volume-3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[2] &lt;a href=&quot;http://www.dae.gov.in/node/118&quot;&gt;DAE reports and documentation on Atomic Energy Programs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[3] &lt;a href=&quot;http://www.barc.gov.in/clip/bhabhatron.html&quot;&gt;BARC report on the Bhabhatron&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;This essay was written as an entry for the 31st DAE (Dept. of Atomic Energy) All India Online Essay Contest on Nuclear Science &amp;amp; Technology&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">The Central Government realized early on in India’s independence that moving forward, Nuclear Technology would be crucial to pulling the nation out of the many challenges it faced. The problems included a paucity of domestic coal and fossil fuel and an impoverished populace.</summary></entry><entry><title type="html">Digital Video Stabilization</title><link href="http://localhost:4000/research/videoStab" rel="alternate" type="text/html" title="Digital Video Stabilization" /><published>2020-07-30T00:00:00+05:30</published><updated>2020-07-30T00:00:00+05:30</updated><id>http://localhost:4000/research/video</id><content type="html" xml:base="http://localhost:4000/research/videoStab">&lt;p&gt;Mechanical stabilization is well known. There external equipment such as camera gimblas and other apparatus are used to filter out vibrations. However, the capability of such equipment is limited to prventing high frequency vibrations from entering camera footage.
+To tackle low frequency vibrations arising from actions such as walking and or running while recording video footage.&lt;/p&gt;
+
+&lt;p&gt;Stages of digital Video stabilization-&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Motions estimation: Transformation parameters between 2 consecutive frames are derived&lt;/li&gt;
+  &lt;li&gt;Motion smoothing: Filtering out unwanted motion - Part where we generate the filter&lt;/li&gt;
+  &lt;li&gt;Image composition: Reconstruction of a stabilized video&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;video-stabilisation-using-feature-points&quot;&gt;Video Stabilisation using feature points&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Track a few feature points between consecutive frames&lt;/li&gt;
+  &lt;li&gt;Tracked features allow us to estimate the motion between subsequrnt frames and subsequently correct for it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;paramteric-linear-motion-models&quot;&gt;Paramteric Linear Motion Models&lt;/h4&gt;
+&lt;p&gt;What should be the transform that facillitates the application of a motion model
+Heirarchy of transforms from computer vision&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Homography&lt;/li&gt;
+  &lt;li&gt;Affine&lt;/li&gt;
+  &lt;li&gt;Euclidean (length preserving)&lt;/li&gt;
+  &lt;li&gt;Translation
+For the purpose of video stabilization, a&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;l1-optimal-camera-paths-paper-implementation-details&quot;&gt;L1 optimal camera paths paper implementation details&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Paper focusses exclusively on 2D motion models (which is fair I guess)&lt;/li&gt;
+  &lt;li&gt;Can compare sparse optical flow (good when sharp features are avaiable) and dense optical flow (good when smooth features are present), both are implemented in openCV &lt;a href=&quot;https://docs.opencv.org/3.3.1/d7/d8b/tutorial_py_lucas_kanade.html&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;In the paper they have gone for the sparse optical flow method&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Mechanical stabilization is well known. There external equipment such as camera gimblas and other apparatus are used to filter out vibrations. However, the capability of such equipment is limited to prventing high frequency vibrations from entering camera footage. To tackle low frequency vibrations arising from actions such as walking and or running while recording video footage.</summary></entry><entry><title type="html">Clock Controller Design</title><link href="http://localhost:4000/blog/nixieClockController" rel="alternate" type="text/html" title="Clock Controller Design" /><published>2020-07-24T00:00:00+05:30</published><updated>2020-07-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock-3</id><content type="html" xml:base="http://localhost:4000/blog/nixieClockController">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/controller_annotated.png&quot; alt=&quot;Controller Board Annotated Image&quot; height=&quot;350&quot; /&gt;
@@ -188,7 +280,7 @@ More details about the circuit board layout with SMPS best practices and details
 &lt;p&gt;&lt;em&gt;Mr. Joginder Yadav, RA Machines Lab, IIT Bombay provided immense help for the design of the power supply and other modules of this project&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-06-29T00:00:00+05:30</published><updated>2020-06-29T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 19 July 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-07-09T00:00:00+05:30</published><updated>2020-07-09T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 14 Aug 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;⭐ ⭐ ⭐ ⭐ ⭐ = Strongly Recommended&lt;/p&gt;
 
@@ -245,9 +337,11 @@ More details about the circuit board layout with SMPS best practices and details
 ⭐ ⭐ ⭐ ⭐&lt;/li&gt;
   &lt;li&gt;You are a Badass - Jen Sincero  &lt;br /&gt;
 ⭐ ⭐&lt;/li&gt;
-  &lt;li&gt;The power of habit - Charles Duhigg 📕&lt;/li&gt;
-  &lt;li&gt;Deep Work - Cal Newport 📖&lt;/li&gt;
-  &lt;li&gt;The Extended phenotype - Richard Dawkins 📕&lt;/li&gt;
+  &lt;li&gt;The power of habit - Charles Duhigg &lt;br /&gt; 
+⭐ ⭐ ⭐&lt;/li&gt;
+  &lt;li&gt;Deep Work - Cal Newport &lt;br /&gt;
+⭐ ⭐ ⭐ ⭐ ⭐&lt;/li&gt;
+  &lt;li&gt;The Extended phenotype - Richard Dawkins 📖&lt;/li&gt;
   &lt;li&gt;Enlightenment Now - Steven Pinker 📕&lt;/li&gt;
   &lt;li&gt;Think and Grow Rich - Napoleon Hill 📕&lt;/li&gt;
   &lt;li&gt;The Science of Getting Rich - Wallace Wattles 📕&lt;/li&gt;
@@ -292,6 +386,18 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;All things shining - Hubert Dreyfus, Sean Dorrance Kelly 📕&lt;/li&gt;
   &lt;li&gt;Flow: The Psychology of Optimal Experience - Mihaly Csikszentmihalyi 📕&lt;/li&gt;
   &lt;li&gt;Essays on Indic History - Vijender Sharma 📕&lt;/li&gt;
+  &lt;li&gt;The Future of the Mind - Michio Kaku 📕&lt;/li&gt;
+  &lt;li&gt;Something Deeply Hidden - Sean Carroll 📕&lt;/li&gt;
+  &lt;li&gt;The Big Picture - Sean Carrol 📕&lt;/li&gt;
+  &lt;li&gt;The Ethical Algorithm - Aaron Roth and Michael Kearns 📕&lt;/li&gt;
+  &lt;li&gt;The Universe and the Teacup - K. C. Cole 📕&lt;/li&gt;
+  &lt;li&gt;How to Win Friends and Influence People - Dale Carnegie 📕&lt;/li&gt;
+  &lt;li&gt;Homo Ludens - Johan Huizinga 📕&lt;/li&gt;
+  &lt;li&gt;The Double Helix - James Watson 📕&lt;/li&gt;
+  &lt;li&gt;The Road to Reality - Roger Penrose 📕&lt;/li&gt;
+  &lt;li&gt;On Intelligence - Jeff Hawkins and Sandra Blakeslee 📕&lt;/li&gt;
+  &lt;li&gt;The Intelligence Trap - David Robinson 📕&lt;/li&gt;
+  &lt;li&gt;The Basic Laws of Human Stupidity - Carlo Cipolla 📕&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;fiction&quot;&gt;&lt;strong&gt;Fiction&lt;/strong&gt;&lt;/h3&gt;
@@ -306,14 +412,11 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;Simulacron-3 - Galouye 📕&lt;/li&gt;
   &lt;li&gt;A for Andromeda - Fred Hoyle 📕&lt;/li&gt;
   &lt;li&gt;Books by Arthur C Clarke 📕&lt;/li&gt;
-  &lt;li&gt;Homo Ludens - Johan Huizinga 📕&lt;/li&gt;
-  &lt;li&gt;The Double Helix - James Watson 📕&lt;/li&gt;
-  &lt;li&gt;The Road to Reality - Roger Penrose 📕&lt;/li&gt;
-  &lt;li&gt;On Intelligence - Jeff Hawkins and Sandra Blakeslee 📕&lt;/li&gt;
-  &lt;li&gt;The Intelligence Trap - David Robinson 📕&lt;/li&gt;
-  &lt;li&gt;The Basic Laws of Human Stupidity - Carlo Cipolla📕&lt;/li&gt;
-  &lt;li&gt;Americanah - Chimamanda Ngozi Adichie&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 19 July 2020</summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
+  &lt;li&gt;Americanah - Chimamanda Ngozi Adichie 📕&lt;/li&gt;
+  &lt;li&gt;War of the Worlds - H.G. Wells 📕&lt;/li&gt;
+  &lt;li&gt;Shiva Trilogy - Amish Tripathi 📕&lt;/li&gt;
+  &lt;li&gt;Suheldev - Amish Tripathi 📕&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 14 Aug 2020</summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/nixie_clock_no_bg.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
@@ -704,47 +807,4 @@ On understanding Frankl’s thoughts on motivation, I looked back to my own life
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;br /&gt;
-&lt;em&gt;This review was written for a course assignment for the Introduction to Psychology course at IIT Bombay&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Staying intrinsically motivated is important for self-improvement and progress. I have always wanted to understand factors that influence motivation and I found Frankl’s book to be extremely insightful in this regard. There are numerous accounts of the Holocaust that go into detail about atrocities committed in the dreaded concentration camps of Nazi Germany. This book is unique in that it discusses Psychological aspects of imprisonment, torture, starvation and suffering.</summary></entry><entry><title type="html">What is your earliest childhood memory?</title><link href="http://localhost:4000/blog/memory" rel="alternate" type="text/html" title="What is your earliest childhood memory?" /><published>2018-08-28T00:00:00+05:30</published><updated>2018-08-28T00:00:00+05:30</updated><id>http://localhost:4000/blog/memory</id><content type="html" xml:base="http://localhost:4000/blog/memory">&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/deep_pool.jpg&quot; alt=&quot;nixie clock&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;It is well known that Childhood memories get distorted if not entirely eroded as we get older. However, some early childhood memories can be recalled vividly if there are strong emotions associated with them. Reflecting on my own childhood memories puts into perspective how daunting the world looks from a child’s point of view. Swimming is one of the activities that seemed very intimidating to me as a five-year-old child.&lt;/p&gt;
-
-&lt;p&gt;I am surprised by how detailed my memory of certain childhood swimming lessons is. I recall that I was one of the kids who was the most scared of jumping into the water. The fact that I was not confident in my ability to swim and stay afloat meant that I hung on to floaters far longer than the other children. Among the many swim lessons that I took at my first swim club, one stands out to me the most.&lt;/p&gt;
-
-&lt;p&gt;A few weeks into the beginners camp, we had learned basic crawl stroke and some other tricks like the correct way to bring the head out and to breathe through the mouth. I was just starting to get comfortable with the water when one day, to my horror, the instructor decided that we were ready to jump into the larger, deeper adult sized pool. Reluctantly I marched along with our group towards the main pool complex. When we reached, what I saw before me was everything I feared the large pool would be.&lt;/p&gt;
-
-&lt;p&gt;The pool had water so deep that I couldn’t even see the bottom. Though this is common for swimming pools, as a child who had only ever been in shallow baby pools, I questioned whether the pool even had a floor! The instructor gestured us to line up. I, though completely unprepared for the ordeal, complied with the instructions and tried to take a position furthest from the pool. The other children seemed to have no problem jumping to their potential doom, but I for one was not ready to walk the plank. So, being a logical person, when my turn came to jump in, I refused. The people behind me in line went in first until I was the only student outside the water. The instructor walked up to me and demanded to know why I wasn’t in the water. I think I made up a story about how I wasn’t feeling well and didn’t want to swim. She saw through the lies and insisted that I jump.&lt;/p&gt;
-
-&lt;p&gt;Left without a choice, I jumped thinking that the cruel teacher will surely pay for making an innocent child suffer. Once in, my body kicked into survival mode and I twirled and flailed my way to the other end. Still unsure of the unfamiliar body of water and thinking of the horrible creatures that could be lurking underneath me, I wasted no time pulling myself out of the water.
-&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;em&gt;This essay was written for a course assignment for the Introduction to Psychology course at IIT Bombay&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Vehicle Routing Problems</title><link href="http://localhost:4000/projects/VRPs/" rel="alternate" type="text/html" title="Vehicle Routing Problems" /><published>2018-06-10T00:00:00+05:30</published><updated>2018-06-10T00:00:00+05:30</updated><id>http://localhost:4000/projects/VRP</id><content type="html" xml:base="http://localhost:4000/projects/VRPs/">&lt;p&gt;The aim of this supervised Learning project project was to come up with a formulation for a &lt;strong&gt;corporate cab fleet problem&lt;/strong&gt;, which is a type of vehicle routing problem (VRP).&lt;/p&gt;
-
-&lt;p&gt;VRPs are problems concerning the distribution of goods from depots to final users (customers). &lt;br /&gt;
-Solving a VRP is equivalent to determining a set of routes that start and end at the same depot,
-such that operational constraints and customer requirements are satisfied and cost is minimized.&lt;/p&gt;
-
-&lt;p&gt;The distribution network is modelled as a Graph with edges as roads and vertices
-corresponding to customer locations.&lt;/p&gt;
-
-&lt;p&gt;To work towards my goal I learnt about concepts like –&lt;br /&gt;
-	Linear Programming problems, the simplex algorithm for constraint optimization, Integer programming (IP) for discrete optimization, Network Problem IP models, the travelling salesman problem and Branch and bound and cutting plane algorithms for solving IP problems.&lt;/p&gt;
-
-&lt;p&gt;Some of the graphics I made as part of &lt;a href=&quot;https://github.com/ishank-juneja/cab-fleet-optimization/tree/master/notes&quot;&gt;my notes&lt;/a&gt; for this are shown below.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Discrete Optimization solutions through Linear Programming Approach&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/images/VRP_2.jpg&quot; alt=&quot;VRP 2&quot; style=&quot;width:600px;height:400px;&quot; /&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Branch and Bound Algorithm for IP solutions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p align=&quot;center&quot;&gt;  
-  &lt;img src=&quot;/assets/images/VRP_4.jpg&quot; alt=&quot;VRP 4&quot; style=&quot;width:500px;height:500px;&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">The aim of this supervised Learning project project was to come up with a formulation for a corporate cab fleet problem, which is a type of vehicle routing problem (VRP).</summary></entry></feed>
+&lt;em&gt;This review was written for a course assignment for the Introduction to Psychology course at IIT Bombay&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Staying intrinsically motivated is important for self-improvement and progress. I have always wanted to understand factors that influence motivation and I found Frankl’s book to be extremely insightful in this regard. There are numerous accounts of the Holocaust that go into detail about atrocities committed in the dreaded concentration camps of Nazi Germany. This book is unique in that it discusses Psychological aspects of imprisonment, torture, starvation and suffering.</summary></entry></feed>
