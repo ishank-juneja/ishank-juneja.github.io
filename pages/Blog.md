@@ -17,7 +17,8 @@ with Anantha Hegde and Yojit Srivastava
 	- Where I write about how I setup this webpage to speed the process for others.
 
 
-### Miscellaneous Blogs
+### Miscellaneous Blogs and Technical Papers
+- Sep 12, 2020 - [A short paper on Hopfield Networks]({{site.baseurl}}/assets/docs/hopfieldNets.pdf)
 - June 29, 2020 - [A reading list for the near future]({{site.baseurl}}/blog/nowReading)
 - August 1, 2019 - [Radioistopes and the Indian Atomic Energy Program]({{site.baseurl}}/blog/radioIsotopes) 
 - October 9, 2018 - [Review: Man's search for meaning - Victor Frankl]({{site.baseurl}}/blog/meaning)
