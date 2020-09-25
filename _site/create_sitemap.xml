@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://localhost:4000/blog/paperReviews</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/blog/radioIsotopes</loc>
     </url>
     
@@ -35,6 +39,10 @@
     
     <url>
         <loc>http://localhost:4000/blog/pageSetupJekyll</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/blog/18-01-2020</loc>
     </url>
     
     <url>

@@ -18,6 +18,7 @@ with Anantha Hegde and Yojit Srivastava
 
 
 ### Miscellaneous Blogs and Technical Papers
+- Sep 25, 2020 - [Paper reviews for papers on Mathematics, Engineering and Computer Science]({{site.baseurl}}/blog/paperReviews)
 - Sep 12, 2020 - [A short paper on Hopfield Networks]({{site.baseurl}}/assets/docs/hopfieldNets.pdf)
 - June 29, 2020 - [A reading list for the near future]({{site.baseurl}}/blog/nowReading)
 - August 1, 2019 - [Radioistopes and the Indian Atomic Energy Program]({{site.baseurl}}/blog/radioIsotopes) 

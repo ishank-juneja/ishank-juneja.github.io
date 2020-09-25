@@ -4,11 +4,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Blog</title>
-  <meta name="description" content="Personal homepage: Ishank Juneja">
+  <title>Review of Autonomous helicopter flight via reinforcement learning</title>
+  <meta name="description" content="Link to the paper - NIPS 2003 Proceedings Link">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/">
+  <link rel="canonical" href="http://localhost:4000/blog/18-01-2020">
   <link rel="alternate" type="application/rss+xml" title="Ishank's Webpage" href="http://localhost:4000/feed.xml">
 
 <link href='http://joelglovier.com/feed.xml' rel='alternate' type='application/atom+xml'>
@@ -73,47 +73,84 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 style="text-align:center"><b><u>Blog Navigation</u></b></h1>
-  </header>
+    <h1 class="post-title p-name" itemprop="name headline">Review of Autonomous helicopter flight via reinforcement learning</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-01-18T00:00:00+05:30" itemprop="datePublished">Jan 18, 2020
+      </time></p>
+			<i><p style="font-size:16px;color:Gray">Reading Time: <span class="reading-time" title="Estimated read time">
+  
+  
+    2 mins
+  
+</span>
 
-  <div class="post-content">
-    <h3 id="electronics">Electronics</h3>
+</p></i> 
+</header>
+	
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Link to the paper - <a href="https://papers.nips.cc/paper/2455-autonomous-helicopter-flight-via-reinforcement-learning.pdf">NIPS 2003 Proceedings Link</a></p>
+
+<p>Follow up work to this from 2008 by Pieter Abbeel - <a href="https://youtu.be/M-QUkgk3HyE">YouTube Video by Stanford University</a></p>
+
+<p>Compared to simulated agent-environment interactions, real-world robotic
+control tasks pose unique challenges in terms of their complex and noisy dynamics. Helicopter-Flight in particular is a difficult control problem, not only
+due to the numerous degrees of freedom, but also because of the simultaneous
+interacting actions required. Controlling a helicopter can be modelled as a sequential decision making task where decisions have to be made about control
+inputs every fraction of a second. The paper, by Andrew Ng and others, looks
+at a reinforcement learning based approach to control a helicopter’s trajectory.</p>
+
+<p>In a robotic control task, creating an accurate training model for vehicle
+dynamics is crucial since it is impractical (and in this case unsafe) to learn online
+in the real world. The dynamical model used for training should incorporate as
+much expert knowledge as possible about the underlying task so that learning
+becomes tractable. In this paper, the authors exploit environmental symmetries
+and incorporate prior knowledge into their model so that the onus of learning
+these relationships does not fall onto the algorithm. Through diligent analysis
+the authors create an accurate model of the helicopter which they use to come
+up with good policies.</p>
+
+<p>The authors use Monte-Carlo simulations to get estimate of the value functions associated with various policies and then perform policy search to arrive
+at an optimal-policy for the task of hovering the helicopter at a fixed location
+in space. To perform policy search the authors used both Gradient-Ascent and
+Random-Walk based approaches. As pointed out in the paper both perform
+comparably well. Through this training procedure, the authors are successful
+in determining a policy that performs significantly better at the hovering task
+than a trained human pilot.</p>
+
+<p>After being successful at the hovering task, the authors take it a step further by attempting to train the helicopter to follow arbitrary trajectories. In
+principle, once hovering at a fixed location is perfected, any trajectory can be
+broken down into a sequence of points to “hover” at for fractions of a second.
+However, as the authors point out, the reward, or rather the penalty, scheme
+needs to be modified slightly when we plan to undertake continuing motion.
+This includes not incentivizing aggressive manoeuvres and providing shaping
+rewards for making forward progress along the trajectory.</p>
+
+<p>After reading and understanding the motives of the paper, a question that I have is,</p>
+
 <ul>
-  <li>June 2020 - A USB Powered Nixie Tube Clock Display <br />
-with Anantha Hegde and Yojit Srivastava
-    <ul>
-      <li>Part 1, June 16: <a href="/blog/nixieClock">Nixie Tube Characterization</a></li>
-      <li>Part 2, July 16: <a href="/blog/nixieClockPower">Power Supply Design</a></li>
-      <li>Part 3, July 24: <a href="/blog/nixieClockController">Controller Design</a></li>
-    </ul>
-  </li>
+  <li>In the problem tackled by this paper, the state and policy spaces were
+continuous, so the authors used policy-search methods to learn good policies. In general, in Reinforcement Learning tasks are there situations with
+a finite/discrete state and action space where we would use policy-search
+over the control approach of estimating action-value functions?</li>
 </ul>
 
-<h3 id="guides-and-tutorials">Guides and Tutorials</h3>
-<ul>
-  <li>May 24, 2020 - <a href="/blog/pageSetupJekyll">How I setup this website</a> <br />
-    <ul>
-      <li>Where I write about how I setup this webpage to speed the process for others.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="miscellaneous-blogs-and-technical-papers">Miscellaneous Blogs and Technical Papers</h3>
-<ul>
-  <li>Sep 25, 2020 - <a href="/blog/paperReviews">Paper reviews for papers on Mathematics, Engineering and Computer Science</a></li>
-  <li>Sep 12, 2020 - <a href="/assets/docs/hopfieldNets.pdf">A short paper on Hopfield Networks</a></li>
-  <li>June 29, 2020 - <a href="/blog/nowReading">A reading list for the near future</a></li>
-  <li>August 1, 2019 - <a href="/blog/radioIsotopes">Radioistopes and the Indian Atomic Energy Program</a></li>
-  <li>October 9, 2018 - <a href="/blog/meaning">Review: Man’s search for meaning - Victor Frankl</a></li>
-  <li>August 28, 2018 - <a href="/blog/memory">An early childhood memory</a></li>
-</ul>
+<hr />
+<p>This paper review was written as part of coursework for the course CS 748 taken by Prof. <a href="https://www.cse.iitb.ac.in/~shivaram/">Shivaram Kalyanakrishnan</a> at Indian Institute of Technology (IIT), Bombay</p>
 
   </div>
 
+  <a class="u-url" href="/blog/18-01-2020" hidden></a>
 </article>
+
+
+  
+
+
+
+
 
       </div>
     </main><footer class="site-footer">

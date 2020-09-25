@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-12T19:36:14+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program</title><link href="http://localhost:4000/blog/radioIsotopes" rel="alternate" type="text/html" title="Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program" /><published>2020-08-01T00:00:00+05:30</published><updated>2020-08-01T00:00:00+05:30</updated><id>http://localhost:4000/blog/radioisotopes</id><content type="html" xml:base="http://localhost:4000/blog/radioIsotopes">&lt;p&gt;The Central Government realized early on in India’s independence that moving forward, Nuclear Technology would be crucial to pulling the nation out of the many challenges it faced. The problems included a paucity of domestic &lt;strong&gt;coal and fossil fuel&lt;/strong&gt; and an impoverished populace.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-25T22:58:10+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Paper Reviews from Mathematics, Engineering and Computer Science</title><link href="http://localhost:4000/blog/paperReviews" rel="alternate" type="text/html" title="Paper Reviews from Mathematics, Engineering and Computer Science" /><published>2020-09-24T00:00:00+05:30</published><updated>2020-09-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/paper-reviews</id><content type="html" xml:base="http://localhost:4000/blog/paperReviews">&lt;ol&gt;
+  &lt;li&gt;Jan 18, 2020 - &lt;a href=&quot;/blog/18-01-2020&quot;&gt;Autonomous helicopter flight via reinforcement learning&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Jan 18, 2020 - Autonomous helicopter flight via reinforcement learning</summary></entry><entry><title type="html">Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program</title><link href="http://localhost:4000/blog/radioIsotopes" rel="alternate" type="text/html" title="Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program" /><published>2020-08-01T00:00:00+05:30</published><updated>2020-08-01T00:00:00+05:30</updated><id>http://localhost:4000/blog/radioisotopes</id><content type="html" xml:base="http://localhost:4000/blog/radioIsotopes">&lt;p&gt;The Central Government realized early on in India’s independence that moving forward, Nuclear Technology would be crucial to pulling the nation out of the many challenges it faced. The problems included a paucity of domestic &lt;strong&gt;coal and fossil fuel&lt;/strong&gt; and an impoverished populace.&lt;/p&gt;
 
 &lt;p&gt;To fulfill these needs the Department of Atomic energy (henceforth referred to as the &lt;strong&gt;DAE&lt;/strong&gt;) was instituted in 1954. Given the importance of the DAE, ever since its inception, the Department has been under the direct charge of the Prime Minister’s Office.&lt;/p&gt;
 
@@ -281,7 +283,7 @@ More details about the circuit board layout with SMPS best practices and details
 &lt;p&gt;&lt;em&gt;Mr. Joginder Yadav, RA Machines Lab, IIT Bombay provided immense help for the design of the power supply and other modules of this project&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-07-09T00:00:00+05:30</published><updated>2020-07-09T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 10 Sep 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-07-09T00:00:00+05:30</published><updated>2020-07-09T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 20 Sep 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;⭐ ⭐ ⭐ ⭐ ⭐ = Strongly Recommended&lt;/p&gt;
 
@@ -307,6 +309,7 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;Reinforcement Learning 📖&lt;/li&gt;
   &lt;li&gt;Convex Optimization - Lieven Vandenberghe and Stephen P. Boyd 📕&lt;/li&gt;
   &lt;li&gt;Heuristics: Intelligent Search Strategies for Computer Problem Solving - Judea Pearl 📕&lt;/li&gt;
+  &lt;li&gt;Bitcoin: A Peer-to-Peer Electronic Cash System (Bitcoin Whitepaper)- Satoshi Nakamoto&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;biographiesautobiographies&quot;&gt;&lt;strong&gt;Biographies/Autobiographies&lt;/strong&gt;&lt;/h3&gt;
@@ -342,7 +345,8 @@ More details about the circuit board layout with SMPS best practices and details
 ⭐ ⭐ ⭐&lt;/li&gt;
   &lt;li&gt;Deep Work - Cal Newport &lt;br /&gt;
 ⭐ ⭐ ⭐ ⭐ ⭐&lt;/li&gt;
-  &lt;li&gt;The Extended phenotype - Richard Dawkins 📖&lt;/li&gt;
+  &lt;li&gt;The Extended phenotype - Richard Dawkins &lt;br /&gt;
+⭐ ⭐&lt;/li&gt;
   &lt;li&gt;Enlightenment Now - Steven Pinker 📕&lt;/li&gt;
   &lt;li&gt;Think and Grow Rich - Napoleon Hill 📕&lt;/li&gt;
   &lt;li&gt;The Science of Getting Rich - Wallace Wattles 📕&lt;/li&gt;
@@ -385,7 +389,7 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;Brave new world - Aldous Huxley 📕&lt;/li&gt;
   &lt;li&gt;Rapt: Attention and the focussed life - Winifred Gallagher 📕&lt;/li&gt;
   &lt;li&gt;All things shining - Hubert Dreyfus, Sean Dorrance Kelly 📕&lt;/li&gt;
-  &lt;li&gt;Flow: The Psychology of Optimal Experience - Mihaly Csikszentmihalyi 📕&lt;/li&gt;
+  &lt;li&gt;Flow: The Psychology of Optimal Experience - Mihaly Csikszentmihalyi 📖&lt;/li&gt;
   &lt;li&gt;Essays on Indic History - Vijender Sharma 📕&lt;/li&gt;
   &lt;li&gt;The Future of the Mind - Michio Kaku 📕&lt;/li&gt;
   &lt;li&gt;Something Deeply Hidden - Sean Carroll 📕&lt;/li&gt;
@@ -399,9 +403,11 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;On Intelligence - Jeff Hawkins and Sandra Blakeslee 📕&lt;/li&gt;
   &lt;li&gt;The Intelligence Trap - David Robinson 📕&lt;/li&gt;
   &lt;li&gt;The Basic Laws of Human Stupidity - Carlo Cipolla 📕&lt;/li&gt;
-  &lt;li&gt;AI Superpowers - Kai-Fu Lee 📕&lt;/li&gt;
+  &lt;li&gt;AI Superpowers - Kai-Fu Lee &lt;br /&gt;
+⭐ ⭐ ⭐ ⭐&lt;/li&gt;
   &lt;li&gt;How to Read a Book Book  - Mortimer J. Adler 📕&lt;/li&gt;
   &lt;li&gt;Good to Great - James C. Collins 📕&lt;/li&gt;
+  &lt;li&gt;A new kind of science - Stephen Wolfram 📕&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;fiction&quot;&gt;&lt;strong&gt;Fiction&lt;/strong&gt;&lt;/h3&gt;
@@ -420,7 +426,7 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;War of the Worlds - H.G. Wells 📕&lt;/li&gt;
   &lt;li&gt;Shiva Trilogy - Amish Tripathi 📕&lt;/li&gt;
   &lt;li&gt;Suheldev - Amish Tripathi 📕&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 10 Sep 2020</summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 20 Sep 2020</summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/nixie_clock_no_bg.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
@@ -799,16 +805,4 @@ A major aspect of the project was identifying and eliminating sources of noise.&
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/assets/images/steth.jpg&quot; alt=&quot;Stethoscope&quot; /&gt;
-&lt;/p&gt;</content><author><name></name></author><summary type="html">A traditional Stethoscope acquires body signals acoustically. The sounds reach a doctor’s ears through rubber tubes. The ability to make accurate inferences from these sounds is limited by the physicians experience.</summary></entry><entry><title type="html">Review of Man’s Search for Meaning, by Viktor Frankl</title><link href="http://localhost:4000/blog/meaning" rel="alternate" type="text/html" title="Review of Man’s Search for Meaning, by Viktor Frankl" /><published>2018-10-09T00:00:00+05:30</published><updated>2018-10-09T00:00:00+05:30</updated><id>http://localhost:4000/blog/meaning</id><content type="html" xml:base="http://localhost:4000/blog/meaning">&lt;p&gt;Staying intrinsically motivated is important for self-improvement and progress. I have always wanted to understand factors that influence motivation and I found Frankl’s book to be extremely insightful in this regard. There are numerous accounts of the Holocaust that go into detail about atrocities committed in the dreaded concentration camps of Nazi Germany. This book is unique in that it discusses Psychological aspects of imprisonment, torture, starvation and suffering.&lt;/p&gt;
-
-&lt;p&gt;At the very start Frankl paints a vivid picture of life in Auschwitz and other camps. He focuses on the everyday sufferings that made life seem like a burden to prisoners. A few things really stood out to me about life in concentration camps. People were robbed completely of their identities and their existence was reduced to a mere number. Inmates were forced to work long hours performing intensive manual labour, and at the same time their diets were limited to a few slices of bread and a single serving of soup. Life and death were extremely unpredictable and a prisoner could be executed on the whim of a guard. It is fascinating that under this kind of an atmosphere, inmates still managed to have light-hearted discussions and steal a few moments to appreciate art and partake in humour.
-A major theme in the book that I found interesting, is the progression of an inmate’s mental state through three stages; Shock about the state of affairs at camp, entrenchment into the camp routine, and the reaction following their release. On arrival at a camp location, many inmates were directly sent to the gas chambers and crematoriums. The survivors of this event considered themselves lucky to be alive, but soon their gratitude turned into despair as they endured through camp life. The struggles included being stripped of all their clothes and possessions, walking barefoot over ice leading to frostbite and contracting infections due to their damaging lifestyles. 
-Soon, starvation and constant physical pain reduced people in concentration camps to primitive beings. Their thoughts were limited to food and survival. Frankl describes the horrific way in which people dropped dead from disease, injuries and exhaustion during this time. Omnipresent death and suffering lead to a sense of apathy among the inmates. These traits marked the second stage of camp life. Reading about this caused me to think deeply about the ideas of humanity and morality – things that supposedly make us human. Values like these differentiate us from animals, however, in the absence of all the comforts of daily life we are not above the nourishment needs of our bodies.&lt;/p&gt;
-
-&lt;p&gt;Frankl emphasises that humans are peculiar in that they can only be content in the present by looking to and hoping for a better future. In fact, the author goes a step further and says, even suffering can become bearable if we look at how the experience could be of value to us in future through a possible silver lining. To validate these ideas he points to anecdotal evidence from his time at the camp. Prisoners who lost faith in the future would become subject to mental decay, and sooner or later they would perish. For other prisoners, the motivation to survive came from looking forward to life after their eventual homecoming. 
-On understanding Frankl’s thoughts on motivation, I looked back to my own life and all the achievements that I was proud of. I have found myself in complete agreement with the view that the key to a meaningful life is to rise up to challenges that are sent our way. However, despite all the struggle, it is possible that we do not reach the goal we strived for. This is not something to lament over, since our struggles have intrinsic value of their own. Instead we should accept our situation and persevere towards our goal.
-&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;em&gt;This review was written for a course assignment for the Introduction to Psychology course at IIT Bombay&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Staying intrinsically motivated is important for self-improvement and progress. I have always wanted to understand factors that influence motivation and I found Frankl’s book to be extremely insightful in this regard. There are numerous accounts of the Holocaust that go into detail about atrocities committed in the dreaded concentration camps of Nazi Germany. This book is unique in that it discusses Psychological aspects of imprisonment, torture, starvation and suffering.</summary></entry></feed>
+&lt;/p&gt;</content><author><name></name></author><summary type="html">A traditional Stethoscope acquires body signals acoustically. The sounds reach a doctor’s ears through rubber tubes. The ability to make accurate inferences from these sounds is limited by the physicians experience.</summary></entry></feed>
