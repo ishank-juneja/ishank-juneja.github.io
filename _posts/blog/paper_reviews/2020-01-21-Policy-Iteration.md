@@ -3,7 +3,7 @@ layout: post
 date: 2020-01-21
 permalink: /blog/21-01-2020
 comments: true
-title: Review of Autonomous helicopter flight via reinforcement learning
+title: Review of On the Complexity of Policy Iteration
 mathjax: true
 ---
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-25T22:58:10+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Paper Reviews from Mathematics, Engineering and Computer Science</title><link href="http://localhost:4000/blog/paperReviews" rel="alternate" type="text/html" title="Paper Reviews from Mathematics, Engineering and Computer Science" /><published>2020-09-24T00:00:00+05:30</published><updated>2020-09-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/paper-reviews</id><content type="html" xml:base="http://localhost:4000/blog/paperReviews">&lt;ol&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-03T14:58:58+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ishank’s Webpage</title><subtitle>Personal homepage: Ishank Juneja</subtitle><entry><title type="html">Paper Reviews from Mathematics, Engineering and Computer Science</title><link href="http://localhost:4000/blog/paperReviews" rel="alternate" type="text/html" title="Paper Reviews from Mathematics, Engineering and Computer Science" /><published>2020-09-24T00:00:00+05:30</published><updated>2020-09-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/paper-reviews</id><content type="html" xml:base="http://localhost:4000/blog/paperReviews">&lt;ol&gt;
   &lt;li&gt;Jan 18, 2020 - &lt;a href=&quot;/blog/18-01-2020&quot;&gt;Autonomous helicopter flight via reinforcement learning&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name></name></author><summary type="html">Jan 18, 2020 - Autonomous helicopter flight via reinforcement learning</summary></entry><entry><title type="html">Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program</title><link href="http://localhost:4000/blog/radioIsotopes" rel="alternate" type="text/html" title="Advances in Radioisotope and Isotope Technologies by the Indian Atomic Energy Program" /><published>2020-08-01T00:00:00+05:30</published><updated>2020-08-01T00:00:00+05:30</updated><id>http://localhost:4000/blog/radioisotopes</id><content type="html" xml:base="http://localhost:4000/blog/radioIsotopes">&lt;p&gt;The Central Government realized early on in India’s independence that moving forward, Nuclear Technology would be crucial to pulling the nation out of the many challenges it faced. The problems included a paucity of domestic &lt;strong&gt;coal and fossil fuel&lt;/strong&gt; and an impoverished populace.&lt;/p&gt;
 
@@ -283,7 +283,7 @@ More details about the circuit board layout with SMPS best practices and details
 &lt;p&gt;&lt;em&gt;Mr. Joginder Yadav, RA Machines Lab, IIT Bombay provided immense help for the design of the power supply and other modules of this project&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;This project was completed in partial fulfilment of the requirements for EE 344: Electronic Design Lab at IITB&lt;/em&gt;&lt;br /&gt;
 &lt;em&gt;A more detailed description of the project along with schematics can be found in our &lt;a href=&quot;/assets/docs/DD08_Design_Lab_report.pdf&quot;&gt;project report&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-07-09T00:00:00+05:30</published><updated>2020-07-09T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 20 Sep 2020&lt;/strong&gt;&lt;/p&gt;
+&lt;em&gt;A demonstration of our project can be &lt;a href=&quot;https://youtu.be/MN-FbMPmbiw&quot;&gt;found here&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Personal Reading List</title><link href="http://localhost:4000/blog/nowReading" rel="alternate" type="text/html" title="Personal Reading List" /><published>2020-07-09T00:00:00+05:30</published><updated>2020-07-09T00:00:00+05:30</updated><id>http://localhost:4000/blog/reading</id><content type="html" xml:base="http://localhost:4000/blog/nowReading">&lt;p&gt;&lt;strong&gt;Last updated: 03 Oct 2020&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;⭐ ⭐ ⭐ ⭐ ⭐ = Strongly Recommended&lt;/p&gt;
 
@@ -306,10 +306,10 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;Bandits and Online learning - Tor Lattimore 📖&lt;/li&gt;
   &lt;li&gt;Causality - Judea Pearl 📕&lt;/li&gt;
   &lt;li&gt;AI: A Modern Approach - Peter Norvig and Stuart Russell 📕&lt;/li&gt;
-  &lt;li&gt;Reinforcement Learning 📖&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf&quot;&gt;Reinforcement Learning&lt;/a&gt; -  Richard S. Sutton and Andrew G. Barto 📖&lt;/li&gt;
   &lt;li&gt;Convex Optimization - Lieven Vandenberghe and Stephen P. Boyd 📕&lt;/li&gt;
   &lt;li&gt;Heuristics: Intelligent Search Strategies for Computer Problem Solving - Judea Pearl 📕&lt;/li&gt;
-  &lt;li&gt;Bitcoin: A Peer-to-Peer Electronic Cash System (Bitcoin Whitepaper)- Satoshi Nakamoto&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitcoin.org/bitcoin.pdf&quot;&gt;Bitcoin: A Peer-to-Peer Electronic Cash System&lt;/a&gt; (Bitcoin Whitepaper)- Satoshi Nakamoto 📕&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;biographiesautobiographies&quot;&gt;&lt;strong&gt;Biographies/Autobiographies&lt;/strong&gt;&lt;/h3&gt;
@@ -408,6 +408,11 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;How to Read a Book Book  - Mortimer J. Adler 📕&lt;/li&gt;
   &lt;li&gt;Good to Great - James C. Collins 📕&lt;/li&gt;
   &lt;li&gt;A new kind of science - Stephen Wolfram 📕&lt;/li&gt;
+  &lt;li&gt;Principles of synthetic intelligence - Joscha Bach 📕&lt;/li&gt;
+  &lt;li&gt;Constituent Assembly of India Debates - Debates in the Lok Sabha 📕&lt;/li&gt;
+  &lt;li&gt;The Worm at the Core: On the Role of Death in Life - Sheldon Solomon 📕&lt;/li&gt;
+  &lt;li&gt;The Denial of Death - Ernest Becker 📕&lt;/li&gt;
+  &lt;li&gt;Being and Time - Martin Heidegger 📕&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;fiction&quot;&gt;&lt;strong&gt;Fiction&lt;/strong&gt;&lt;/h3&gt;
@@ -426,7 +431,8 @@ More details about the circuit board layout with SMPS best practices and details
   &lt;li&gt;War of the Worlds - H.G. Wells 📕&lt;/li&gt;
   &lt;li&gt;Shiva Trilogy - Amish Tripathi 📕&lt;/li&gt;
   &lt;li&gt;Suheldev - Amish Tripathi 📕&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 20 Sep 2020</summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
+  &lt;li&gt;All the Light We Cannot See - Anthony Doerr 📕&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Last updated: 03 Oct 2020</summary></entry><entry><title type="html">Nixie Tube Characterization</title><link href="http://localhost:4000/blog/nixieClock" rel="alternate" type="text/html" title="Nixie Tube Characterization" /><published>2020-06-16T00:00:00+05:30</published><updated>2020-06-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/nixie-clock</id><content type="html" xml:base="http://localhost:4000/blog/nixieClock">&lt;hr /&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;br /&gt;
   &lt;img src=&quot;/assets/images/nixie_clock_no_bg.jpg&quot; alt=&quot;nixie clock&quot; height=&quot;300&quot; /&gt;
