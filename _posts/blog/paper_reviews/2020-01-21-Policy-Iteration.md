@@ -10,7 +10,7 @@ mathjax: true
 Link to the paper - [arXiV paper link](https://arxiv.org/pdf/1301.6718.pdf)
 
 Markov Decision Processes (MDPs) are a good way to model agent-environment
-interactions. Under the MDP planning setting, the designer has complete access to the MDPs attributes including its transition - $T (s,a,s)$ and reward functions - $R(s, a, s )$. To obtain an optimal policy for an MDP through planning, there are three well known algorithms - Policy Iteration (PI), Value Iteration and Linear Programming. Empirically, it has been observed that PI is often a better choice than the other two methods, further policy iteration has the advantage of having an un-ambiguous stopping condition on converging to an optimal pol icy. The paper by Mansour and Singh is very significant since it proves upper bounds on the number of iterations required by two variants of PI - greedy PI and randomized PI.
+interactions. Under the MDP planning setting, the designer has complete access to the MDPs attributes including its transition - $T (s,a,s)$ and reward functions - $R(s, a, s )$. To obtain an optimal policy for an MDP through planning, there are three well known algorithms - Policy Iteration (PI), Value Iteration and Linear Programming. Empirically, it has been observed that PI is often a better choice than the other two methods, further policy iteration has the advantage of having an un-ambiguous stopping condition on converging to an optimal policy. The paper by Mansour and Singh is very significant since it proves upper bounds on the number of iterations required by two variants of PI - greedy PI and randomized PI.
 
 The Policy Iteration algorithm works by identifying and improving on certain
 improvable states at every iteration. A state s is called improvable if the action
@@ -27,7 +27,7 @@ Greedy Policy Iteration is when we choose to update the action associated
 with every single improvable state. The paper shows that under such a scheme,
 the number of policies we rule out over every iteration is at least equal to the
 number of improvable states in that iteration. Using this result, the authors derive an upper-bound of $O( 2^{n} )$ policy iterations for a two action MDP under
-Greedy Policy Iteration. Here and below n is the number of states in the MDP.
+Greedy Policy Iteration. Here and below $n$ is the number of states in the MDP.
 
 Random Policy Iteration on the other hand chooses to accept the improvement offered by each state with probability half. For this randomised algorithm,
 the authors show that $\Omega (2^{m} )$ policies can be ruled at out at every iteration with a constant probability. Here $m$ is the number of improvable states for the current iteration. As is apparent from this result, it is possible to obtain a tighter upper-bound for Randomized PI as compared to Greedy PI, and the authors
