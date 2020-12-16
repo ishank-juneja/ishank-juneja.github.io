@@ -23,8 +23,6 @@ mathjax: false
 
 8. [Algorithms for Inverse Reinforcement Learning - Ng and Russel]({{site.baseurl}}/assets/docs/paper_reviews/R9_16D070012.pdf)
 
-9. [Is it Enough to Get the Behaviour Right? - Levesque]({{site.baseurl}}/assets/docs/paper_reviews/R10_16D070012.pdf)
-
 10. [Labeling Images with a Computer Game - Ahn and Dabbish]({{site.baseurl}}/assets/docs/paper_reviews/R11_16D070012.pdf)
 
 11. [Planning and acting in partially observable stochastic domains - Kaelbling, Littman, and Cassandra]({{site.baseurl}}/assets/docs/paper_reviews/R12_16D070012.pdf)
