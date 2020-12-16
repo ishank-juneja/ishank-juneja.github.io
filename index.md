@@ -11,5 +11,5 @@ layout: page
 
 Welcome to my personal blog. I write about various technical and non-technical topics here.
 
-Please reach out to me through email at ishankjuneja [at] gmail [dot] com.
+Please reach out to me through email at: **ishankjuneja [at] gmail [dot] com**
 
