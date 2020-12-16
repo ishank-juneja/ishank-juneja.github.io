@@ -9,10 +9,7 @@ layout: page
   <img src="{{site.baseurl}}/assets/images/ishank.jpg" alt="picture of me"/>
 </p>
 
-Welcome to my Homepage!
+Welcome to my personal blog. I write about various technical and non-technical topics here.
 
-My name is Ishank Juneja and I am currently a 4<sup>th</sup> Year undergraduate student. I am pursuing a major in Electrical Engineering and a minor in Computer Science. 
+Please reach out to me through email at ishankjuneja [at] gmail [dot] com.
 
-Recently I have had the chance to work on some exciting projects: For Details [Click Here]({{site.baseurl}}/projects)
-
-I am also enthusiastic about programming, I put up my work on [my Github Page](https://github.com/ishank-juneja)
